@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "IsValidPhoneNumber"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "IsValidPhoneNumberGroup"
+when
+    $input : RecordIn( dataset.isMostComplete( $input.TALEND_INTERNAL_ID ) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "IsValidPhoneNumber", drools.getRule().getName());
+
+end
+
+

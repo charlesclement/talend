@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="org.talend.survivorship.sample.SurvivorFlow" name="SurvivorFlow" >
+
+    <!-- nodes -->
+    <startEvent id="_jbpm-unique-62" name="start"  isInterrupting="false">
+    </startEvent>
+    <businessRuleTask id="_jbpm-unique-63" name="customer" g:ruleFlowGroup="customerGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-64" name="OwnerRU" g:ruleFlowGroup="OwnerRUGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-65" name="CommonName" g:ruleFlowGroup="CommonNameGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-66" name="LegalName" g:ruleFlowGroup="LegalNameGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-67" name="OrganisationNo" g:ruleFlowGroup="OrganisationNoGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-68" name="VAT" g:ruleFlowGroup="VATGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-69" name="STG_VAT" g:ruleFlowGroup="STG_VATGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-70" name="ChamberOfCom" g:ruleFlowGroup="ChamberOfComGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-71" name="Parma" g:ruleFlowGroup="ParmaGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-72" name="SICCode" g:ruleFlowGroup="SICCodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-73" name="AdressLine1" g:ruleFlowGroup="AdressLine1Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-74" name="sAddrLine2" g:ruleFlowGroup="sAddrLine2Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-75" name="sAddrLine3" g:ruleFlowGroup="sAddrLine3Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-76" name="sPostalCode" g:ruleFlowGroup="sPostalCodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-77" name="sCity" g:ruleFlowGroup="sCityGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-78" name="sStateProvince" g:ruleFlowGroup="sStateProvinceGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-79" name="Country" g:ruleFlowGroup="CountryGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-80" name="CountryCode" g:ruleFlowGroup="CountryCodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-81" name="STG_Adresse" g:ruleFlowGroup="STG_AdresseGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-82" name="SalesChannel" g:ruleFlowGroup="SalesChannelGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-83" name="Phone" g:ruleFlowGroup="PhoneGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-84" name="STG_Phone" g:ruleFlowGroup="STG_PhoneGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-85" name="StandardizedPhoneNumber" g:ruleFlowGroup="StandardizedPhoneNumberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-86" name="IsValidPhoneNumber" g:ruleFlowGroup="IsValidPhoneNumberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-87" name="IsPossiblePhoneNumber" g:ruleFlowGroup="IsPossiblePhoneNumberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-88" name="IsAlreadyStandard" g:ruleFlowGroup="IsAlreadyStandardGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-89" name="PhoneNumberType" g:ruleFlowGroup="PhoneNumberTypeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-90" name="ErrorMessage" g:ruleFlowGroup="ErrorMessageGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-91" name="VAT_countryCode" g:ruleFlowGroup="VAT_countryCodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-92" name="VAT_vatNumber" g:ruleFlowGroup="VAT_vatNumberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-93" name="VAT_requestDate" g:ruleFlowGroup="VAT_requestDateGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-94" name="VAT_valid" g:ruleFlowGroup="VAT_validGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-95" name="VAT_name" g:ruleFlowGroup="VAT_nameGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-96" name="VAT_address" g:ruleFlowGroup="VAT_addressGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-97" name="VAT_Complet" g:ruleFlowGroup="VAT_CompletGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-98" name="OSM_VAT_lat" g:ruleFlowGroup="OSM_VAT_latGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-99" name="OSM_VAT_lon" g:ruleFlowGroup="OSM_VAT_lonGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-100" name="OSM_VAT_house_number" g:ruleFlowGroup="OSM_VAT_house_numberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-101" name="OSM_VAT_road" g:ruleFlowGroup="OSM_VAT_roadGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-102" name="OSM_VAT_city_district" g:ruleFlowGroup="OSM_VAT_city_districtGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-103" name="OSM_VAT_town" g:ruleFlowGroup="OSM_VAT_townGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-104" name="OSM_VAT_county" g:ruleFlowGroup="OSM_VAT_countyGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-105" name="OSM_VAT_state" g:ruleFlowGroup="OSM_VAT_stateGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-106" name="OSM_VAT_postcode" g:ruleFlowGroup="OSM_VAT_postcodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-107" name="OSM_VAT_country" g:ruleFlowGroup="OSM_VAT_countryGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-108" name="OSM_VAT_country_code" g:ruleFlowGroup="OSM_VAT_country_codeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-109" name="OSM_VAT_Valid" g:ruleFlowGroup="OSM_VAT_ValidGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-110" name="OSM_lat" g:ruleFlowGroup="OSM_latGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-111" name="OSM_lon" g:ruleFlowGroup="OSM_lonGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-112" name="OSM_VAT_house_number" g:ruleFlowGroup="OSM_VAT_house_numberGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-113" name="OSM_road" g:ruleFlowGroup="OSM_roadGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-114" name="OSM_city_district" g:ruleFlowGroup="OSM_city_districtGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-115" name="OSM_town" g:ruleFlowGroup="OSM_townGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-116" name="OSM_county" g:ruleFlowGroup="OSM_countyGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-117" name="OSM_state" g:ruleFlowGroup="OSM_stateGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-118" name="OSM_postcode" g:ruleFlowGroup="OSM_postcodeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-119" name="OSM_country" g:ruleFlowGroup="OSM_countryGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-120" name="OSM_country_code" g:ruleFlowGroup="OSM_country_codeGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-121" name="OSM_Valid" g:ruleFlowGroup="OSM_ValidGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-122" name="GID" g:ruleFlowGroup="GIDGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <endEvent id="_jbpm-unique-123" name="end" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_jbpm-unique-62-_jbpm-unique-63" sourceRef="_jbpm-unique-62" targetRef="_jbpm-unique-63" />
+    <sequenceFlow id="_jbpm-unique-63-_jbpm-unique-64" sourceRef="_jbpm-unique-63" targetRef="_jbpm-unique-64" />
+    <sequenceFlow id="_jbpm-unique-64-_jbpm-unique-65" sourceRef="_jbpm-unique-64" targetRef="_jbpm-unique-65" />
+    <sequenceFlow id="_jbpm-unique-65-_jbpm-unique-66" sourceRef="_jbpm-unique-65" targetRef="_jbpm-unique-66" />
+    <sequenceFlow id="_jbpm-unique-66-_jbpm-unique-67" sourceRef="_jbpm-unique-66" targetRef="_jbpm-unique-67" />
+    <sequenceFlow id="_jbpm-unique-67-_jbpm-unique-68" sourceRef="_jbpm-unique-67" targetRef="_jbpm-unique-68" />
+    <sequenceFlow id="_jbpm-unique-68-_jbpm-unique-69" sourceRef="_jbpm-unique-68" targetRef="_jbpm-unique-69" />
+    <sequenceFlow id="_jbpm-unique-69-_jbpm-unique-70" sourceRef="_jbpm-unique-69" targetRef="_jbpm-unique-70" />
+    <sequenceFlow id="_jbpm-unique-70-_jbpm-unique-71" sourceRef="_jbpm-unique-70" targetRef="_jbpm-unique-71" />
+    <sequenceFlow id="_jbpm-unique-71-_jbpm-unique-72" sourceRef="_jbpm-unique-71" targetRef="_jbpm-unique-72" />
+    <sequenceFlow id="_jbpm-unique-72-_jbpm-unique-73" sourceRef="_jbpm-unique-72" targetRef="_jbpm-unique-73" />
+    <sequenceFlow id="_jbpm-unique-73-_jbpm-unique-74" sourceRef="_jbpm-unique-73" targetRef="_jbpm-unique-74" />
+    <sequenceFlow id="_jbpm-unique-74-_jbpm-unique-75" sourceRef="_jbpm-unique-74" targetRef="_jbpm-unique-75" />
+    <sequenceFlow id="_jbpm-unique-75-_jbpm-unique-76" sourceRef="_jbpm-unique-75" targetRef="_jbpm-unique-76" />
+    <sequenceFlow id="_jbpm-unique-76-_jbpm-unique-77" sourceRef="_jbpm-unique-76" targetRef="_jbpm-unique-77" />
+    <sequenceFlow id="_jbpm-unique-77-_jbpm-unique-78" sourceRef="_jbpm-unique-77" targetRef="_jbpm-unique-78" />
+    <sequenceFlow id="_jbpm-unique-78-_jbpm-unique-79" sourceRef="_jbpm-unique-78" targetRef="_jbpm-unique-79" />
+    <sequenceFlow id="_jbpm-unique-79-_jbpm-unique-80" sourceRef="_jbpm-unique-79" targetRef="_jbpm-unique-80" />
+    <sequenceFlow id="_jbpm-unique-80-_jbpm-unique-81" sourceRef="_jbpm-unique-80" targetRef="_jbpm-unique-81" />
+    <sequenceFlow id="_jbpm-unique-81-_jbpm-unique-82" sourceRef="_jbpm-unique-81" targetRef="_jbpm-unique-82" />
+    <sequenceFlow id="_jbpm-unique-82-_jbpm-unique-83" sourceRef="_jbpm-unique-82" targetRef="_jbpm-unique-83" />
+    <sequenceFlow id="_jbpm-unique-83-_jbpm-unique-84" sourceRef="_jbpm-unique-83" targetRef="_jbpm-unique-84" />
+    <sequenceFlow id="_jbpm-unique-84-_jbpm-unique-85" sourceRef="_jbpm-unique-84" targetRef="_jbpm-unique-85" />
+    <sequenceFlow id="_jbpm-unique-85-_jbpm-unique-86" sourceRef="_jbpm-unique-85" targetRef="_jbpm-unique-86" />
+    <sequenceFlow id="_jbpm-unique-86-_jbpm-unique-87" sourceRef="_jbpm-unique-86" targetRef="_jbpm-unique-87" />
+    <sequenceFlow id="_jbpm-unique-87-_jbpm-unique-88" sourceRef="_jbpm-unique-87" targetRef="_jbpm-unique-88" />
+    <sequenceFlow id="_jbpm-unique-88-_jbpm-unique-89" sourceRef="_jbpm-unique-88" targetRef="_jbpm-unique-89" />
+    <sequenceFlow id="_jbpm-unique-89-_jbpm-unique-90" sourceRef="_jbpm-unique-89" targetRef="_jbpm-unique-90" />
+    <sequenceFlow id="_jbpm-unique-90-_jbpm-unique-91" sourceRef="_jbpm-unique-90" targetRef="_jbpm-unique-91" />
+    <sequenceFlow id="_jbpm-unique-91-_jbpm-unique-92" sourceRef="_jbpm-unique-91" targetRef="_jbpm-unique-92" />
+    <sequenceFlow id="_jbpm-unique-92-_jbpm-unique-93" sourceRef="_jbpm-unique-92" targetRef="_jbpm-unique-93" />
+    <sequenceFlow id="_jbpm-unique-93-_jbpm-unique-94" sourceRef="_jbpm-unique-93" targetRef="_jbpm-unique-94" />
+    <sequenceFlow id="_jbpm-unique-94-_jbpm-unique-95" sourceRef="_jbpm-unique-94" targetRef="_jbpm-unique-95" />
+    <sequenceFlow id="_jbpm-unique-95-_jbpm-unique-96" sourceRef="_jbpm-unique-95" targetRef="_jbpm-unique-96" />
+    <sequenceFlow id="_jbpm-unique-96-_jbpm-unique-97" sourceRef="_jbpm-unique-96" targetRef="_jbpm-unique-97" />
+    <sequenceFlow id="_jbpm-unique-97-_jbpm-unique-98" sourceRef="_jbpm-unique-97" targetRef="_jbpm-unique-98" />
+    <sequenceFlow id="_jbpm-unique-98-_jbpm-unique-99" sourceRef="_jbpm-unique-98" targetRef="_jbpm-unique-99" />
+    <sequenceFlow id="_jbpm-unique-99-_jbpm-unique-100" sourceRef="_jbpm-unique-99" targetRef="_jbpm-unique-100" />
+    <sequenceFlow id="_jbpm-unique-100-_jbpm-unique-101" sourceRef="_jbpm-unique-100" targetRef="_jbpm-unique-101" />
+    <sequenceFlow id="_jbpm-unique-101-_jbpm-unique-102" sourceRef="_jbpm-unique-101" targetRef="_jbpm-unique-102" />
+    <sequenceFlow id="_jbpm-unique-102-_jbpm-unique-103" sourceRef="_jbpm-unique-102" targetRef="_jbpm-unique-103" />
+    <sequenceFlow id="_jbpm-unique-103-_jbpm-unique-104" sourceRef="_jbpm-unique-103" targetRef="_jbpm-unique-104" />
+    <sequenceFlow id="_jbpm-unique-104-_jbpm-unique-105" sourceRef="_jbpm-unique-104" targetRef="_jbpm-unique-105" />
+    <sequenceFlow id="_jbpm-unique-105-_jbpm-unique-106" sourceRef="_jbpm-unique-105" targetRef="_jbpm-unique-106" />
+    <sequenceFlow id="_jbpm-unique-106-_jbpm-unique-107" sourceRef="_jbpm-unique-106" targetRef="_jbpm-unique-107" />
+    <sequenceFlow id="_jbpm-unique-107-_jbpm-unique-108" sourceRef="_jbpm-unique-107" targetRef="_jbpm-unique-108" />
+    <sequenceFlow id="_jbpm-unique-108-_jbpm-unique-109" sourceRef="_jbpm-unique-108" targetRef="_jbpm-unique-109" />
+    <sequenceFlow id="_jbpm-unique-109-_jbpm-unique-110" sourceRef="_jbpm-unique-109" targetRef="_jbpm-unique-110" />
+    <sequenceFlow id="_jbpm-unique-110-_jbpm-unique-111" sourceRef="_jbpm-unique-110" targetRef="_jbpm-unique-111" />
+    <sequenceFlow id="_jbpm-unique-111-_jbpm-unique-112" sourceRef="_jbpm-unique-111" targetRef="_jbpm-unique-112" />
+    <sequenceFlow id="_jbpm-unique-112-_jbpm-unique-113" sourceRef="_jbpm-unique-112" targetRef="_jbpm-unique-113" />
+    <sequenceFlow id="_jbpm-unique-113-_jbpm-unique-114" sourceRef="_jbpm-unique-113" targetRef="_jbpm-unique-114" />
+    <sequenceFlow id="_jbpm-unique-114-_jbpm-unique-115" sourceRef="_jbpm-unique-114" targetRef="_jbpm-unique-115" />
+    <sequenceFlow id="_jbpm-unique-115-_jbpm-unique-116" sourceRef="_jbpm-unique-115" targetRef="_jbpm-unique-116" />
+    <sequenceFlow id="_jbpm-unique-116-_jbpm-unique-117" sourceRef="_jbpm-unique-116" targetRef="_jbpm-unique-117" />
+    <sequenceFlow id="_jbpm-unique-117-_jbpm-unique-118" sourceRef="_jbpm-unique-117" targetRef="_jbpm-unique-118" />
+    <sequenceFlow id="_jbpm-unique-118-_jbpm-unique-119" sourceRef="_jbpm-unique-118" targetRef="_jbpm-unique-119" />
+    <sequenceFlow id="_jbpm-unique-119-_jbpm-unique-120" sourceRef="_jbpm-unique-119" targetRef="_jbpm-unique-120" />
+    <sequenceFlow id="_jbpm-unique-120-_jbpm-unique-121" sourceRef="_jbpm-unique-120" targetRef="_jbpm-unique-121" />
+    <sequenceFlow id="_jbpm-unique-121-_jbpm-unique-122" sourceRef="_jbpm-unique-121" targetRef="_jbpm-unique-122" />
+    <sequenceFlow id="_jbpm-unique-122-_jbpm-unique-123" sourceRef="_jbpm-unique-122" targetRef="_jbpm-unique-123" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.sample.SurvivorFlow" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-62" >
+        <dc:Bounds x="81" y="16" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-63" >
+        <dc:Bounds x="65" y="96" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-64" >
+        <dc:Bounds x="65" y="176" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-65" >
+        <dc:Bounds x="65" y="256" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-66" >
+        <dc:Bounds x="65" y="336" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-67" >
+        <dc:Bounds x="43" y="416" width="124" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-68" >
+        <dc:Bounds x="65" y="496" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-69" >
+        <dc:Bounds x="65" y="576" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-70" >
+        <dc:Bounds x="49" y="656" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-71" >
+        <dc:Bounds x="65" y="736" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-72" >
+        <dc:Bounds x="65" y="816" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-73" >
+        <dc:Bounds x="52" y="896" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-74" >
+        <dc:Bounds x="65" y="976" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-75" >
+        <dc:Bounds x="65" y="1056" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-76" >
+        <dc:Bounds x="52" y="1136" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-77" >
+        <dc:Bounds x="65" y="1216" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-78" >
+        <dc:Bounds x="43" y="1296" width="124" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-79" >
+        <dc:Bounds x="65" y="1376" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-80" >
+        <dc:Bounds x="52" y="1456" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-81" >
+        <dc:Bounds x="52" y="1536" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-82" >
+        <dc:Bounds x="49" y="1616" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-83" >
+        <dc:Bounds x="65" y="1696" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-84" >
+        <dc:Bounds x="65" y="1776" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-85" >
+        <dc:Bounds x="16" y="1856" width="178" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-86" >
+        <dc:Bounds x="31" y="1936" width="148" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-87" >
+        <dc:Bounds x="22" y="2016" width="166" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-88" >
+        <dc:Bounds x="34" y="2096" width="142" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-89" >
+        <dc:Bounds x="40" y="2176" width="130" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-90" >
+        <dc:Bounds x="49" y="2256" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-91" >
+        <dc:Bounds x="40" y="2336" width="130" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-92" >
+        <dc:Bounds x="46" y="2416" width="118" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-93" >
+        <dc:Bounds x="40" y="2496" width="130" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-94" >
+        <dc:Bounds x="65" y="2576" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-95" >
+        <dc:Bounds x="65" y="2656" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-96" >
+        <dc:Bounds x="52" y="2736" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-97" >
+        <dc:Bounds x="52" y="2816" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-98" >
+        <dc:Bounds x="52" y="2896" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-99" >
+        <dc:Bounds x="52" y="2976" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-100" >
+        <dc:Bounds x="25" y="3056" width="160" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-101" >
+        <dc:Bounds x="49" y="3136" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-102" >
+        <dc:Bounds x="22" y="3216" width="166" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-103" >
+        <dc:Bounds x="49" y="3296" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-104" >
+        <dc:Bounds x="43" y="3376" width="124" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-105" >
+        <dc:Bounds x="46" y="3456" width="118" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-106" >
+        <dc:Bounds x="37" y="3536" width="136" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-107" >
+        <dc:Bounds x="40" y="3616" width="130" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-108" >
+        <dc:Bounds x="25" y="3696" width="160" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-109" >
+        <dc:Bounds x="46" y="3776" width="118" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-110" >
+        <dc:Bounds x="65" y="3856" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-111" >
+        <dc:Bounds x="65" y="3936" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-112" >
+        <dc:Bounds x="25" y="4016" width="160" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-113" >
+        <dc:Bounds x="65" y="4096" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-114" >
+        <dc:Bounds x="34" y="4176" width="142" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-115" >
+        <dc:Bounds x="65" y="4256" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-116" >
+        <dc:Bounds x="65" y="4336" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-117" >
+        <dc:Bounds x="65" y="4416" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-118" >
+        <dc:Bounds x="49" y="4496" width="112" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-119" >
+        <dc:Bounds x="52" y="4576" width="106" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-120" >
+        <dc:Bounds x="37" y="4656" width="136" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-121" >
+        <dc:Bounds x="65" y="4736" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-122" >
+        <dc:Bounds x="65" y="4816" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-123" >
+        <dc:Bounds x="81" y="4896" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-62-_jbpm-unique-63" >
+        <di:waypoint x="105" y="40" />
+        <di:waypoint x="105" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-63-_jbpm-unique-64" >
+        <di:waypoint x="105" y="120" />
+        <di:waypoint x="105" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-64-_jbpm-unique-65" >
+        <di:waypoint x="105" y="200" />
+        <di:waypoint x="105" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-65-_jbpm-unique-66" >
+        <di:waypoint x="105" y="280" />
+        <di:waypoint x="105" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-66-_jbpm-unique-67" >
+        <di:waypoint x="105" y="360" />
+        <di:waypoint x="105" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-67-_jbpm-unique-68" >
+        <di:waypoint x="105" y="440" />
+        <di:waypoint x="105" y="520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-68-_jbpm-unique-69" >
+        <di:waypoint x="105" y="520" />
+        <di:waypoint x="105" y="600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-69-_jbpm-unique-70" >
+        <di:waypoint x="105" y="600" />
+        <di:waypoint x="105" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-70-_jbpm-unique-71" >
+        <di:waypoint x="105" y="680" />
+        <di:waypoint x="105" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-71-_jbpm-unique-72" >
+        <di:waypoint x="105" y="760" />
+        <di:waypoint x="105" y="840" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-72-_jbpm-unique-73" >
+        <di:waypoint x="105" y="840" />
+        <di:waypoint x="105" y="920" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-73-_jbpm-unique-74" >
+        <di:waypoint x="105" y="920" />
+        <di:waypoint x="105" y="1000" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-74-_jbpm-unique-75" >
+        <di:waypoint x="105" y="1000" />
+        <di:waypoint x="105" y="1080" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-75-_jbpm-unique-76" >
+        <di:waypoint x="105" y="1080" />
+        <di:waypoint x="105" y="1160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-76-_jbpm-unique-77" >
+        <di:waypoint x="105" y="1160" />
+        <di:waypoint x="105" y="1240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-77-_jbpm-unique-78" >
+        <di:waypoint x="105" y="1240" />
+        <di:waypoint x="105" y="1320" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-78-_jbpm-unique-79" >
+        <di:waypoint x="105" y="1320" />
+        <di:waypoint x="105" y="1400" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-79-_jbpm-unique-80" >
+        <di:waypoint x="105" y="1400" />
+        <di:waypoint x="105" y="1480" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-80-_jbpm-unique-81" >
+        <di:waypoint x="105" y="1480" />
+        <di:waypoint x="105" y="1560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-81-_jbpm-unique-82" >
+        <di:waypoint x="105" y="1560" />
+        <di:waypoint x="105" y="1640" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-82-_jbpm-unique-83" >
+        <di:waypoint x="105" y="1640" />
+        <di:waypoint x="105" y="1720" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-83-_jbpm-unique-84" >
+        <di:waypoint x="105" y="1720" />
+        <di:waypoint x="105" y="1800" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-84-_jbpm-unique-85" >
+        <di:waypoint x="105" y="1800" />
+        <di:waypoint x="105" y="1880" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-85-_jbpm-unique-86" >
+        <di:waypoint x="105" y="1880" />
+        <di:waypoint x="105" y="1960" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-86-_jbpm-unique-87" >
+        <di:waypoint x="105" y="1960" />
+        <di:waypoint x="105" y="2040" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-87-_jbpm-unique-88" >
+        <di:waypoint x="105" y="2040" />
+        <di:waypoint x="105" y="2120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-88-_jbpm-unique-89" >
+        <di:waypoint x="105" y="2120" />
+        <di:waypoint x="105" y="2200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-89-_jbpm-unique-90" >
+        <di:waypoint x="105" y="2200" />
+        <di:waypoint x="105" y="2280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-90-_jbpm-unique-91" >
+        <di:waypoint x="105" y="2280" />
+        <di:waypoint x="105" y="2360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-91-_jbpm-unique-92" >
+        <di:waypoint x="105" y="2360" />
+        <di:waypoint x="105" y="2440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-92-_jbpm-unique-93" >
+        <di:waypoint x="105" y="2440" />
+        <di:waypoint x="105" y="2520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-93-_jbpm-unique-94" >
+        <di:waypoint x="105" y="2520" />
+        <di:waypoint x="105" y="2600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-94-_jbpm-unique-95" >
+        <di:waypoint x="105" y="2600" />
+        <di:waypoint x="105" y="2680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-95-_jbpm-unique-96" >
+        <di:waypoint x="105" y="2680" />
+        <di:waypoint x="105" y="2760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-96-_jbpm-unique-97" >
+        <di:waypoint x="105" y="2760" />
+        <di:waypoint x="105" y="2840" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-97-_jbpm-unique-98" >
+        <di:waypoint x="105" y="2840" />
+        <di:waypoint x="105" y="2920" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-98-_jbpm-unique-99" >
+        <di:waypoint x="105" y="2920" />
+        <di:waypoint x="105" y="3000" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-99-_jbpm-unique-100" >
+        <di:waypoint x="105" y="3000" />
+        <di:waypoint x="105" y="3080" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-100-_jbpm-unique-101" >
+        <di:waypoint x="105" y="3080" />
+        <di:waypoint x="105" y="3160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-101-_jbpm-unique-102" >
+        <di:waypoint x="105" y="3160" />
+        <di:waypoint x="105" y="3240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-102-_jbpm-unique-103" >
+        <di:waypoint x="105" y="3240" />
+        <di:waypoint x="105" y="3320" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-103-_jbpm-unique-104" >
+        <di:waypoint x="105" y="3320" />
+        <di:waypoint x="105" y="3400" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-104-_jbpm-unique-105" >
+        <di:waypoint x="105" y="3400" />
+        <di:waypoint x="105" y="3480" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-105-_jbpm-unique-106" >
+        <di:waypoint x="105" y="3480" />
+        <di:waypoint x="105" y="3560" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-106-_jbpm-unique-107" >
+        <di:waypoint x="105" y="3560" />
+        <di:waypoint x="105" y="3640" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-107-_jbpm-unique-108" >
+        <di:waypoint x="105" y="3640" />
+        <di:waypoint x="105" y="3720" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-108-_jbpm-unique-109" >
+        <di:waypoint x="105" y="3720" />
+        <di:waypoint x="105" y="3800" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-109-_jbpm-unique-110" >
+        <di:waypoint x="105" y="3800" />
+        <di:waypoint x="105" y="3880" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-110-_jbpm-unique-111" >
+        <di:waypoint x="105" y="3880" />
+        <di:waypoint x="105" y="3960" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-111-_jbpm-unique-112" >
+        <di:waypoint x="105" y="3960" />
+        <di:waypoint x="105" y="4040" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-112-_jbpm-unique-113" >
+        <di:waypoint x="105" y="4040" />
+        <di:waypoint x="105" y="4120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-113-_jbpm-unique-114" >
+        <di:waypoint x="105" y="4120" />
+        <di:waypoint x="105" y="4200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-114-_jbpm-unique-115" >
+        <di:waypoint x="105" y="4200" />
+        <di:waypoint x="105" y="4280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-115-_jbpm-unique-116" >
+        <di:waypoint x="105" y="4280" />
+        <di:waypoint x="105" y="4360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-116-_jbpm-unique-117" >
+        <di:waypoint x="105" y="4360" />
+        <di:waypoint x="105" y="4440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-117-_jbpm-unique-118" >
+        <di:waypoint x="105" y="4440" />
+        <di:waypoint x="105" y="4520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-118-_jbpm-unique-119" >
+        <di:waypoint x="105" y="4520" />
+        <di:waypoint x="105" y="4600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-119-_jbpm-unique-120" >
+        <di:waypoint x="105" y="4600" />
+        <di:waypoint x="105" y="4680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-120-_jbpm-unique-121" >
+        <di:waypoint x="105" y="4680" />
+        <di:waypoint x="105" y="4760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-121-_jbpm-unique-122" >
+        <di:waypoint x="105" y="4760" />
+        <di:waypoint x="105" y="4840" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-122-_jbpm-unique-123" >
+        <di:waypoint x="105" y="4840" />
+        <di:waypoint x="105" y="4920" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

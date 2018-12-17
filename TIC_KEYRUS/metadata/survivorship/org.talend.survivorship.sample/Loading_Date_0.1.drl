@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Loading_Date"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Loading_DateGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( loading_date, "Loading_Date", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Loading_Date", drools.getRule().getName());
+
+end
+
+

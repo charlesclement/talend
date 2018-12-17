@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "sCity"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "sCityGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( scity, "sCity", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "sCity", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "ErrorMessage"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "ErrorMessageGroup"
+when
+    $input : RecordIn( dataset.isMostComplete( $input.TALEND_INTERNAL_ID ) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "ErrorMessage", drools.getRule().getName());
+
+end
+
+

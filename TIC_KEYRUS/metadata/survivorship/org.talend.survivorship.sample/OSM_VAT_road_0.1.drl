@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "OSM_VAT_road"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "OSM_VAT_roadGroup"
+when
+    $input : RecordIn( dataset.isMostComplete( $input.TALEND_INTERNAL_ID ) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "OSM_VAT_road", drools.getRule().getName());
+
+end
+
+

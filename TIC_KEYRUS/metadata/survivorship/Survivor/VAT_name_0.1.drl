@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "VAT_name"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "VAT_nameGroup"
+when
+    $input : RecordIn( dataset.isMostComplete( $input.TALEND_INTERNAL_ID ) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "VAT_name", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SFDC_test"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="SFDC_testOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SFDC_testOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="SFDC_testOperationRequest">
+		<wsdl:part name="parameters" element="tns:SFDC_testOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SFDC_testOperationResponse">
+		<wsdl:part name="parameters" element="tns:SFDC_testOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="SFDC_testPortType">
+		<wsdl:operation name="SFDC_testOperation">
+			<wsdl:input message="tns:SFDC_testOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:SFDC_testOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SFDC_testBinding" type="tns:SFDC_testPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="SFDC_testOperation">
+			<soap:operation soapAction="http://www.talend.org/service/SFDC_testOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="SFDC_test">
+		<wsdl:port name="SFDC_testPort" binding="tns:SFDC_testBinding">
+			<soap:address location="http://localhost:8090/services/SFDC_test" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,81 @@
+package Survivor 
+
+import java.util.Date
+import java.math.BigDecimal
+
+global org.talend.survivorship.model.DataSet dataset
+
+declare  RecordIn 
+
+    TALEND_INTERNAL_ID : int  
+    customer : String  
+    ownerru : String  
+    commonname : String  
+    legalname : String  
+    organisationno : String  
+    vat : String  
+    stg_vat : String  
+    chamberofcom : String  
+    parma : String  
+    siccode : String  
+    adressline1 : String  
+    saddrline2 : String  
+    saddrline3 : String  
+    spostalcode : String  
+    scity : String  
+    sstateprovince : String  
+    country : String  
+    countrycode : String  
+    stg_adresse : String  
+    saleschannel : String  
+    phone : String  
+    stg_phone : String  
+    standardizedphonenumber : String  
+    isvalidphonenumber : String  
+    ispossiblephonenumber : String  
+    isalreadystandard : String  
+    phonenumbertype : String  
+    errormessage : String  
+    vat_countrycode : String  
+    vat_vatnumber : String  
+    vat_requestdate : String  
+    vat_valid : String  
+    vat_name : String  
+    vat_address : String  
+    vat_complet : String  
+    osm_vat_lat : String  
+    osm_vat_lon : String  
+    osm_vat_house_number : String  
+    osm_vat_road : String  
+    osm_vat_city_district : String  
+    osm_vat_town : String  
+    osm_vat_county : String  
+    osm_vat_state : String  
+    osm_vat_postcode : String  
+    osm_vat_country : String  
+    osm_vat_country_code : String  
+    osm_vat_valid : String  
+    osm_lat : String  
+    osm_lon : String  
+    osm_house_number : String  
+    osm_road : String  
+    osm_city_district : String  
+    osm_town : String  
+    osm_county : String  
+    osm_state : String  
+    osm_postcode : String  
+    osm_country : String  
+    osm_country_code : String  
+    osm_valid : String  
+    id : String  
+    loading_date : Date  
+    source : String  
+    t_gen_key : String  
+    gid : String  
+    grp_size : Integer  
+    master : String  
+    score : String  
+    grp_quality : String  
+end
+
+

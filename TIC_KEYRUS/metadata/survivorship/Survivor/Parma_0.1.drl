@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "Parma"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "ParmaGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( parma, "Parma", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Parma", drools.getRule().getName());
+
+end
+
+

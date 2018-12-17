@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "SICCode"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "SICCodeGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( siccode, "SICCode", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "SICCode", drools.getRule().getName());
+
+end
+
+

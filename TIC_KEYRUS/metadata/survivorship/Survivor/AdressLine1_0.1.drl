@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "AdressLine1"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "AdressLine1Group"
+when
+    $input : RecordIn( dataset.isMostCommon( adressline1, "AdressLine1", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "AdressLine1", drools.getRule().getName());
+
+end
+
+

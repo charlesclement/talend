@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "T_GEN_KEY"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "T_GEN_KEYGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( t_gen_key, "T_GEN_KEY", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "T_GEN_KEY", drools.getRule().getName());
+
+end
+
+

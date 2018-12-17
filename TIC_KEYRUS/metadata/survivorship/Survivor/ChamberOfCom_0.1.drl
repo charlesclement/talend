@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "ChamberOfCom"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "ChamberOfComGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( chamberofcom, "ChamberOfCom", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "ChamberOfCom", drools.getRule().getName());
+
+end
+
+

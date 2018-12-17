@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "STG_VAT"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "STG_VATGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( stg_vat, "STG_VAT", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "STG_VAT", drools.getRule().getName());
+
+end
+
+

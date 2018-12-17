@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "VAT_Complet"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "VAT_CompletGroup"
+when
+    $input : RecordIn( dataset.isMostComplete( $input.TALEND_INTERNAL_ID ) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "VAT_Complet", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:WSDLSchemaConnection WSDL="&quot;http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl&quot;" dataPackage="_gmKTheNPEeiPfJdv9puJpw" isInputModel="false" methodName="checkVat(parameters):string,string,date,boolean,string,string" name="repository.metadataWSDLSchema" portName="checkVatPort" portNameSpace="urn:ec.europa.eu:taxud:vies:services:checkVat" serverName="checkVatService" serverNameSpace="urn:ec.europa.eu:taxud:vies:services:checkVat" timeOut="20" xmi:id="_gmKTYONPEeiPfJdv9puJpw">
+    <parameterValue Element="parameters" xmi:id="_6bwL0ONkEei95uEYyXaCig"/>
+    <parameterValue ParameterInfo="parameters" ParameterInfoParent="" xmi:id="_6bwL0eNkEei95uEYyXaCig"/>
+    <parameterValue ParameterInfo="countryCode" ParameterInfoParent="parameters" xmi:id="_6bwL0uNkEei95uEYyXaCig"/>
+    <parameterValue ParameterInfo="vatNumber" ParameterInfoParent="parameters" xmi:id="_6bwL0-NkEei95uEYyXaCig"/>
+    <parameterValue Column="countryCode" xmi:id="_6bwL1ONkEei95uEYyXaCig"/>
+    <parameterValue Column="vatNumber" xmi:id="_6bwL1eNkEei95uEYyXaCig"/>
+    <parameterValue source="countryCode" xmi:id="_6bwL1uNkEei95uEYyXaCig"/>
+    <parameterValue source="vatNumber" xmi:id="_6bwL1-NkEei95uEYyXaCig"/>
+    <outputParameter Element="parameters" xmi:id="_6bwL2ONkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="parameters" ParameterInfoParent="" xmi:id="_6bwL2eNkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="countryCode" ParameterInfoParent="parameters" xmi:id="_6bwL2uNkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="vatNumber" ParameterInfoParent="parameters" xmi:id="_6bwL2-NkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="requestDate" ParameterInfoParent="parameters" xmi:id="_6bwL3ONkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="valid" ParameterInfoParent="parameters" xmi:id="_6bwL3eNkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="name" ParameterInfoParent="parameters" xmi:id="_6bwL3uNkEei95uEYyXaCig"/>
+    <outputParameter ParameterInfo="address" ParameterInfoParent="parameters" xmi:id="_6bwy4ONkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.address" xmi:id="_6bwy4eNkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.vatNumber" xmi:id="_6bwy4uNkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.valid" xmi:id="_6bwy4-NkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.requestDate" xmi:id="_6bwy5ONkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.countryCode" xmi:id="_6bwy5eNkEei95uEYyXaCig"/>
+    <outputParameter source="parameters.name" xmi:id="_6bwy5uNkEei95uEYyXaCig"/>
+  </TalendMetadata:WSDLSchemaConnection>
+  <TalendMetadata:GenericPackage dataManager="_gmKTYONPEeiPfJdv9puJpw" name="repository.metadataWSDLSchema" xmi:id="_gmKTheNPEeiPfJdv9puJpw">
+    <ownedElement id="_GqTOUONPEeiPfJdv9puJpw" label="Output" xmi:id="_gmKThuNPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="countryCode" name="countryCode" talendType="id_String" xmi:id="_gmKTh-NPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vatNumber" name="vatNumber" talendType="id_String" xmi:id="_gmKTiONPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="requestDate" name="requestDate" talendType="id_String" xmi:id="_gmKTieNPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="valid" name="valid" talendType="id_String" xmi:id="_gmKTiuNPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="name" name="name" talendType="id_String" xmi:id="_gmKTi-NPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="address" name="address" talendType="id_String" xmi:id="_gmKTjONPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+    <ownedElement id="_IIBJgONPEeiPfJdv9puJpw" label="Input" xmi:id="_gmKTjeNPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="countryCode" name="countryCode" talendType="id_String" xmi:id="_gmKTjuNPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vatNumber" name="vatNumber" talendType="id_String" xmi:id="_gmKTj-NPEeiPfJdv9puJpw" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_82a47a93-23c6-49f8-96f5-60fb31e1de7c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>axcr6+Af4HZKFVCU1SZX13bIzVFkhHjxwgKZRrvObhpR58AALUMyNDcj0XzzYnG28inocoCXd033
+DPLCjNT7Zw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c0b2c856-70a8-4bb2-80bd-4fd34031b1ce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w4SJNssK02oABA8YVBgJe+Jbt9vyRoGLZHayolc4XgNDIDKX++lMq7BXTreo6zuYi5z46YQ5oyog
+unduc24iYw==</DigestValue></Reference></SignedInfo><SignatureValue>1F68IK5EZdJEbbuLhBi50k/fDsZE22gLXfAA4YGyMaRQatNTJ2hY2Kx/V5GchN/AhgCyG4trwQlb
+iNiu2HUsxzfyenu97UIpBSujb5wSDbDXE9cw28oDYXK2WnkuAgqsyLhtp4ry9xnYoHJzQ5XepBTk
+gDpqMG4b0iA6uR24j7QaLWwBmohQBrUUnuf82qy8y6nrXDCf9LxoX1CSFEgbgY7YuJ1TYJWDffVg
+mR2qkJR1at8zwyCtYizg52VdxGL9Hkc9K1YmLswgR98SlwrD32c0RveQUw1QMT844p8IFrBemiVS
+XOzvkuA0fdOpJvhVFtaGoO2R5PkJE3YvNvp6CA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c0b2c856-70a8-4bb2-80bd-4fd34031b1ce" Target="#_82a47a93-23c6-49f8-96f5-60fb31e1de7c"><Timestamp>2018-12-17 14:21:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "GRP_SIZE"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "GRP_SIZEGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( grp_size, "GRP_SIZE", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "GRP_SIZE", drools.getRule().getName());
+
+end
+
+

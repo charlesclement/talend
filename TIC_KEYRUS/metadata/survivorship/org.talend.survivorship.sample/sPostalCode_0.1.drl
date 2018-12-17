@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "sPostalCode"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "sPostalCodeGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( spostalcode, "sPostalCode", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "sPostalCode", drools.getRule().getName());
+
+end
+
+

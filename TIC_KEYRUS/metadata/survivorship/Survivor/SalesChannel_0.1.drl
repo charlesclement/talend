@@ -1,0 +1,14 @@
+package Survivor 
+
+rule "SalesChannel"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "SalesChannelGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( saleschannel, "SalesChannel", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "SalesChannel", drools.getRule().getName());
+
+end
+
+
