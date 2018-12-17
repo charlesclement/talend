@@ -478,8 +478,8 @@
     <elementParameter field="CHECK" name="LINK_WITH_PREVIOUS" value="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_ORIGINAL" show="false" value="false"/>
     <elementParameter field="CHECK" name="SORT_DATA" value="true"/>
-    <elementParameter field="CHECK" name="OUTPUTDD" value="false"/>
-    <elementParameter field="CHECK" name="DISPLAY_ATTR_LABELS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUTDD" value="true"/>
+    <elementParameter field="CHECK" name="DISPLAY_ATTR_LABELS" value="true"/>
     <elementParameter field="CHECK" name="DEACTIVATE_MATCHING_COMPUTATION" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="TECHNICAL" name="VALIDATION_RULE_TYPE:VALIDATION_RULE_TYPE" show="false" value="REPOSITORY"/>
@@ -541,6 +541,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW_OUTPUT" name="FLOW_OUTPUT">
       <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
@@ -599,6 +600,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE_ROWS" name="UNIQUE_ROWS">
       <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
@@ -657,6 +659,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="CONFIDENT_GROUPS" name="CONFIDENT_GROUPS">
       <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
@@ -715,6 +718,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNCERTAIN_GROUPS" name="UNCERTAIN_GROUPS">
       <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
@@ -773,6 +777,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="VALIDATION_REJECT" name="VALIDATION_REJECT">
       <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
@@ -831,10 +836,10 @@
     <nodeData xsi:type="tdqmatching:MatchingData">
       <ruleMatchers>
         <joinkeys>
-          <columnMap key="MATCHING_TYPE" value="Levenshtein"/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
           <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.8"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="BillingCity"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
@@ -842,9 +847,9 @@
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
           <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.8"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="BillingPostalCode"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
@@ -852,9 +857,9 @@
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
           <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.8"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="BillingStreet"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
@@ -862,9 +867,9 @@
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Jaro-Winkler"/>
-          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="MostCommon"/>
           <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
-          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="0.8"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Name"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
@@ -919,7 +924,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="sortie" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.Name" name="Name" nullable="true" type="id_String"/>
@@ -955,6 +960,7 @@
         <mapperTableEntries name="MASTER" nullable="true" type="id_Boolean"/>
         <mapperTableEntries name="SCORE" nullable="true" type="id_Double"/>
         <mapperTableEntries name="GRP_QUALITY" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="MATCHING_DISTANCES" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1124,6 +1130,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -1185,6 +1193,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
@@ -1244,6 +1253,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="SCORE"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MATCHING_DISTANCES"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -1306,6 +1317,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="MAIN" label="row1" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_2">
@@ -1341,13 +1353,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_58f2f6b5-3a00-4196-810f-e337e4f4858d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Su/BM6RkZ6JtC1BmvYt3Zq89qkyrKXG1kBEfH/skxoARcRio2Qtz0h83CDE0nHK+SsmLgD9hPWwp
-aNHsc5oVHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bb354b93-1d94-4ad2-a000-95160e3857be"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IqK4U1+fIgU6dAmmULPM/694d2Fnl5/BNeSF6nSE5sAV4Ba+M6QB+Ztrnm4/emLJCsdTbJc8KTXO
-Vm+yFsO38w==</DigestValue></Reference></SignedInfo><SignatureValue>unK8ujWYCcrPgR6V88U0fV7j4Yr2XHwm4EwG0N+NK1awkAS4H/olLj+9PNNTPR0ro+8FwoKTN+Jj
-MsunffMrbUaTBmzCAgNgqAw8ene4LGwHul3ratPJswy4VFhDVHQmpCUtbKVNCe2hCczZDah8qjsu
-zzWJL6FlQPp5cBqVd016RN+DLTcA+Eh9NlctpoSz+az8OdoyozBmDKaV7S8mqp3EkY2vkq4rPmYX
-eaHgYZLVtQbziqVQKaPnCInVEazyvFnFadcqn6zF2z4yrbG4TmdIMkuOWLV/JgeGQ4jkEhcOXyXa
-1l/MfSx1GTJ/7UoCq2EkRj7nuX+yXk9a3/5Gjg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_494febf4-1d26-4969-8cfd-264b3a5533af"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CgdZx7dFCuchneqXiCq/d70IDuF6F8hcimXyAERwxkXxgxlrzubjNRRivoqEo09KK1ujHaRlmTCx
+caH04AMWZg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9a3602ca-ecf1-4098-a4d3-f9f6c8404300"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vt1tON1gwCYWMhI7npWI95WOwoyE2B/FO/Fjj12/QkZp2LrcWiajpxB9RhHpIb/xhgdENmAszpl4
+vZHzQTWKwg==</DigestValue></Reference></SignedInfo><SignatureValue>rDuYQYgkeiT5lDc9RgGGwYmAHrSVjrgzcuK/ViRqqOA3WoFKtjs5X7LbGvKXVbOAPd/HSB0qrHXl
+BPQeClIjzharu9SJLAF5lh4HoK43YTJJgWR3GyF938fh5LFOhYxoJd1e3f/VecNT5wK/I/CHj0BH
+FPi+N9mnDlks2GHrjfsfvkns8gYK+23R/wMVny5hKtBsNEgno5+J/q738ZvamHlxvLd/KT9YvjaP
+uXyqJ/d+deImr6qWX36JgeH2yFydhg5MiaVGHe7jtuGqH7hMR9c2EdSnkpNXC1d/2t/n5leX3SL4
+vmbBhFZWgywAWPM3p7q5QeghETPDF2GReNBdKw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1371,4 +1383,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bb354b93-1d94-4ad2-a000-95160e3857be" Target="#_58f2f6b5-3a00-4196-810f-e337e4f4858d"><Timestamp>2018-12-17 21:13:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9a3602ca-ecf1-4098-a4d3-f9f6c8404300" Target="#_494febf4-1d26-4969-8cfd-264b3a5533af"><Timestamp>2018-12-17 21:15:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
