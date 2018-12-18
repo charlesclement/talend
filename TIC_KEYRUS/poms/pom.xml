@@ -39,13 +39,14 @@
     <module>jobs/process/Sfdc/c_sfdc_dq_adresse_0.1</module>
     <module>jobs/process_storm/test_2_0.1</module>
     <module>jobs/process/Sfdc/d_sfdc_dq_phone_1.1</module>
+    <module>jobs/process/Sfdc/c_sfdc_dq_adresse_1.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
