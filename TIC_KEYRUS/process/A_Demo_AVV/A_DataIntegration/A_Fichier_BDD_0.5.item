@@ -1,24 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="PROD">
-    <contextParameter comment="" name="Dossier_cible" prompt="Dossier_cible?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/OUTPUT/DEMO/01_DataIntegration/PROD/"/>
-    <contextParameter comment="" name="Dossier_source" prompt="Dossier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/"/>
-    <contextParameter comment="" name="Fichier_source" prompt="Fichier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_File" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/DIM_CLIENT.csv"/>
-    <contextParameter comment="" name="NomDuContext" prompt="NomDuContext?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_String" value="&quot;PROD&quot;"/>
-    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Password" value=""/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Studio" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Remote">
+    <contextParameter comment="" name="Dossier_cible" prompt="Dossier_cible?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Directory" value="C:/Users/Administrator/Desktop/OUTPUT/DEMO/01_DataIntegration/DEV/"/>
+    <contextParameter comment="" name="Dossier_source" prompt="Dossier_source?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Directory" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/"/>
+    <contextParameter comment="" name="NomDuContext" prompt="NomDuContext?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_String" value="&quot;Remote&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Password" value=""/>
   </context>
-  <context confirmationNeeded="false" name="DEV">
-    <contextParameter comment="" name="Dossier_cible" prompt="Dossier_cible?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/OUTPUT/DEMO/01_DataIntegration/DEV/"/>
-    <contextParameter comment="" name="Dossier_source" prompt="Dossier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/"/>
-    <contextParameter comment="" name="Fichier_source" prompt="Fichier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_File" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/DIM_CLIENT.csv"/>
-    <contextParameter comment="" name="NomDuContext" prompt="NomDuContext?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_String" value="&quot;DEV&quot;"/>
-    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Password" value=""/>
-  </context>
-  <context confirmationNeeded="false" name="PREPROD">
-    <contextParameter comment="" name="Dossier_cible" prompt="Dossier_cible?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/OUTPUT/DEMO/01_DataIntegration/PREPROD/"/>
-    <contextParameter comment="" name="Dossier_source" prompt="Dossier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Directory" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/"/>
-    <contextParameter comment="" name="Fichier_source" prompt="Fichier_source?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_File" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/DIM_CLIENT.csv"/>
-    <contextParameter comment="" name="NomDuContext" prompt="NomDuContext?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_String" value="&quot;PREPROD&quot;"/>
-    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_QcT90FbDEee6Gt9nbzXxxA" type="id_Password" value=""/>
+  <context confirmationNeeded="false" name="Studio">
+    <contextParameter comment="" name="Dossier_cible" prompt="Dossier_cible?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Directory" value="C:/Users/Administrator/Desktop/OUTPUT/DEMO/01_DataIntegration/DEV/"/>
+    <contextParameter comment="" name="Dossier_source" prompt="Dossier_source?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Directory" value="C:/Users/Administrator/Desktop/INPUT/DEMO/01_DataIntegration/"/>
+    <contextParameter comment="" name="NomDuContext" prompt="NomDuContext?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_String" value="&quot;Studio&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_LYnmUFB0EeePQYsu6PYskQ" type="id_Password" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -135,7 +126,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_XXbS8FmMEeWX_-uAgknM5w - metadata"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Fichier_source"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Dossier_source"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -573,13 +564,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_26e7a7e6-25f7-4c66-be53-1daa17095b01"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QX0FfIeivEEviMFpf/Mh891qhERaEJrLQF6fHNuvS3Ij22095vKRt+qF5NqfQy8sLVxbHMR1WKAO
-qgso7t+LFA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2a78470a-a17d-4710-b355-5f7401f5a06a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/GuxbwQx9OJKW0890BRBRj0y2udwmlMe91zMhGX7GChNcbVgEqJIztAOp6sqY8UkadciI78Ekupv
-N/KjMy00VQ==</DigestValue></Reference></SignedInfo><SignatureValue>dXOSKUxYGpkD0R+HcW2ZQ6Ok37ag+C2Y6KrJwXnjjCOUCuWJwDQDiix1gHhYaO7p6vNmDHYjtFK4
-LHs4kXW9nDJei456CdiLoqF40gfBu0O2BZwPSAPqPc5y0oiIY5s826MKMmT1CBfsWEC0WNNTD7+M
-HJGHhHrmcM8Jtr0HRKPuhENKEWVx8Qo6IjF86FQFQIVYO+Re7Tfu68yENMIqvAFABoaw7Y+sqL+a
-7cmaXY3OKtCYingUqxuRa/7C6Kgl5SgPQHK7wXJjphagVBIyvbvklYaud5/JC9Uy9BWhY6dgyEkc
-KIT8KRSWs5Slyu+b2I9yErgNEVr5X9wCFkssig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2608bb9e-b6c9-4aaa-98ff-31c8d3f90774"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BCjXnwUGiO94Ax8+L9FMGm9lzZlCprmzL1XgfS6QJqypzNv8d5lMrFAqj6JZFb6nspv/iujA81hR
+eOW4nuf+3A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14032cad-675b-48aa-b8d1-ca3a2f415aa3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ci1MgI2tfvVk+56uuERW/Kv6gFqyIzxEXJBnNpGGWSS+8irbZADW9Wmx8RW6T4tfmtqmq995NkFf
+HczjmvSxNw==</DigestValue></Reference></SignedInfo><SignatureValue>kf4unjnW2JHDdVT6AonSR4MhrVLT8y+Cve40hYDIuytp1WQJTsT1coPxvF/+munWXjO5zP0+uQak
+HELrG4WLtGLMPJqQpgjYGhvPATfvF6jVl/prYDItFtjOjCpDteIKaOHHprchPGgaYn6ubBLgEgt2
+n6p5+59fG7R3+7/4QPzG71WFB4i0i51mFyJZiAqJFY8sJI33i/OUK7+iHeGKEOrXZOODPAOj3aNe
+oskVe700aGd0I9XiAmmo62/ZEIbLdyJSnEf2BhuXyZae1vS/lp7XDPYhsw5fN+zNjBKLreCUByb9
+0bSCpdHr7Mdjvw/5wlHZ/k3D89yklTV1FH9J/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -603,4 +594,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2a78470a-a17d-4710-b355-5f7401f5a06a" Target="#_26e7a7e6-25f7-4c66-be53-1daa17095b01"><Timestamp>2018-12-19 14:05:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14032cad-675b-48aa-b8d1-ca3a2f415aa3" Target="#_2608bb9e-b6c9-4aaa-98ff-31c8d3f90774"><Timestamp>2018-12-19 17:49:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
