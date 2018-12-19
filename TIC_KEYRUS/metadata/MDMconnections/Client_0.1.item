@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:org.talend.cwm.xml="http://www.talend.org/cwm/resource/xml/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:MDMConnection Datacluster="Client" Datamodel="Client" Password="gYS5jltDdzLSfHIqaDxbXg==" Username="administrator" dataPackage="_NAhVMH9jEeaR9bJ7ci5Czg" label="Client" name="Client" serverUrl="http://localhost:8180/talendmdm/services/soap" version="s60" xmi:id="_Ixa3gH9jEeaR9bJ7ci5Czg">
+    <schemas LoopLimit="50" conceptType="OUTPUT" label="ClientOut" xmi:id="_LPKOYJisEeejquC495VgbA">
+      <root Attribute="main" Order="1" RelatedColumn="" Type="id_String" XMLPath="/Client" xmi:id="_MRX5UJisEeejquC495VgbA"/>
+      <root Attribute="main" Order="3" RelatedColumn="Nom" Type="id_String" XMLPath="/Client/Nom" xmi:id="_MRX5UZisEeejquC495VgbA"/>
+      <root Attribute="main" Order="4" RelatedColumn="Prenom" Type="id_String" XMLPath="/Client/Prenom" xmi:id="_MRX5UpisEeejquC495VgbA"/>
+      <root Attribute="main" Order="5" RelatedColumn="Rue" Type="id_String" XMLPath="/Client/Rue" xmi:id="_MRX5U5isEeejquC495VgbA"/>
+      <root Attribute="main" Order="6" RelatedColumn="Ville" Type="id_String" XMLPath="/Client/Ville" xmi:id="_MRX5VJisEeejquC495VgbA"/>
+      <root Attribute="main" Order="7" RelatedColumn="Region" Type="id_String" XMLPath="/Client/Region" xmi:id="_MRX5VZisEeejquC495VgbA"/>
+      <root Attribute="main" Order="8" RelatedColumn="Code_postal" Type="id_String" XMLPath="/Client/Code_postal" xmi:id="_MRX5VpisEeejquC495VgbA"/>
+      <root Attribute="main" Order="9" RelatedColumn="Pays" Type="id_String" XMLPath="/Client/Pays" xmi:id="_MRX5V5isEeejquC495VgbA"/>
+      <root Attribute="main" Order="10" RelatedColumn="Telephone" Type="id_String" XMLPath="/Client/Telephone" xmi:id="_MRX5WJisEeejquC495VgbA"/>
+      <root Attribute="main" Order="11" RelatedColumn="Adresse_mail" Type="id_String" XMLPath="/Client/Adresse_mail" xmi:id="_MRX5WZisEeejquC495VgbA"/>
+      <root Attribute="main" Order="12" RelatedColumn="id_SFDC" Type="id_String" XMLPath="/Client/id_SFDC" xmi:id="_MRX5WpisEeejquC495VgbA"/>
+      <loop Attribute="main" Order="2" RelatedColumn="ClientId" Type="id_String" XMLPath="/Client/ClientId" xmi:id="_MRX5W5isEeejquC495VgbA"/>
+    </schemas>
+    <schemas LoopExpression="/Client" LoopLimit="50" label="ClientIn" xmi:id="_Equ4EJisEeejquC495VgbA">
+      <conceptTargets RelativeLoopExpression="ClientId" targetName="ClientId" xmi:id="_JzWXsJisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Nom" targetName="Nom" xmi:id="_JzWXsZisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Prenom" targetName="Prenom" xmi:id="_JzWXspisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Rue" targetName="Rue" xmi:id="_JzWXs5isEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Ville" targetName="Ville" xmi:id="_JzWXtJisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Region" targetName="Region" xmi:id="_JzWXtZisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Code_postal" targetName="Code_postal" xmi:id="_JzWXtpisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Pays" targetName="Pays" xmi:id="_JzWXt5isEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Telephone" targetName="Telephone" xmi:id="_JzWXuJisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="Adresse_mail" targetName="Adresse_mail" xmi:id="_JzWXuZisEeejquC495VgbA"/>
+      <conceptTargets RelativeLoopExpression="id_SFDC" targetName="id_SFDC" xmi:id="_JzWXupisEeejquC495VgbA"/>
+    </schemas>
+  </TalendMetadata:MDMConnection>
+  <org.talend.cwm.xml:TdXmlSchema dataManager="_Ixa3gH9jEeaR9bJ7ci5Czg" name="Client" xmi:id="_NAhVMH9jEeaR9bJ7ci5Czg">
+    <ownedElement id="_KfHRgJisEeejquC495VgbA" label="ClientIn" xmi:id="_KfJGsJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="ClientId" talendType="id_String" xmi:id="_Q2wwEJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Nom" talendType="id_String" xmi:id="_Q2xXIJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Prenom" talendType="id_String" xmi:id="_Q2xXIZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Rue" talendType="id_String" xmi:id="_Q2x-MJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ville" talendType="id_String" xmi:id="_Q2x-MZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Region" talendType="id_String" xmi:id="_Q2ylQJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Code_postal" talendType="id_String" xmi:id="_Q2ylQZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Pays" talendType="id_String" xmi:id="_Q2zMUJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Telephone" talendType="id_String" xmi:id="_Q2zMUZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Adresse_mail" talendType="id_String" xmi:id="_Q2zzYJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="id_SFDC" talendType="id_String" xmi:id="_Q2zzYZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+    <ownedElement id="_MRU2AJisEeejquC495VgbA" label="ClientOut" xmi:id="_NLO5gJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="ClientId" talendType="id_String" xmi:id="_NLO5gZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Nom" talendType="id_String" xmi:id="_NLO5gpisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Prenom" talendType="id_String" xmi:id="_NLO5g5isEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Rue" talendType="id_String" xmi:id="_NLO5hJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Ville" talendType="id_String" xmi:id="_NLO5hZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Region" talendType="id_String" xmi:id="_NLO5hpisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Code_postal" talendType="id_String" xmi:id="_NLO5h5isEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Pays" talendType="id_String" xmi:id="_NLO5iJisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Telephone" talendType="id_String" xmi:id="_NLO5iZisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Adresse_mail" talendType="id_String" xmi:id="_NLO5ipisEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="id_SFDC" talendType="id_String" xmi:id="_NLO5i5isEeejquC495VgbA" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </org.talend.cwm.xml:TdXmlSchema>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8944d0e2-3a84-43bb-85ce-8a609df94c03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FFsZdoXvv4ojrnCsnA56ywBJXlZGMnCZ9iJQ84/64Olnl9dQd60PPlYeIx/91V/JuJMtgIDPTsPl
+pfTtpUtURw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c1638d6a-e036-4582-bafd-57542f669c8e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OpJa76BBtHL2oelFgMvAdiVFJTXvIy86Sg6R9dRYkVDOPRX3BefcWUUSq3IfaUMjOKtcjtX0ItFl
++7ROUPO3pQ==</DigestValue></Reference></SignedInfo><SignatureValue>BTZdsSMMCrHgZYYbY0Z68TRXZ+42Qtj2ModgksEFAz2uH63Bwhy+g9Fr7D6RtQ0dQsz9wTDfbdxQ
+mWqNCvPUfXlVldzZdFd0vip1sPu/l13NbgXZ1abzKb+lPWvQ42sBDk0Ze38PCjueq7U4i3ivxuYc
+2OtZj953cXHgOwOEipI98NipZZLKlFh7yRV0ZxZ1RqsykU1Cv5vz0D49HcQTVpLDqTf9YwR/FSQo
+R69MbjKjUFijnNv8OFBIDAca/HApnoCGtab4XxntkbkrYWJSSClWkO4Ozb+F4JG+qOgoY3HBYUud
+LkvG0T2hXUv2UP/w4US0/Bo4J5XJeGjOLHT+DA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c1638d6a-e036-4582-bafd-57542f669c8e" Target="#_8944d0e2-3a84-43bb-85ce-8a609df94c03"><Timestamp>2018-12-19 13:38:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

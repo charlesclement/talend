@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:XmlFileConnection Encoding="UTF-8" XmlFilePath="C:/Users/Administrator/Desktop/INPUT/DEMO/06_SFDC/Pivot_Compte.xml" dataPackage="_3TCXQaBLEeecIecOBVnYZA" fileContent="3C726F6F745461673E3C49643E3C49643E303031323430303030314B3462493541414A3C2F49643E3C42696C6C696E67436974793E4C796F6E3C2F42696C6C696E67436974793E3C42696C6C696E67436F756E7472793E4672616E63653C2F42696C6C696E67436F756E7472793E3C42696C6C696E67506F7374616C436F64653E36393030363C2F42696C6C696E67506F7374616C436F64653E3C42696C6C696E6753746174653E52686F6E6520616C7065733C2F42696C6C696E6753746174653E3C42696C6C696E675374726565743E32322072756520626F73737565743C2F42696C6C696E675374726565743E3C4E616D653E436F6D7061676E6965206475206C6169743C2F4E616D653E3C50686F6E653E303437363634303434363C2F50686F6E653E3C49534F323E46523C2F49534F323E3C5374616E64617264697A656450686F6E654E756D6265723E2B33333437363634303434363C2F5374616E64617264697A656450686F6E654E756D6265723E3C497356616C696450686F6E654E756D6265723E747275653C2F497356616C696450686F6E654E756D6265723E3C4973506F737369626C6550686F6E654E756D6265723E747275653C2F4973506F737369626C6550686F6E654E756D6265723E3C4973416C72656164795374616E646172643E66616C73653C2F4973416C72656164795374616E646172643E3C50686F6E654E756D626572547970653E46495845445F4C494E453C2F50686F6E654E756D626572547970653E3C4572726F724D6573736167652F3E3C2F49643E3C2F726F6F745461673E" name="Pivot_Compte_input" xmi:id="_3TCXMKBLEeecIecOBVnYZA">
+    <schema AbsoluteXPathQuery="/rootTag/Id" LimitBoucle="50" xmi:id="_3TCXMaBLEeecIecOBVnYZA">
+      <schemaTargets RelativeXPathQuery="Id" TagName="Id" xmi:id="_3TCXMqBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="BillingCity" TagName="BillingCity" xmi:id="_3TCXM6BLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="BillingCountry" TagName="BillingCountry" xmi:id="_3TCXNKBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="BillingPostalCode" TagName="BillingPostalCode" xmi:id="_3TCXNaBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="BillingState" TagName="BillingState" xmi:id="_3TCXNqBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="BillingStreet" TagName="BillingStreet" xmi:id="_3TCXN6BLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="Name" TagName="Name" xmi:id="_3TCXOKBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="Phone" TagName="Phone" xmi:id="_3TCXOaBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="ISO2" TagName="ISO2" xmi:id="_3TCXOqBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="StandardizedPhoneNumber" TagName="StandardizedPhoneNumber" xmi:id="_3TCXO6BLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="IsValidPhoneNumber" TagName="IsValidPhoneNumber" xmi:id="_3TCXPKBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="IsPossiblePhoneNumber" TagName="IsPossiblePhoneNumber" xmi:id="_3TCXPaBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="IsAlreadyStandard" TagName="IsAlreadyStandard" xmi:id="_3TCXPqBLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="PhoneNumberType" TagName="PhoneNumberType" xmi:id="_3TCXP6BLEeecIecOBVnYZA"/>
+      <schemaTargets RelativeXPathQuery="ErrorMessage" TagName="ErrorMessage" xmi:id="_3TCXQKBLEeecIecOBVnYZA"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_3TCXMKBLEeecIecOBVnYZA" name="default" xmi:id="_3TCXQaBLEeecIecOBVnYZA">
+    <ownedElement id="_jRNAkKBLEeecIecOBVnYZA" label="metadata" xmi:id="_3TCXQqBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="Id" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXQ6BLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BillingCity" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXRKBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BillingCountry" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXRaBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BillingPostalCode" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXRqBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BillingState" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXR6BLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BillingStreet" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXSKBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Name" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXSaBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Phone" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXSqBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ISO2" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXS6BLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="StandardizedPhoneNumber" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXTKBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="IsValidPhoneNumber" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXTaBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="IsPossiblePhoneNumber" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXTqBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="IsAlreadyStandard" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXT6BLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PhoneNumberType" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXUKBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ErrorMessage" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_3TCXUaBLEeecIecOBVnYZA" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f49c7e19-b448-47fe-ba1b-64a45f36be8a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>m11m4jhtv6LTL58IeYcF9OVw9BewyLL+U9FcnFnEKWkM9/SG3ODNxVTlyrRtt04R+UxGCABHeHVy
+jh7/OBwIWw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_efba2c2b-d949-4c72-8379-ec3d072972c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CFgNJh5OfyZbyJF4u1HdVkpnOAXZIaDTmQfiHDua9ja+gC03oH6syWPR6AEwWqbfaoJ6ApsVU0EH
+elNu52dQWw==</DigestValue></Reference></SignedInfo><SignatureValue>HQT3625CzcQTbSJNXEkV6ecSsZM46RnHIiC7KvLDInUCB0S5wo2aYebYImCAm/+nmPBfrRGg3JeZ
+uQPzGGN8lsPr1PFHzrc1zNMZQvhlZmUVjRGtB1XBpiXKkyK7Ffiz+PJrVFdJg5GwSLrSPjhZLkjp
+7eYNE2CB9RusvbxmaPoEutYfX6yq/8CUl1mt+cYl5dJaZ4df+M4uoNcBEnSyw1XXrUXvV9kOZAKi
+Og7n0Ry7QHLXRyl5k222Txltf3xuXhoxeKscZnzYlEbpW9aDLX9ZSfbmQjjluvhcj041GmDxjePQ
+xk7hL08kvx5ItSiAEWnMnZGeq0exFVxI3SBBPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_efba2c2b-d949-4c72-8379-ec3d072972c0" Target="#_f49c7e19-b448-47fe-ba1b-64a45f36be8a"><Timestamp>2018-12-19 13:38:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
