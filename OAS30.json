@@ -1,40 +1,9 @@
 {
   "openapi" : "3.0.1",
   "info" : {
-    "title" : "Client",
+    "title" : "Untitled",
     "description" : "No description",
     "version" : "1.0.0"
   },
-  "servers" : [ {
-    "url" : "https://k4g3ob5.eu.api-mocks.com",
-    "description" : "This is your API mock endpoint. When called, it will simulate the behavior of your API."
-  } ],
-  "paths" : {
-    "/Client/{Id}" : {
-      "get" : {
-        "parameters" : [ {
-          "name" : "Id",
-          "in" : "query",
-          "description" : "Identifiant du client",
-          "schema" : {
-            "type" : "string",
-            "description" : "Identifiant du client"
-          }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Status 200"
-          }
-        }
-      },
-      "parameters" : [ {
-        "name" : "Id",
-        "in" : "path",
-        "required" : true,
-        "schema" : {
-          "type" : "string"
-        }
-      } ]
-    }
-  }
+  "paths" : { }
 }
