@@ -8,6 +8,24 @@
   },
   "paths" : {
     "/client/{id}" : {
+      "get" : {
+        "summary" : "Récupération client",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "400" : {
+            "description" : "Status 400"
+          }
+        }
+      },
       "parameters" : [ {
         "name" : "id",
         "in" : "path",
