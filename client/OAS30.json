@@ -1,0 +1,36 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Client",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "paths" : {
+    "/Client/{Id}" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "Id",
+          "in" : "query",
+          "description" : "Identifiant du client",
+          "schema" : {
+            "type" : "string",
+            "description" : "Identifiant du client"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "Id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
+    }
+  }
+}
