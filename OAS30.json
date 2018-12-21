@@ -6,5 +6,16 @@
     "contact" : { },
     "version" : "1.0.0"
   },
-  "paths" : { }
+  "paths" : {
+    "/client/{id}" : {
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
+    }
+  }
 }
