@@ -3,28 +3,34 @@
   "info" : {
     "title" : "Client",
     "description" : "No description",
+    "contact" : { },
     "version" : "1.0.0"
   },
+  "servers" : [ {
+    "url" : "http://0.0.0.0:8088"
+  } ],
   "paths" : {
-    "/Client/{Id}" : {
+    "/Client/{id}" : {
       "get" : {
+        "summary" : "Récupération client",
         "parameters" : [ {
-          "name" : "Id",
+          "name" : "id",
           "in" : "query",
-          "description" : "Identifiant du client",
           "schema" : {
-            "type" : "string",
-            "description" : "Identifiant du client"
+            "type" : "string"
           }
         } ],
         "responses" : {
           "200" : {
             "description" : "Status 200"
+          },
+          "400" : {
+            "description" : "Status 400"
           }
         }
       },
       "parameters" : [ {
-        "name" : "Id",
+        "name" : "id",
         "in" : "path",
         "required" : true,
         "schema" : {
