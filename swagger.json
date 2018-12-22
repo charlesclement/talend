@@ -1,0 +1,40 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "Client",
+    "contact" : { }
+  },
+  "host" : "54.170.254.57:8088",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/client/{id}" : {
+      "get" : {
+        "summary" : "Récupération client",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "400" : {
+            "description" : "Status 400"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    }
+  }
+}
