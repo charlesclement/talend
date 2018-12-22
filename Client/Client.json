@@ -1,0 +1,99 @@
+{
+    "version": 4,
+    "entities": [
+        {
+            "entity": {
+                "type": "Project",
+                "description": "No description",
+                "fullProjectTag": "655d0ef5-ccbb-4927-82a5-306fe4aa078c",
+                "id": "d76ad5a0-4238-4a0f-805c-db9bcc5d6111",
+                "importedFrom": "e229776e-1c28-45aa-a4de-6fcc4385482c",
+                "lastModified": "2018-12-22T23:59:30.516+01:00",
+                "lastUpdaterId": "a344edd9-ad65-46e8-84ed-d9ad65a6e88a",
+                "lastUpdaterName": "Charles Clement",
+                "name": "Client",
+                "tag": "8b6cb3cb-2086-4977-a1c4-7be68bbb986a",
+                "updatedAt": "2018-12-22T17:18:24.301Z"
+            },
+            "children": [
+                {
+                    "entity": {
+                        "uriEditor": true,
+                        "type": "Request",
+                        "method": {
+                            "link": "",
+                            "name": "GET"
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": [
+                                    {
+                                        "name": "id",
+                                        "value": ""
+                                    }
+                                ]
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "54.74.233.114:8088",
+                            "path": "/Client/3"
+                        },
+                        "id": "9ae20f1a-3435-4cf8-9782-2f2f5d58f651",
+                        "lastUpdaterId": "a344edd9-ad65-46e8-84ed-d9ad65a6e88a",
+                        "lastUpdaterName": "Charles Clement",
+                        "name": "Récupération client",
+                        "tag": "62425bc4-f6c3-40bb-9931-14ecc395417c",
+                        "updatedAt": "2018-12-22T22:54:30.252Z",
+                        "headers": [],
+                        "assertions": [],
+                        "parentId": "d76ad5a0-4238-4a0f-805c-db9bcc5d6111"
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "autoSetLength": true
+                        },
+                        "headersType": "Form",
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "54.74.233.114:8088",
+                            "path": "/Clients"
+                        },
+                        "id": "5055dd41-fc72-4872-9218-99ffdd7fe630",
+                        "lastUpdaterId": "a344edd9-ad65-46e8-84ed-d9ad65a6e88a",
+                        "lastUpdaterName": "Charles Clement",
+                        "name": "Récupération ensemble client",
+                        "tag": "43bced8d-d865-48c5-a0ea-daec32f6b309",
+                        "updatedAt": "2018-12-22T22:57:16.682Z",
+                        "headers": [],
+                        "parentId": "d76ad5a0-4238-4a0f-805c-db9bcc5d6111"
+                    }
+                }
+            ]
+        }
+    ],
+    "front-version": "18.11.2"
+}
