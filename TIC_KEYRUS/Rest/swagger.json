@@ -28,15 +28,10 @@
         }
       }
     },
-    "/Client/" : {
+    "/Client/?" : {
       "get" : {
         "summary" : "Client unique",
-        "parameters" : [ {
-          "name" : "{id}",
-          "in" : "query",
-          "required" : false,
-          "type" : "string"
-        } ],
+        "parameters" : [ ],
         "responses" : {
           "200" : {
             "description" : "Status 200"
