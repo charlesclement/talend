@@ -1,0 +1,51 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Contient tous les services REST de Talend",
+    "version" : "1.0.0",
+    "title" : "Talend REST",
+    "contact" : {
+      "name" : "charles clement",
+      "email" : "charles.clement@keyrus.com"
+    }
+  },
+  "host" : "54.78.133.188:8088",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/Clients" : {
+      "get" : {
+        "summary" : "Récupération client",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "400" : {
+            "description" : "Status 400"
+          }
+        }
+      }
+    },
+    "/Client/" : {
+      "get" : {
+        "summary" : "Client unique",
+        "parameters" : [ {
+          "name" : "{id}",
+          "in" : "query",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "400" : {
+            "description" : "Status 400"
+          }
+        }
+      }
+    }
+  }
+}
