@@ -483,34 +483,70 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
         <nodes name="ID_CLIENT" nullable="false" outgoingConnections="//@node.6/@nodeData/@connections.0" type="id_Integer" xpath="row2/ID_CLIENT"/>
-        <nodes name="NOM" type="id_String" xpath="row2/NOM"/>
-        <nodes name="PRENOM" type="id_String" xpath="row2/PRENOM"/>
-        <nodes name="MAIL" type="id_String" xpath="row2/MAIL"/>
-        <nodes name="ID_MAGASIN" type="id_Integer" xpath="row2/ID_MAGASIN"/>
-        <nodes name="VILLE_MAGASIN" type="id_String" xpath="row2/VILLE_MAGASIN"/>
-        <nodes name="ID_VENDEUR" type="id_Integer" xpath="row2/ID_VENDEUR"/>
-        <nodes name="TELEPHONE" type="id_String" xpath="row2/TELEPHONE"/>
-        <nodes name="ADRESSE_FORMATE" type="id_String" xpath="row2/ADRESSE_FORMATE"/>
-        <nodes name="NUMERO_DE_RUE" type="id_String" xpath="row2/NUMERO_DE_RUE"/>
-        <nodes name="VILLE_FORMATE" type="id_String" xpath="row2/VILLE_FORMATE"/>
-        <nodes name="REGION" type="id_String" xpath="row2/REGION"/>
-        <nodes name="DEPARTEMENT" type="id_String" xpath="row2/DEPARTEMENT"/>
-        <nodes name="PAYS" type="id_String" xpath="row2/PAYS"/>
-        <nodes name="CODE_POSTAL" type="id_String" xpath="row2/CODE_POSTAL"/>
-        <nodes name="lat" type="id_Double" xpath="row2/lat"/>
-        <nodes name="lng" type="id_Double" xpath="row2/lng"/>
-        <nodes name="status" type="id_String" xpath="row2/status"/>
-        <nodes name="ADRESSE_ORIGINE" type="id_String" xpath="row2/ADRESSE_ORIGINE"/>
+        <nodes name="NOM" outgoingConnections="//@node.6/@nodeData/@connections.1" type="id_String" xpath="row2/NOM"/>
+        <nodes name="PRENOM" outgoingConnections="//@node.6/@nodeData/@connections.2" type="id_String" xpath="row2/PRENOM"/>
+        <nodes name="MAIL" outgoingConnections="//@node.6/@nodeData/@connections.3" type="id_String" xpath="row2/MAIL"/>
+        <nodes name="ID_MAGASIN" outgoingConnections="//@node.6/@nodeData/@connections.4" type="id_Integer" xpath="row2/ID_MAGASIN"/>
+        <nodes name="VILLE_MAGASIN" outgoingConnections="//@node.6/@nodeData/@connections.5" type="id_String" xpath="row2/VILLE_MAGASIN"/>
+        <nodes name="ID_VENDEUR" outgoingConnections="//@node.6/@nodeData/@connections.6" type="id_Integer" xpath="row2/ID_VENDEUR"/>
+        <nodes name="TELEPHONE" outgoingConnections="//@node.6/@nodeData/@connections.7" type="id_String" xpath="row2/TELEPHONE"/>
+        <nodes name="ADRESSE_FORMATE" outgoingConnections="//@node.6/@nodeData/@connections.8" type="id_String" xpath="row2/ADRESSE_FORMATE"/>
+        <nodes name="NUMERO_DE_RUE" outgoingConnections="//@node.6/@nodeData/@connections.9" type="id_String" xpath="row2/NUMERO_DE_RUE"/>
+        <nodes name="VILLE_FORMATE" outgoingConnections="//@node.6/@nodeData/@connections.10" type="id_String" xpath="row2/VILLE_FORMATE"/>
+        <nodes name="REGION" outgoingConnections="//@node.6/@nodeData/@connections.11" type="id_String" xpath="row2/REGION"/>
+        <nodes name="DEPARTEMENT" outgoingConnections="//@node.6/@nodeData/@connections.12" type="id_String" xpath="row2/DEPARTEMENT"/>
+        <nodes name="PAYS" outgoingConnections="//@node.6/@nodeData/@connections.13" type="id_String" xpath="row2/PAYS"/>
+        <nodes name="CODE_POSTAL" outgoingConnections="//@node.6/@nodeData/@connections.14" type="id_String" xpath="row2/CODE_POSTAL"/>
+        <nodes name="lat" outgoingConnections="//@node.6/@nodeData/@connections.15" type="id_Double" xpath="row2/lat"/>
+        <nodes name="lng" outgoingConnections="//@node.6/@nodeData/@connections.16" type="id_Double" xpath="row2/lng"/>
+        <nodes name="status" outgoingConnections="//@node.6/@nodeData/@connections.17" type="id_String" xpath="row2/status"/>
+        <nodes name="ADRESSE_ORIGINE" outgoingConnections="//@node.6/@nodeData/@connections.18" type="id_String" xpath="row2/ADRESSE_ORIGINE"/>
       </inputTrees>
       <outputTrees name="response">
         <nodes expression="" name="body" type="id_Document" xpath="response/body">
           <children expression="" loop="true" main="true" name="root" type="id_String" xpath="response.body:/root" xsi:type="TalendXMLMap:OutputTreeNode">
             <children expression="row2.ID_CLIENT" incomingConnections="//@node.6/@nodeData/@connections.0" name="ID_CLIENT" type="id_Integer" xpath="response.body:/root/ID_CLIENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.NOM" incomingConnections="//@node.6/@nodeData/@connections.1" name="NOM" type="id_String" xpath="response.body:/root/NOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.PRENOM" incomingConnections="//@node.6/@nodeData/@connections.2" name="PRENOM" type="id_String" xpath="response.body:/root/PRENOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.MAIL" incomingConnections="//@node.6/@nodeData/@connections.3" name="MAIL" type="id_String" xpath="response.body:/root/MAIL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ID_MAGASIN" incomingConnections="//@node.6/@nodeData/@connections.4" name="ID_MAGASIN" type="id_Integer" xpath="response.body:/root/ID_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.VILLE_MAGASIN" incomingConnections="//@node.6/@nodeData/@connections.5" name="VILLE_MAGASIN" type="id_String" xpath="response.body:/root/VILLE_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ID_VENDEUR" incomingConnections="//@node.6/@nodeData/@connections.6" name="ID_VENDEUR" type="id_Integer" xpath="response.body:/root/ID_VENDEUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.TELEPHONE" incomingConnections="//@node.6/@nodeData/@connections.7" name="TELEPHONE" type="id_String" xpath="response.body:/root/TELEPHONE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ADRESSE_FORMATE" incomingConnections="//@node.6/@nodeData/@connections.8" name="ADRESSE_FORMATE" type="id_String" xpath="response.body:/root/ADRESSE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.NUMERO_DE_RUE" incomingConnections="//@node.6/@nodeData/@connections.9" name="NUMERO_DE_RUE" type="id_String" xpath="response.body:/root/NUMERO_DE_RUE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.VILLE_FORMATE" incomingConnections="//@node.6/@nodeData/@connections.10" name="VILLE_FORMATE" type="id_String" xpath="response.body:/root/VILLE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.REGION" incomingConnections="//@node.6/@nodeData/@connections.11" name="REGION" type="id_String" xpath="response.body:/root/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.DEPARTEMENT" incomingConnections="//@node.6/@nodeData/@connections.12" name="DEPARTEMENT" type="id_String" xpath="response.body:/root/DEPARTEMENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.PAYS" incomingConnections="//@node.6/@nodeData/@connections.13" name="PAYS" type="id_String" xpath="response.body:/root/PAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.CODE_POSTAL" incomingConnections="//@node.6/@nodeData/@connections.14" name="CODE_POSTAL" type="id_String" xpath="response.body:/root/CODE_POSTAL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.lat" incomingConnections="//@node.6/@nodeData/@connections.15" name="lat" type="id_Double" xpath="response.body:/root/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.lng" incomingConnections="//@node.6/@nodeData/@connections.16" name="lng" type="id_Double" xpath="response.body:/root/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.status" incomingConnections="//@node.6/@nodeData/@connections.17" name="status" type="id_String" xpath="response.body:/root/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ADRESSE_ORIGINE" incomingConnections="//@node.6/@nodeData/@connections.18" name="ADRESSE_ORIGINE" type="id_String" xpath="response.body:/root/ADRESSE_ORIGINE" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
       <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.16" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.17" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.6/@nodeData/@inputTrees.0/@nodes.18" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
@@ -588,13 +624,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_696ca4c5-d28a-4e18-989e-aff4b6bc7590"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tc8rPgAVX6dXLtDYz5Wyt0ytTWTr9wttpn/o31JE1OtF2yXd+hBoAiTsFrI+jEXv0f8wzKQm9YQy
-21xHkeJgfg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d4a0781-e3a7-4ca0-9707-eb67cda993f1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bl3dglSwvd+mVzkWkTF2shEzBbU9nasImaYWN3yEIFaotIGkuKywPaug97Cg1DRV/BZ6+Bu3f5fR
-DJD/H5+ZZg==</DigestValue></Reference></SignedInfo><SignatureValue>pcrCu7xxSYgsxwgO7a02a4I5+poDgMCTmI1Z1xB1aTMHHVpu53HSLiX53Y6TNyvKC6WSTPicqk8+
-nQSgDd0p6OxU9yjH2Ph4IhyIDC7IlZT/eXy2bJHErFvsrJAXJoQPH5f/1pNeRniVkF5ndHfg2YwK
-+zQ2vNiGBpgKBQ2ZgMcc+hst/lSMyJaS/5cBljXyUBsklvbI2GFljHctbYzqwlDc3F9FKv1t58Q8
-mi10sWv8dTM0OUXTsA7Qp1sSV8TxcNdwm4ku/W7Ps1ZLun9sY36UMonw1a+B9U/sQsN8niUmgeT6
-D1cmnci5Ll72HfA7KY6gMDmBoVWZs6E/9ayfYA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_39ca5c3e-2f6f-4fa3-a659-7e3720acea33"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GUm0uRgxL7jdC8q8k4eiiGbLpvKf/LnAeN6HpiXG+NBsIQrjZEmK4IkDBZbbRfsMtdMjZTHY3K4z
+QJfVSy7FBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4f42d015-cc44-435c-a0af-0d1bab34bab6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kVee4APS1hBasTc6f5YHTATn/Mkml5buepQngoKRHxrcPoXd2IAg4HtfIuxkBMzauN5Z4m7SIlTh
+UCHjRMu+GA==</DigestValue></Reference></SignedInfo><SignatureValue>P8OGMCt5u2nUAwY6y8mhUm6M4Z4W0KJnlexQokDmzR6WAGpF0l1cHlXIt2ooFlTq50VPaTJeL6/B
+f94rmzIfnsjRscEVzVzG0n+TQxun276oIGYEO2HedWEmcDIqkyEKTUC/ntJf7cUjUx6xtWO1hs3Q
+jF1tfvPBSaFlRVSxkldXPJDvlpMYrgKg8W1HOauV+6FmQEqgYsvwwT+k1yj/HnQ+q3CTHJf+X+mc
+tqYF8XEBiB+EIoE9r+hEuIjtlUQ3E19GD+TSPhh8vEqe9sslQbTAg9zNQe1Ir+DV+zXuh4cc1Sdn
+lYiIeNeSnqXWY08ZZXcsJLXuhycmFJy3UTBb0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -618,4 +654,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d4a0781-e3a7-4ca0-9707-eb67cda993f1" Target="#_696ca4c5-d28a-4e18-989e-aff4b6bc7590"><Timestamp>2019-01-02 18:32:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4f42d015-cc44-435c-a0af-0d1bab34bab6" Target="#_39ca5c3e-2f6f-4fa3-a659-7e3720acea33"><Timestamp>2019-01-02 18:33:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
