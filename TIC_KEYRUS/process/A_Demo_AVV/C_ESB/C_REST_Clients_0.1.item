@@ -242,6 +242,30 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_5"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="q"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Get_Client" name="tLogRow_5">
+      <column comment="" key="false" length="-1" name="q" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -252,76 +276,72 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="Get_Client">
-        <nodes lookupOutgoingConnections="//@node.4/@nodeData/@connections.19" name="q" type="id_String" xpath="Get_Client/q"/>
-      </inputTrees>
       <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3">
-        <nodes expression="Integer.parseInt(Get_Client.q) " lookupIncomingConnections="//@node.4/@nodeData/@connections.19" name="ID_CLIENT" nullable="false" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_Integer" xpath="row3/ID_CLIENT"/>
-        <nodes name="NOM" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="row3/NOM"/>
-        <nodes name="PRENOM" outgoingConnections="//@node.4/@nodeData/@connections.2" type="id_String" xpath="row3/PRENOM"/>
-        <nodes name="MAIL" outgoingConnections="//@node.4/@nodeData/@connections.3" type="id_String" xpath="row3/MAIL"/>
-        <nodes name="ID_MAGASIN" outgoingConnections="//@node.4/@nodeData/@connections.4" type="id_Integer" xpath="row3/ID_MAGASIN"/>
-        <nodes name="VILLE_MAGASIN" outgoingConnections="//@node.4/@nodeData/@connections.5" type="id_String" xpath="row3/VILLE_MAGASIN"/>
-        <nodes name="ID_VENDEUR" outgoingConnections="//@node.4/@nodeData/@connections.6" type="id_Integer" xpath="row3/ID_VENDEUR"/>
-        <nodes name="TELEPHONE" outgoingConnections="//@node.4/@nodeData/@connections.7" type="id_String" xpath="row3/TELEPHONE"/>
-        <nodes name="ADRESSE_FORMATE" outgoingConnections="//@node.4/@nodeData/@connections.8" type="id_String" xpath="row3/ADRESSE_FORMATE"/>
-        <nodes name="NUMERO_DE_RUE" outgoingConnections="//@node.4/@nodeData/@connections.9" type="id_String" xpath="row3/NUMERO_DE_RUE"/>
-        <nodes name="VILLE_FORMATE" outgoingConnections="//@node.4/@nodeData/@connections.10" type="id_String" xpath="row3/VILLE_FORMATE"/>
-        <nodes name="REGION" outgoingConnections="//@node.4/@nodeData/@connections.11" type="id_String" xpath="row3/REGION"/>
-        <nodes name="DEPARTEMENT" outgoingConnections="//@node.4/@nodeData/@connections.12" type="id_String" xpath="row3/DEPARTEMENT"/>
-        <nodes name="PAYS" outgoingConnections="//@node.4/@nodeData/@connections.13" type="id_String" xpath="row3/PAYS"/>
-        <nodes name="CODE_POSTAL" outgoingConnections="//@node.4/@nodeData/@connections.14" type="id_String" xpath="row3/CODE_POSTAL"/>
-        <nodes name="lat" outgoingConnections="//@node.4/@nodeData/@connections.15" type="id_Double" xpath="row3/lat"/>
-        <nodes name="lng" outgoingConnections="//@node.4/@nodeData/@connections.16" type="id_Double" xpath="row3/lng"/>
-        <nodes name="status" outgoingConnections="//@node.4/@nodeData/@connections.17" type="id_String" xpath="row3/status"/>
-        <nodes name="ADRESSE_ORIGINE" outgoingConnections="//@node.4/@nodeData/@connections.18" type="id_String" xpath="row3/ADRESSE_ORIGINE"/>
+        <nodes expression="Integer.parseInt(Get_Client.q) " name="ID_CLIENT" nullable="false" outgoingConnections="//@node.5/@nodeData/@connections.0" type="id_Integer" xpath="row3/ID_CLIENT"/>
+        <nodes name="NOM" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_String" xpath="row3/NOM"/>
+        <nodes name="PRENOM" outgoingConnections="//@node.5/@nodeData/@connections.2" type="id_String" xpath="row3/PRENOM"/>
+        <nodes name="MAIL" outgoingConnections="//@node.5/@nodeData/@connections.3" type="id_String" xpath="row3/MAIL"/>
+        <nodes name="ID_MAGASIN" outgoingConnections="//@node.5/@nodeData/@connections.4" type="id_Integer" xpath="row3/ID_MAGASIN"/>
+        <nodes name="VILLE_MAGASIN" outgoingConnections="//@node.5/@nodeData/@connections.5" type="id_String" xpath="row3/VILLE_MAGASIN"/>
+        <nodes name="ID_VENDEUR" outgoingConnections="//@node.5/@nodeData/@connections.6" type="id_Integer" xpath="row3/ID_VENDEUR"/>
+        <nodes name="TELEPHONE" outgoingConnections="//@node.5/@nodeData/@connections.7" type="id_String" xpath="row3/TELEPHONE"/>
+        <nodes name="ADRESSE_FORMATE" outgoingConnections="//@node.5/@nodeData/@connections.8" type="id_String" xpath="row3/ADRESSE_FORMATE"/>
+        <nodes name="NUMERO_DE_RUE" outgoingConnections="//@node.5/@nodeData/@connections.9" type="id_String" xpath="row3/NUMERO_DE_RUE"/>
+        <nodes name="VILLE_FORMATE" outgoingConnections="//@node.5/@nodeData/@connections.10" type="id_String" xpath="row3/VILLE_FORMATE"/>
+        <nodes name="REGION" outgoingConnections="//@node.5/@nodeData/@connections.11" type="id_String" xpath="row3/REGION"/>
+        <nodes name="DEPARTEMENT" outgoingConnections="//@node.5/@nodeData/@connections.12" type="id_String" xpath="row3/DEPARTEMENT"/>
+        <nodes name="PAYS" outgoingConnections="//@node.5/@nodeData/@connections.13" type="id_String" xpath="row3/PAYS"/>
+        <nodes name="CODE_POSTAL" outgoingConnections="//@node.5/@nodeData/@connections.14" type="id_String" xpath="row3/CODE_POSTAL"/>
+        <nodes name="lat" outgoingConnections="//@node.5/@nodeData/@connections.15" type="id_Double" xpath="row3/lat"/>
+        <nodes name="lng" outgoingConnections="//@node.5/@nodeData/@connections.16" type="id_Double" xpath="row3/lng"/>
+        <nodes name="status" outgoingConnections="//@node.5/@nodeData/@connections.17" type="id_String" xpath="row3/status"/>
+        <nodes name="ADRESSE_ORIGINE" outgoingConnections="//@node.5/@nodeData/@connections.18" type="id_String" xpath="row3/ADRESSE_ORIGINE"/>
       </inputTrees>
       <outputTrees name="out2">
         <nodes expression="" name="body" pattern="" type="id_Document" xpath="out2/body">
           <children expression="" loop="true" main="true" name="Client" type="id_String" xpath="out2.body:/Client" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children expression="row3.ID_CLIENT" incomingConnections="//@node.4/@nodeData/@connections.0" name="ID_CLIENT" type="id_Integer" xpath="out2.body:/Client/ID_CLIENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.NOM" incomingConnections="//@node.4/@nodeData/@connections.1" name="NOM" type="id_String" xpath="out2.body:/Client/NOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.PRENOM" incomingConnections="//@node.4/@nodeData/@connections.2" name="PRENOM" type="id_String" xpath="out2.body:/Client/PRENOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.MAIL" incomingConnections="//@node.4/@nodeData/@connections.3" name="MAIL" type="id_String" xpath="out2.body:/Client/MAIL" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.ID_MAGASIN" incomingConnections="//@node.4/@nodeData/@connections.4" name="ID_MAGASIN" type="id_Integer" xpath="out2.body:/Client/ID_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.VILLE_MAGASIN" incomingConnections="//@node.4/@nodeData/@connections.5" name="VILLE_MAGASIN" type="id_String" xpath="out2.body:/Client/VILLE_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.ID_VENDEUR" incomingConnections="//@node.4/@nodeData/@connections.6" name="ID_VENDEUR" type="id_Integer" xpath="out2.body:/Client/ID_VENDEUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.TELEPHONE" incomingConnections="//@node.4/@nodeData/@connections.7" name="TELEPHONE" type="id_String" xpath="out2.body:/Client/TELEPHONE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.ADRESSE_FORMATE" incomingConnections="//@node.4/@nodeData/@connections.8" name="ADRESSE_FORMATE" type="id_String" xpath="out2.body:/Client/ADRESSE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.NUMERO_DE_RUE" incomingConnections="//@node.4/@nodeData/@connections.9" name="NUMERO_DE_RUE" type="id_String" xpath="out2.body:/Client/NUMERO_DE_RUE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.VILLE_FORMATE" incomingConnections="//@node.4/@nodeData/@connections.10" name="VILLE_FORMATE" type="id_String" xpath="out2.body:/Client/VILLE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.REGION" incomingConnections="//@node.4/@nodeData/@connections.11" name="REGION" type="id_String" xpath="out2.body:/Client/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.DEPARTEMENT" incomingConnections="//@node.4/@nodeData/@connections.12" name="DEPARTEMENT" type="id_String" xpath="out2.body:/Client/DEPARTEMENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.PAYS" incomingConnections="//@node.4/@nodeData/@connections.13" name="PAYS" type="id_String" xpath="out2.body:/Client/PAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.CODE_POSTAL" incomingConnections="//@node.4/@nodeData/@connections.14" name="CODE_POSTAL" type="id_String" xpath="out2.body:/Client/CODE_POSTAL" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.lat" incomingConnections="//@node.4/@nodeData/@connections.15" name="lat" type="id_Double" xpath="out2.body:/Client/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.lng" incomingConnections="//@node.4/@nodeData/@connections.16" name="lng" type="id_Double" xpath="out2.body:/Client/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.status" incomingConnections="//@node.4/@nodeData/@connections.17" name="status" type="id_String" xpath="out2.body:/Client/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row3.ADRESSE_ORIGINE" incomingConnections="//@node.4/@nodeData/@connections.18" name="ADRESSE_ORIGINE" type="id_String" xpath="out2.body:/Client/ADRESSE_ORIGINE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.ID_CLIENT" incomingConnections="//@node.5/@nodeData/@connections.0" name="ID_CLIENT" type="id_Integer" xpath="out2.body:/Client/ID_CLIENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.NOM" incomingConnections="//@node.5/@nodeData/@connections.1" name="NOM" type="id_String" xpath="out2.body:/Client/NOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.PRENOM" incomingConnections="//@node.5/@nodeData/@connections.2" name="PRENOM" type="id_String" xpath="out2.body:/Client/PRENOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.MAIL" incomingConnections="//@node.5/@nodeData/@connections.3" name="MAIL" type="id_String" xpath="out2.body:/Client/MAIL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.ID_MAGASIN" incomingConnections="//@node.5/@nodeData/@connections.4" name="ID_MAGASIN" type="id_Integer" xpath="out2.body:/Client/ID_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.VILLE_MAGASIN" incomingConnections="//@node.5/@nodeData/@connections.5" name="VILLE_MAGASIN" type="id_String" xpath="out2.body:/Client/VILLE_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.ID_VENDEUR" incomingConnections="//@node.5/@nodeData/@connections.6" name="ID_VENDEUR" type="id_Integer" xpath="out2.body:/Client/ID_VENDEUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.TELEPHONE" incomingConnections="//@node.5/@nodeData/@connections.7" name="TELEPHONE" type="id_String" xpath="out2.body:/Client/TELEPHONE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.ADRESSE_FORMATE" incomingConnections="//@node.5/@nodeData/@connections.8" name="ADRESSE_FORMATE" type="id_String" xpath="out2.body:/Client/ADRESSE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.NUMERO_DE_RUE" incomingConnections="//@node.5/@nodeData/@connections.9" name="NUMERO_DE_RUE" type="id_String" xpath="out2.body:/Client/NUMERO_DE_RUE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.VILLE_FORMATE" incomingConnections="//@node.5/@nodeData/@connections.10" name="VILLE_FORMATE" type="id_String" xpath="out2.body:/Client/VILLE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.REGION" incomingConnections="//@node.5/@nodeData/@connections.11" name="REGION" type="id_String" xpath="out2.body:/Client/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.DEPARTEMENT" incomingConnections="//@node.5/@nodeData/@connections.12" name="DEPARTEMENT" type="id_String" xpath="out2.body:/Client/DEPARTEMENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.PAYS" incomingConnections="//@node.5/@nodeData/@connections.13" name="PAYS" type="id_String" xpath="out2.body:/Client/PAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.CODE_POSTAL" incomingConnections="//@node.5/@nodeData/@connections.14" name="CODE_POSTAL" type="id_String" xpath="out2.body:/Client/CODE_POSTAL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.lat" incomingConnections="//@node.5/@nodeData/@connections.15" name="lat" type="id_Double" xpath="out2.body:/Client/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.lng" incomingConnections="//@node.5/@nodeData/@connections.16" name="lng" type="id_Double" xpath="out2.body:/Client/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.status" incomingConnections="//@node.5/@nodeData/@connections.17" name="status" type="id_String" xpath="out2.body:/Client/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row3.ADRESSE_ORIGINE" incomingConnections="//@node.5/@nodeData/@connections.18" name="ADRESSE_ORIGINE" type="id_String" xpath="out2.body:/Client/ADRESSE_ORIGINE" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.2" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.4" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.6" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.7" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.8" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.9" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.10" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.11" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.12" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.13" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.14" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.15" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.16" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.17" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.18" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.5" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.6" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.7" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.8" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.9" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.10" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.11" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.12" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.13" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.14" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.15" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.16" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.17" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.18" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="320">
@@ -557,7 +577,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Client"/>
   </connection>
-  <connection connectorName="FLOW" label="Get_Client" lineStyle="0" metaname="Get_Client" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTRequest_1" target="tXMLMap_2">
+  <connection connectorName="FLOW" label="Get_Client" lineStyle="0" metaname="Get_Client" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTRequest_1" target="tLogRow_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Get_Client"/>
   </connection>
@@ -578,6 +598,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tLogRow_5" offsetLabelX="0" offsetLabelY="0" source="tLogRow_5" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -606,13 +630,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5a9e8268-c7db-45eb-a96a-c3b8b1ee24ad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y/A2vWjl7XhXA4Ctoi6+i50v3vRFEYLDGH4t1t4rbSEikIiab4yu4clx5jDRDfsOQ1AIaQUdXW5F
-maqD1ODp+g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7283de17-7f13-4ff3-90fb-3e07cdbaa7a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vEcodFAnRICGW0Zc1ahKRUbG/8KoLQh5lysEcK19h20Zr372pTBOaEBg901sNy4B5x8GKgoqTeVS
-5lsnfV0r6Q==</DigestValue></Reference></SignedInfo><SignatureValue>PRfUNvCjwiorMxDlpoeSTM3jhcYMjUqUHmjYLkRLdESiJsXnhID8c4vf3BuJKr6MRVfHL6XK/9TF
-yH4sF7s9K2nUOYpdFgFuh3nNjDrma5fBHUH487pFkDxY/06v4mgAV64KztdVcEzypTnb9Si8X8k1
-rpH/C+ViY8am6ijuPfDlob9PzWzSPIqvHijvjdwMor97loyQXndUlqQ+NlhfweZiQCnu7d3YmXrN
-SaINQMu43JseBDEugoDx3qYqEVANkPD5Vsvp1TxvFl01013Y+GwAfs3vd9zc5UV0zyQxBJNfd36P
-NLNh1INUJQ2ULd0kTJ+kgJcJceZk8SskS61c0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6d87c3d-92b1-4f18-a1c5-65750ec46eea"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kmnGpKUO5IjEr8WwuwwzZ8CWsPrIHP83u8ZEq6aefO79GGfisWJbvMzU2Vm0UPk/RKuwEbrlK6VV
+290pPsppdA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7cc9fa55-5fff-43c2-8868-a057568055cf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i5Vjue8b8zYIHpJ2W5dZHzVbrtHPDHr8XsbL86gV2Xo44R+Byo8noJtLQxA63rMz5obwc1/LPvD0
+PIGW0GGDqw==</DigestValue></Reference></SignedInfo><SignatureValue>Bq3+kb12X5eM3rg2tS/wl7P0NizWGmGWpJerjyFjt/LzjwQy+A/PFWvGYFGAyKfwOW/9KHzubuU9
+nEznpq5V23sjdSKo11BzL2cdSIDBLmJoG9991mirwsOPVxwmv5NtmZkMwUBQArSJlQE0P4VP8Rib
+PRr8vRPmD+NpO1Arrn7mwtuWnxfASQYXSRP/+vk8rq7hXBg0pkn/hnNq7BCt2GDYQr+iBe7qU8zc
+JRCxWSOFQXNL4jgzYBQSqTrlJDIaJSffh18sHXPPwROQOYEWXJ5SXaQ1oMYqxbznEhVzl9m5Wa9m
+yFa6At2OfRGRYJAZbL1eFq/DOQyW0Qh3nIJm7Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -636,4 +660,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7283de17-7f13-4ff3-90fb-3e07cdbaa7a7" Target="#_5a9e8268-c7db-45eb-a96a-c3b8b1ee24ad"><Timestamp>2019-01-02 15:01:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7cc9fa55-5fff-43c2-8868-a057568055cf" Target="#_e6d87c3d-92b1-4f18-a1c5-65750ec46eea"><Timestamp>2019-01-02 15:02:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
