@@ -280,26 +280,26 @@
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row5">
         <nodes lookupOutgoingConnections="//@node.5/@nodeData/@connections.0" name="q" type="id_String" xpath="row5/q"/>
       </inputTrees>
-      <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row7">
-        <nodes expression=" row5.q" lookupIncomingConnections="//@node.5/@nodeData/@connections.0" name="ID_CLIENT" nullable="false" type="id_String" xpath="row7/ID_CLIENT"/>
-        <nodes name="NOM" type="id_String" xpath="row7/NOM"/>
-        <nodes name="PRENOM" type="id_String" xpath="row7/PRENOM"/>
-        <nodes name="MAIL" type="id_String" xpath="row7/MAIL"/>
-        <nodes name="ID_MAGASIN" type="id_Integer" xpath="row7/ID_MAGASIN"/>
-        <nodes name="VILLE_MAGASIN" type="id_String" xpath="row7/VILLE_MAGASIN"/>
-        <nodes name="ID_VENDEUR" type="id_Integer" xpath="row7/ID_VENDEUR"/>
-        <nodes name="TELEPHONE" type="id_String" xpath="row7/TELEPHONE"/>
-        <nodes name="ADRESSE_FORMATE" type="id_String" xpath="row7/ADRESSE_FORMATE"/>
-        <nodes name="NUMERO_DE_RUE" type="id_String" xpath="row7/NUMERO_DE_RUE"/>
-        <nodes name="VILLE_FORMATE" type="id_String" xpath="row7/VILLE_FORMATE"/>
-        <nodes name="REGION" type="id_String" xpath="row7/REGION"/>
-        <nodes name="DEPARTEMENT" type="id_String" xpath="row7/DEPARTEMENT"/>
-        <nodes name="PAYS" type="id_String" xpath="row7/PAYS"/>
-        <nodes name="CODE_POSTAL" type="id_String" xpath="row7/CODE_POSTAL"/>
-        <nodes name="lat" type="id_Double" xpath="row7/lat"/>
-        <nodes name="lng" type="id_Double" xpath="row7/lng"/>
-        <nodes name="status" type="id_String" xpath="row7/status"/>
-        <nodes name="ADRESSE_ORIGINE" type="id_String" xpath="row7/ADRESSE_ORIGINE"/>
+      <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6">
+        <nodes expression="row5.q" lookupIncomingConnections="//@node.5/@nodeData/@connections.0" name="ID_CLIENT" nullable="false" type="id_String" xpath="row6/ID_CLIENT"/>
+        <nodes name="NOM" type="id_String" xpath="row6/NOM"/>
+        <nodes name="PRENOM" type="id_String" xpath="row6/PRENOM"/>
+        <nodes name="MAIL" type="id_String" xpath="row6/MAIL"/>
+        <nodes name="ID_MAGASIN" type="id_Integer" xpath="row6/ID_MAGASIN"/>
+        <nodes name="VILLE_MAGASIN" type="id_String" xpath="row6/VILLE_MAGASIN"/>
+        <nodes name="ID_VENDEUR" type="id_Integer" xpath="row6/ID_VENDEUR"/>
+        <nodes name="TELEPHONE" type="id_String" xpath="row6/TELEPHONE"/>
+        <nodes name="ADRESSE_FORMATE" type="id_String" xpath="row6/ADRESSE_FORMATE"/>
+        <nodes name="NUMERO_DE_RUE" type="id_String" xpath="row6/NUMERO_DE_RUE"/>
+        <nodes name="VILLE_FORMATE" type="id_String" xpath="row6/VILLE_FORMATE"/>
+        <nodes name="REGION" type="id_String" xpath="row6/REGION"/>
+        <nodes name="DEPARTEMENT" type="id_String" xpath="row6/DEPARTEMENT"/>
+        <nodes name="PAYS" type="id_String" xpath="row6/PAYS"/>
+        <nodes name="CODE_POSTAL" type="id_String" xpath="row6/CODE_POSTAL"/>
+        <nodes name="lat" type="id_Double" xpath="row6/lat"/>
+        <nodes name="lng" type="id_Double" xpath="row6/lng"/>
+        <nodes name="status" type="id_String" xpath="row6/status"/>
+        <nodes name="ADRESSE_ORIGINE" type="id_String" xpath="row6/ADRESSE_ORIGINE"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" allInOne="true" name="out2">
         <nodes expression="" name="body" pattern="" type="id_Document" xpath="out2/body">
@@ -513,7 +513,7 @@
     <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
     <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tConvertType_2">
+    <metadata connector="FLOW" label="dim_client" name="tConvertType_2">
       <column comment="" defaultValue="0" key="true" length="10" name="ID_CLIENT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -571,8 +571,9 @@
       <column comment="" key="false" length="100" name="ADRESSE_ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
+    <metadata connector="REJECT" label="dim_client" name="REJECT">
       <column comment="" defaultValue="0" key="true" length="10" name="ID_CLIENT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -632,6 +633,7 @@
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="32">
@@ -735,68 +737,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tConvertType_2" offsetLabelX="0" offsetLabelY="0" source="tConvertType_2" target="tXMLMap_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="TELEPHONE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ADRESSE_FORMATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ID_CLIENT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ID_MAGASIN"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="VILLE_FORMATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="CODE_POSTAL"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="NOM"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PAYS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="VILLE_MAGASIN"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="REGION"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DEPARTEMENT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="NUMERO_DE_RUE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="MAIL"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ID_VENDEUR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="status"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ADRESSE_ORIGINE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tConvertType_2" offsetLabelX="0" offsetLabelY="0" source="tConvertType_2" target="tXMLMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
@@ -813,13 +756,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3c2db80a-6989-407b-aa45-173c8dae2198"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B4CThf+nVruMtJwXwTdGhXsLh6TksnVnVCPG06TFNboTYkghxB/yYswYhAm0XptD+tr0d23sB9sl
-CgYLit071Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_824c80cc-6648-494c-8c35-871529b6648d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/cugxwYkD+kpLJ5sTJ4HRB9mzMbar6D0FHcHRJKIvN6Mqf8YiUMvYpv7NWu3I/ueTtASGvT9AIrh
-Wzk8z7SCYw==</DigestValue></Reference></SignedInfo><SignatureValue>NmWYVw1MzeIUpCkBGfHAsN7gMza2bK+0UhXU+L+skDheuT72uH0c0b8JaqbljyA8Apg+5a+/4WZ+
-NoByNHpG9HddpqdnefD2ykNbo1IomnxNZdMTOJT64DJiyoPzKjJ0H0xNbh3WMrFB28KTkyDbXgc0
-6Bu0NImdrEzI/V2CSfdplexZzPj7RFgjZcChGRsAcNciirEJIdSTIvn6D7pS9LpvaOP+Rj5CQglB
-74oF8xDr0qOSHxSf9/vGbBdP1tT9Art5+SCVuL7WVqEIuPBb/FebZiP5E+ZBuhYG98/7bGtEyCLv
-w6o4VjSgp/fA4LP9bxTcicti+o8lpLeFe4oERw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1f06e62e-1d23-488a-b005-1ed27d0bbdb0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SY5OStGPgVpZltUdAhkWylpC5C0KIyOG9oCtodngdaM4rKqGu51tsettRjbgC2cxZIz7lxO0lEtz
+aEBK5tKDpA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_57d34607-035b-4ca5-a7f2-19cd501e0905"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/CvrBvLNXJh7+Bba7xfPqs8a1NnXR5dlPq5JeEUcfBcd0plIc6LP3QA8n53rbwePtoQJzNPuC/Pg
+8SfwBQZeUg==</DigestValue></Reference></SignedInfo><SignatureValue>bEpOJQBkyTfZRMyHs1AxgmJFgcLzU7AK0stWHKSTd4zPZIUabwiGbbvCDzUxDVwnZunNBURbXf/R
+Sv86yx3vmQDgabhoZZve5vSxpZsWhS8KS4SpDYcB7C/oaDEypprLgiCvQeQvLMh670kKAYinOFqi
+iR8VZ8oN3As44ySF386wlVkjPs5VKaKFuEhnyuiN2RwmkZHPHj8ioIjSVRNpJJI0dfRClMVqnhel
+iKlGkt6Wc76L9SCpSlZIsmHQLWlv89up23nxv9/y4Ha5VikQton4kXANSuTwAK+tPxhhmP24uScl
+N5uquOVzfDrJwYMyD9kMfRLJz8wLfwkc9ahWgA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -843,4 +786,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_824c80cc-6648-494c-8c35-871529b6648d" Target="#_3c2db80a-6989-407b-aa45-173c8dae2198"><Timestamp>2019-01-02 15:47:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_57d34607-035b-4ca5-a7f2-19cd501e0905" Target="#_1f06e62e-1d23-488a-b005-1ed27d0bbdb0"><Timestamp>2019-01-02 15:48:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
