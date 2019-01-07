@@ -63,6 +63,7 @@
                   <exclude>wsdl4j:wsdl4j</exclude>
                   <exclude>org.talend.libraries:jackson-databind-2.8.9</exclude>
                   <exclude>org.talend.libraries:spark-graphx_2.11-2.1.0.2.6.0.2-76</exclude>
+                  <exclude>org.talend.libraries:talend_file_enhanced_20070724</exclude>
                 </excludes>
               </artifactSet>
             </configuration>
@@ -453,6 +454,12 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>spark-sql_2.11-2.1.0.2.6.0.2-76</artifactId>
+      <version>6.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
       <scope>compile</scope>
     </dependency>
