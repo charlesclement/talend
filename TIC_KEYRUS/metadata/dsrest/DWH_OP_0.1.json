@@ -1,0 +1,35 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "DWH_OP",
+    "contact" : { }
+  },
+  "host" : "127.0.0.1",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/Person" : {
+      "get" : {
+        "summary" : "GetPerson",
+        "description" : "récupération du nom de la personne à partir de son ID unique",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "required" : true,
+          "type" : "integer",
+          "description" : "ID client",
+          "x-example" : 1
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  }
+}
