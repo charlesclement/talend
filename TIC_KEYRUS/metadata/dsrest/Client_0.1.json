@@ -1,0 +1,35 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "API pour intérroger la base client",
+    "version" : "1.0.0",
+    "title" : "Client",
+    "contact" : {
+      "name" : "Charles Clement",
+      "email" : "charles.clement@keyrus.com"
+    }
+  },
+  "host" : "localhost:8090",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/Client/ClientComplet" : {
+      "get" : {
+        "summary" : "Client",
+        "parameters" : [ {
+          "name" : "q",
+          "in" : "query",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  }
+}
