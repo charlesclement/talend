@@ -117,7 +117,6 @@
     <module>jobs/process/Tdsc/a_sfdc_comptes_0.1</module>
     <module>jobs/process/Tdsc/b_recuperation_tdsc_0.1</module>
     <module>jobs/process/Tdsc/c_survivor_0.1</module>
-    <module>jobs/process/D_DQ_RTDMS/ab_vat_rtdms_ws_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/b_rest_find_customer_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/scratch_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/c_rest_customer_0.1</module>
@@ -133,8 +132,8 @@
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
