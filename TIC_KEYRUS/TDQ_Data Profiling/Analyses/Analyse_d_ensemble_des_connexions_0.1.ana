@@ -11,13 +11,55 @@
     <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
   </context>
   <results xmi:id="_KH7apzmlEemIQ8NBGZEDjw">
-    <resultMetadata xmi:id="_KH7aqDmlEemIQ8NBGZEDjw"/>
-    <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_KH7aqTmlEemIQ8NBGZEDjw">
+    <resultMetadata xmi:id="_KH7aqDmlEemIQ8NBGZEDjw" executionDate="2019-02-26T10:02:04.068+0100" executionDuration="576" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_KH7aqTmlEemIQ8NBGZEDjw" computed="true" tableCount="14" keyCount="1" indexCount="1" tableRowCount="795724" catalogCount="1">
       <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
       <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
-      <catalogIndicators xmi:id="_KH7aqjmlEemIQ8NBGZEDjw">
+      <catalogIndicators xmi:id="_L9RysDmlEemIQ8NBGZEDjw" tableCount="14" keyCount="1" indexCount="1" tableRowCount="795724">
         <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_9dUyIB8wEeaZwq16WZZz4g"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+        <tableIndicators xmi:id="_L9RysTmlEemIQ8NBGZEDjw" rowCount="175770" tableName="generate_commande">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RysjmlEemIQ8NBGZEDjw" rowCount="303998" tableName="generate_ligne_commande">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyszmlEemIQ8NBGZEDjw" tableName="log_ws">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RytDmlEemIQ8NBGZEDjw" rowCount="7" tableName="ods_annee">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RytTmlEemIQ8NBGZEDjw" rowCount="2502" tableName="ods_calendrier">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RytjmlEemIQ8NBGZEDjw" rowCount="9039" tableName="ods_client">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RytzmlEemIQ8NBGZEDjw" rowCount="31" tableName="ods_employe">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyuDmlEemIQ8NBGZEDjw" rowCount="303998" tableName="ods_fait_vente">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyuTmlEemIQ8NBGZEDjw" rowCount="8" tableName="ods_ligne_produit">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyujmlEemIQ8NBGZEDjw" rowCount="11" tableName="ods_magasin">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyuzmlEemIQ8NBGZEDjw" rowCount="12" tableName="ods_mois">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyvDmlEemIQ8NBGZEDjw" rowCount="248" tableName="ods_pays" keyCount="1" indexCount="1">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyvTmlEemIQ8NBGZEDjw" rowCount="72" tableName="ods_produit">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_L9RyvjmlEemIQ8NBGZEDjw" rowCount="28" tableName="ods_region">
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
       </catalogIndicators>
     </indicators>
   </results>
