@@ -9,47 +9,37 @@
     <relativePath>../../../../../</relativePath>
   </parent>
   <groupId>org.example.tic_keyrus.service</groupId>
-  <artifactId>API_B_REST_Find_Customer-bundle</artifactId>
+  <artifactId>API_B_REST_Find_Customer</artifactId>
   <version>0.1.0</version>
-  <packaging>bundle</packaging>
-  <name>TIC_KEYRUS API_B_REST_Find_Customer-0.1.0 (0.1,Jobs) Bundle</name>
+  <name>TIC_KEYRUS API_B_REST_Find_Customer-0.1.0 (0.1,Jobs) Microservice Jar</name>
   <properties>
-    <item.name>@ItemName@</item.name>
-    <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
-    <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
-    <talend.job.name>API_B_REST_Find_Customer</talend.job.name>
-    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.project.name>TIC_KEYRUS</talend.project.name>
-    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <bundle.config.export.package>@BundleConfigExportPackage@</bundle.config.export.package>
-    <talend.project.id>0</talend.project.id>
-    <provided.lib.path>${current.bundle.resources.dir}/provided-lib</provided.lib.path>
-    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <talend.product.version>7.1.1.20181026_1147</talend.product.version>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
-    <talend.job.folder>b_demo_avv/c_esb/</talend.job.folder>
-    <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
-    <talend.job.id>_0rZaQBLZEem26K_bHSIsFA</talend.job.id>
-    <talend.project.name.lowercase>tic_keyrus</talend.project.name.lowercase>
-    <talend.job.finalName>${talend.job.name}-bundle-${project.version}</talend.job.finalName>
-    <lib.path>${resources.path}/lib</lib.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
+    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
+    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.project.name.lowercase>tic_keyrus</talend.project.name.lowercase>
     <talend.job.path>tic_keyrus/api_b_rest_find_customer_0_1</talend.job.path>
+    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
+    <talend.project.name>TIC_KEYRUS</talend.project.name>
+    <talend.product.version>7.1.1.20181026_1147</talend.product.version>
+    <talend.job.finalName>api_b_rest_find_customer_0_1</talend.job.finalName>
+    <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
+    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M </talend.job.jvmargs>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
-    <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
+    <talend.job.date>${maven.build.timestamp}</talend.job.date>
+    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
+    <talend.job.name>API_B_REST_Find_Customer</talend.job.name>
+    <talend.job.id>_0rZaQBLZEem26K_bHSIsFA</talend.job.id>
+    <talend.project.id>0</talend.project.id>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.folder>b_demo_avv/c_esb/</talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
-    <resources.path>${basedir}/src/main/resources</resources.path>
-    <item.project.name>@ItemProjectName@</item.project.name>
   </properties>
   <dependencies>
     <dependency>
@@ -319,11 +309,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>org.apache.log4j_1.2.15.v201012070815</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -341,16 +326,6 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-api-1.7.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-log4j12-1.7.5</artifactId>
-      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -472,46 +447,100 @@
       <artifactId>routines</artifactId>
       <version>7.1.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>1.5.9.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <version>8.0.44</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-el</artifactId>
+      <version>8.0.44</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-logging-juli</artifactId>
+      <version>8.0.44</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-websocket</artifactId>
+      <version>8.0.44</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jolokia</groupId>
+      <artifactId>jolokia-core</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-management</artifactId>
+      <version>3.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-features-metrics</artifactId>
+      <version>3.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>io.dropwizard.metrics</groupId>
+      <artifactId>metrics-core</artifactId>
+      <version>3.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>1.5.9.RELEASE</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-starter-logging</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-log4j2</artifactId>
+      <version>1.5.9.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>1.5.9.RELEASE</version>
+    </dependency>
   </dependencies>
   <build>
+    <finalName>${talend.job.finalName}</finalName>
     <plugins>
       <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <version>2.5.3</version>
-        <extensions>true</extensions>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.7</version>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>1.5.9.RELEASE</version>
         <executions>
           <execution>
-            <phase>package</phase>
             <goals>
-              <goal>single</goal>
+              <goal>repackage</goal>
             </goals>
-            <configuration>
-              <descriptors>
-                <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
-              </descriptors>
-              <tarLongFileMode>gnu</tarLongFileMode>
-              <appendAssemblyId>false</appendAssemblyId>
-              <finalName>${talend.job.name}-bundle-${project.version}</finalName>
-              <archive>
-                <manifestFile>${current.bundle.resources.dir}/META-INF/MANIFEST.MF</manifestFile>
-              </archive>
-            </configuration>
           </execution>
         </executions>
+        <configuration>
+          <mainClass>tic_keyrus.api_b_rest_find_customer_0_1.App</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -537,11 +566,32 @@
                   </descriptors>
                   <tarLongFileMode>gnu</tarLongFileMode>
                   <appendAssemblyId>false</appendAssemblyId>
-                  <finalName>${talend.job.name}-bundle-${project.version}</finalName>
-                  <archive>
-                    <manifestFile>${current.bundle.resources.dir}/META-INF/MANIFEST.MF</manifestFile>
-                  </archive>
+                  <finalName>${talend.job.finalName}</finalName>
                 </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>signature</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.talend.ci</groupId>
+            <artifactId>signer-maven-plugin</artifactId>
+            <version>${talend.version}</version>
+            <executions>
+              <execution>
+                <id>sign</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
               </execution>
             </executions>
           </plugin>
@@ -574,9 +624,15 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <poms.dir>${basedir}</poms.dir>
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
+        <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
+        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
+        <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
+        <templates.dir>${basedir}/src/main/templates/</templates.dir>
+        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
+        <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
+        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
+        <poms.dir>${basedir}</poms.dir>
       </properties>
     </profile>
     <profile>
@@ -647,6 +703,9 @@
     </profile>
     <profile>
       <id>include-running-log4j</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <properties>
         <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
       </properties>
@@ -688,43 +747,8 @@
     <profile>
       <id>include-microservice-running-configs</id>
       <properties>
-        <microservice.running.configs.dir>${current.resources.dir}/</microservice.running.configs.dir>
+        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
       </properties>
-    </profile>
-    <profile>
-      <id>deploy-nexus</id>
-      <activation>
-        <property>
-          <name>altDeploymentRepository</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>2.7</version>
-            <executions>
-              <execution>
-                <id>deploy-file</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy-file</goal>
-                </goals>
-                <configuration>
-                  <file>${basedir}/src/main/resources/feature/feature.xml</file>
-                  <groupId>${project.groupId}</groupId>
-                  <artifactId>${talend.job.name}-feature</artifactId>
-                  <version>${project.version}</version>
-                  <classifier>features</classifier>
-                  <packaging>xml</packaging>
-                  <repositoryId>${project.distribution-management.repository.id}</repositoryId>
-                  <url>${project.distribution-management.repository.url}</url>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
   </profiles>
 </project>
