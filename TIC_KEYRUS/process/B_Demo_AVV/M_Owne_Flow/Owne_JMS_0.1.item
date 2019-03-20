@@ -134,79 +134,74 @@
         <nodes expression="" name="body" type="id_Document" xpath="row1/body">
           <children main="true" name="tns:NotificationOperationRequest" type="id_String" xpath="row1.body:/tns:NotificationOperationRequest">
             <children defaultValue="http://www.talend.org/service/" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="row1.body:/tns:NotificationOperationRequest/xmlns:tns"/>
-            <children loop="true" name="in" type="id_String" xpath="row1.body:/tns:NotificationOperationRequest/in"/>
+            <children lookupOutgoingConnections="//@node.1/@nodeData/@connections.0" loop="true" name="in" type="id_String" xpath="row1.body:/tns:NotificationOperationRequest/in"/>
           </children>
         </nodes>
       </inputTrees>
-      <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2">
-        <nodes expression="Integer.toString(row1.body:/tns:NotificationOperationRequest/in) " name="ID_CLIENT" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_Integer" xpath="row2/ID_CLIENT"/>
-        <nodes name="NOM" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row2/NOM"/>
-        <nodes name="PRENOM" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="row2/PRENOM"/>
-        <nodes name="MAIL" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row2/MAIL"/>
-        <nodes name="ID_MAGASIN" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_Integer" xpath="row2/ID_MAGASIN"/>
-        <nodes name="VILLE_MAGASIN" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_String" xpath="row2/VILLE_MAGASIN"/>
-        <nodes name="ID_VENDEUR" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_Integer" xpath="row2/ID_VENDEUR"/>
-        <nodes name="TELEPHONE" outgoingConnections="//@node.1/@nodeData/@connections.7" type="id_String" xpath="row2/TELEPHONE"/>
-        <nodes name="ADRESSE_FORMATE" outgoingConnections="//@node.1/@nodeData/@connections.8" type="id_String" xpath="row2/ADRESSE_FORMATE"/>
-        <nodes name="NUMERO_DE_RUE" outgoingConnections="//@node.1/@nodeData/@connections.9" type="id_String" xpath="row2/NUMERO_DE_RUE"/>
-        <nodes name="VILLE_FORMATE" outgoingConnections="//@node.1/@nodeData/@connections.10" type="id_String" xpath="row2/VILLE_FORMATE"/>
-        <nodes name="REGION" outgoingConnections="//@node.1/@nodeData/@connections.11" type="id_String" xpath="row2/REGION"/>
-        <nodes name="DEPARTEMENT" outgoingConnections="//@node.1/@nodeData/@connections.12" type="id_String" xpath="row2/DEPARTEMENT"/>
-        <nodes name="PAYS" outgoingConnections="//@node.1/@nodeData/@connections.13" type="id_String" xpath="row2/PAYS"/>
-        <nodes name="CODE_POSTAL" outgoingConnections="//@node.1/@nodeData/@connections.14" type="id_String" xpath="row2/CODE_POSTAL"/>
-        <nodes name="lat" outgoingConnections="//@node.1/@nodeData/@connections.15" type="id_Double" xpath="row2/lat"/>
-        <nodes name="lng" outgoingConnections="//@node.1/@nodeData/@connections.16" type="id_Double" xpath="row2/lng"/>
-        <nodes name="status" outgoingConnections="//@node.1/@nodeData/@connections.17" type="id_String" xpath="row2/status"/>
-        <nodes name="ADRESSE_ORIGINE" outgoingConnections="//@node.1/@nodeData/@connections.18" type="id_String" xpath="row2/ADRESSE_ORIGINE"/>
+      <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3">
+        <nodes expression="[row1.body:/tns:NotificationOperationRequest/in]" lookupIncomingConnections="//@node.1/@nodeData/@connections.0" name="ID_CLIENT" nullable="false" type="id_String" xpath="row3/ID_CLIENT"/>
+        <nodes name="NOM" type="id_String" xpath="row3/NOM"/>
+        <nodes name="PRENOM" type="id_String" xpath="row3/PRENOM"/>
+        <nodes name="MAIL" type="id_String" xpath="row3/MAIL"/>
+        <nodes name="ID_MAGASIN" type="id_Integer" xpath="row3/ID_MAGASIN"/>
+        <nodes name="VILLE_MAGASIN" type="id_String" xpath="row3/VILLE_MAGASIN"/>
+        <nodes name="ID_VENDEUR" type="id_Integer" xpath="row3/ID_VENDEUR"/>
+        <nodes name="TELEPHONE" type="id_String" xpath="row3/TELEPHONE"/>
+        <nodes name="ADRESSE_FORMATE" type="id_String" xpath="row3/ADRESSE_FORMATE"/>
+        <nodes name="NUMERO_DE_RUE" type="id_String" xpath="row3/NUMERO_DE_RUE"/>
+        <nodes name="VILLE_FORMATE" type="id_String" xpath="row3/VILLE_FORMATE"/>
+        <nodes name="REGION" type="id_String" xpath="row3/REGION"/>
+        <nodes name="DEPARTEMENT" type="id_String" xpath="row3/DEPARTEMENT"/>
+        <nodes name="PAYS" type="id_String" xpath="row3/PAYS"/>
+        <nodes name="CODE_POSTAL" type="id_String" xpath="row3/CODE_POSTAL"/>
+        <nodes name="lat" type="id_Double" xpath="row3/lat"/>
+        <nodes name="lng" type="id_Double" xpath="row3/lng"/>
+        <nodes name="status" type="id_String" xpath="row3/status"/>
+        <nodes name="ADRESSE_ORIGINE" type="id_String" xpath="row3/ADRESSE_ORIGINE"/>
       </inputTrees>
       <outputTrees name="out1">
         <nodes expression="" name="Body" pattern="" type="id_Document" xpath="out1/Body">
           <children expression="" loop="true" main="true" name="root" type="id_String" xpath="out1.Body:/root" xsi:type="TalendXMLMap:OutputTreeNode">
-            <children expression="row2.ID_CLIENT" incomingConnections="//@node.1/@nodeData/@connections.0" name="ID_CLIENT" type="id_Integer" xpath="out1.Body:/root/ID_CLIENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.NOM" incomingConnections="//@node.1/@nodeData/@connections.1" name="NOM" type="id_String" xpath="out1.Body:/root/NOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.PRENOM" incomingConnections="//@node.1/@nodeData/@connections.2" name="PRENOM" type="id_String" xpath="out1.Body:/root/PRENOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.MAIL" incomingConnections="//@node.1/@nodeData/@connections.3" name="MAIL" type="id_String" xpath="out1.Body:/root/MAIL" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.ID_MAGASIN" incomingConnections="//@node.1/@nodeData/@connections.4" name="ID_MAGASIN" type="id_Integer" xpath="out1.Body:/root/ID_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.VILLE_MAGASIN" incomingConnections="//@node.1/@nodeData/@connections.5" name="VILLE_MAGASIN" type="id_String" xpath="out1.Body:/root/VILLE_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.ID_VENDEUR" incomingConnections="//@node.1/@nodeData/@connections.6" name="ID_VENDEUR" type="id_Integer" xpath="out1.Body:/root/ID_VENDEUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.TELEPHONE" incomingConnections="//@node.1/@nodeData/@connections.7" name="TELEPHONE" type="id_String" xpath="out1.Body:/root/TELEPHONE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.ADRESSE_FORMATE" incomingConnections="//@node.1/@nodeData/@connections.8" name="ADRESSE_FORMATE" type="id_String" xpath="out1.Body:/root/ADRESSE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.NUMERO_DE_RUE" incomingConnections="//@node.1/@nodeData/@connections.9" name="NUMERO_DE_RUE" type="id_String" xpath="out1.Body:/root/NUMERO_DE_RUE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.VILLE_FORMATE" incomingConnections="//@node.1/@nodeData/@connections.10" name="VILLE_FORMATE" type="id_String" xpath="out1.Body:/root/VILLE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.REGION" incomingConnections="//@node.1/@nodeData/@connections.11" name="REGION" type="id_String" xpath="out1.Body:/root/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.DEPARTEMENT" incomingConnections="//@node.1/@nodeData/@connections.12" name="DEPARTEMENT" type="id_String" xpath="out1.Body:/root/DEPARTEMENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.PAYS" incomingConnections="//@node.1/@nodeData/@connections.13" name="PAYS" type="id_String" xpath="out1.Body:/root/PAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.CODE_POSTAL" incomingConnections="//@node.1/@nodeData/@connections.14" name="CODE_POSTAL" type="id_String" xpath="out1.Body:/root/CODE_POSTAL" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.lat" incomingConnections="//@node.1/@nodeData/@connections.15" name="lat" type="id_Double" xpath="out1.Body:/root/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.lng" incomingConnections="//@node.1/@nodeData/@connections.16" name="lng" type="id_Double" xpath="out1.Body:/root/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.status" incomingConnections="//@node.1/@nodeData/@connections.17" name="status" type="id_String" xpath="out1.Body:/root/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row2.ADRESSE_ORIGINE" incomingConnections="//@node.1/@nodeData/@connections.18" name="ADRESSE_ORIGINE" type="id_String" xpath="out1.Body:/root/ADRESSE_ORIGINE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ID_CLIENT" name="ID_CLIENT" type="id_Integer" xpath="out1.Body:/root/ID_CLIENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.NOM" name="NOM" type="id_String" xpath="out1.Body:/root/NOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.PRENOM" name="PRENOM" type="id_String" xpath="out1.Body:/root/PRENOM" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.MAIL" name="MAIL" type="id_String" xpath="out1.Body:/root/MAIL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ID_MAGASIN" name="ID_MAGASIN" type="id_Integer" xpath="out1.Body:/root/ID_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.VILLE_MAGASIN" name="VILLE_MAGASIN" type="id_String" xpath="out1.Body:/root/VILLE_MAGASIN" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ID_VENDEUR" name="ID_VENDEUR" type="id_Integer" xpath="out1.Body:/root/ID_VENDEUR" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.TELEPHONE" name="TELEPHONE" type="id_String" xpath="out1.Body:/root/TELEPHONE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ADRESSE_FORMATE" name="ADRESSE_FORMATE" type="id_String" xpath="out1.Body:/root/ADRESSE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.NUMERO_DE_RUE" name="NUMERO_DE_RUE" type="id_String" xpath="out1.Body:/root/NUMERO_DE_RUE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.VILLE_FORMATE" name="VILLE_FORMATE" type="id_String" xpath="out1.Body:/root/VILLE_FORMATE" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.REGION" name="REGION" type="id_String" xpath="out1.Body:/root/REGION" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.DEPARTEMENT" name="DEPARTEMENT" type="id_String" xpath="out1.Body:/root/DEPARTEMENT" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.PAYS" name="PAYS" type="id_String" xpath="out1.Body:/root/PAYS" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.CODE_POSTAL" name="CODE_POSTAL" type="id_String" xpath="out1.Body:/root/CODE_POSTAL" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.lat" name="lat" type="id_Double" xpath="out1.Body:/root/lat" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.lng" name="lng" type="id_Double" xpath="out1.Body:/root/lng" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.status" name="status" type="id_String" xpath="out1.Body:/root/status" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row2.ADRESSE_ORIGINE" name="ADRESSE_ORIGINE" type="id_String" xpath="out1.Body:/root/ADRESSE_ORIGINE" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.13" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.15" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.16" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.17" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.17" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
     </nodeData>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRouteOutput_1"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Body"/>
+      <elementValue elementRef="TYPE" value="Body"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTICE" value="The &quot;Name&quot; with &quot;Body&quot; type will be ignored"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tRouteOutput_1">
+      <column comment="" key="false" length="-1" name="Body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_q1spgFmMEeWX_-uAgknM5w"/>
@@ -339,17 +334,132 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRouteOutput_1"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Body"/>
-      <elementValue elementRef="TYPE" value="Body"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTICE" value="The &quot;Name&quot; with &quot;Body&quot; type will be ignored"/>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out1" name="tRouteOutput_1">
-      <column comment="" key="false" length="-1" name="Body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column comment="" defaultValue="0" key="true" length="10" name="ID_CLIENT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_MAGASIN" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="VILLE_MAGASIN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_VENDEUR" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="TELEPHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ADRESSE_FORMATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NUMERO_DE_RUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="VILLE_FORMATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DEPARTEMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PAYS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="CODE_POSTAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="lat" nullable="true" pattern="" precision="8" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="lng" nullable="true" pattern="" precision="8" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ADRESSE_ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="0" key="true" length="10" name="ID_CLIENT" nullable="false" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_MAGASIN" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="VILLE_MAGASIN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ID_VENDEUR" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="TELEPHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ADRESSE_FORMATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NUMERO_DE_RUE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="VILLE_FORMATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DEPARTEMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="PAYS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="CODE_POSTAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="lat" nullable="true" pattern="" precision="8" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="lng" nullable="true" pattern="" precision="8" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="ADRESSE_ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRouteInput_1" offsetLabelX="0" offsetLabelY="0" source="tRouteInput_1" target="tXMLMap_1">
@@ -360,22 +470,85 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tConvertType_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TELEPHONE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADRESSE_FORMATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ID_MAGASIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VILLE_FORMATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE_POSTAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PAYS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VILLE_MAGASIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REGION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DEPARTEMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMERO_DE_RUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAIL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ID_VENDEUR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADRESSE_ORIGINE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRouteInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_441d2751-d0cb-47cf-9757-211acac51b5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1wLr2tGqtD45mZKdeA3PC85+eQGncP+mN2SORD6fQzXtFnvnUHrK3lk2Me04BJ8ID8PeTOTMd+Mu
-eYtWC5yMeg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fc351fa0-987b-4eae-a2b1-05ab63166f25"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZLWsEa0XCYlHCgolUZ794VDLpV5j2r3/BIRQv68A2ONgU+HW9sApUYEzdcGa5fqDxw6ij1eGi5Ej
-kr0BrmLZtQ==</DigestValue></Reference></SignedInfo><SignatureValue>iyKKghCv7tBH3sQx2CWhwDnAn8Jj1RplQu/RSRN/R6H47G31azzS2bJJMegMcC9FCfMdCXB6sfEU
-tajlLsCMWb7Wq3UE8LxzWqNkNaZxhqJP2AbcWryy9lpLurqvNqu7AFk1DscjuYuQlz+g+qvwgwYy
-Ph7Noh8hCAJCFOMdlQmKOq7+3D7PbbkIOLGNHObNk6JyTVAIm8bnNUZSSs2XwiX/S162TXqNbyuv
-9ytSrXFb3AhZ/Dt2xmxaAnJMNNcEH618Ju8XLllOgeEBTV7+oTCT5clB88uuXWKdN0uj/CGs1r4P
-HoRHMepbie3R+LuU6wzJJ53T4+ZDWdIl3AQ2rg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6cc9b8b2-a223-440a-9d68-efddbb88065c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W2QB5guW/M/U+OO+b6kdPMbtVNvN1BLSFA2Etb7UD2V5vK424CQtrfdFUKbAOI9BaewT3gwST5S5
+/eT2ihXWJQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1bb5a67-8a6d-45af-a10b-bad369c6e74f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K4kNLF0xWoOYX8Jw+IvxjsdV93FOrIb/bzCnfrP9JENRe0YM06yn7JMT5JT2AOzgLX6OXAoWpDtY
+gthdWKn5Pg==</DigestValue></Reference></SignedInfo><SignatureValue>sOIVEwq6ml2Ct8qm656ZYMXRP7CAhDOZg6BTan5CwcU/ZBEb+5d+V+lk/P5idUtlEftHuRncJWM4
+VuiM3WYPffHykjM4KMf3/mVfeTKeRzJa/ZlsMkTUd797XLz8FbZHoa7w1c8S4Mk27gTpCiO91+5/
+sIbnJgBbH5kV0pJMlP3OAA7pVUiJPFO1cTUg3v81HcuWd17Un8IINtO2mGszS5WKTFe6Ksf3SSHu
+fGpmQqTGbvYqnqdfLbs5njulFej4wYVSzcQa+tCgXTRDU/vC4d7uSbvqA796mSeyqj9BsNQxBx9V
+rXmEYjGZAsb+NksLU6m26qItuEBMQp0ZfjhAlw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -399,4 +572,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fc351fa0-987b-4eae-a2b1-05ab63166f25" Target="#_441d2751-d0cb-47cf-9757-211acac51b5f"><Timestamp>2019-03-20 15:42:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1bb5a67-8a6d-45af-a10b-bad369c6e74f" Target="#_6cc9b8b2-a223-440a-9d68-efddbb88065c"><Timestamp>2019-03-20 15:43:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
