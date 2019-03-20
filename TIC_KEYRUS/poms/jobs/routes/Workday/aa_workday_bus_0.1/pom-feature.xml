@@ -46,6 +46,27 @@
   <build>
     <plugins>
       <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.1</version>
+        <executions>
+          <execution>
+            <id>install-jar-lib-0</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <groupId>org.example.tic_keyrus.job</groupId>
+              <artifactId>AA_WorkDay_Bus_Owne_JMS</artifactId>
+              <version>0.1.0</version>
+              <packaging>jar</packaging>
+              <file>../../../process/B_Demo_AVV/M_Owne_Flow/owne_jms_0.1/target/owne_jms_0_1.jar</file>
+              <generatePom>true</generatePom>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.karaf.tooling</groupId>
         <artifactId>features-maven-plugin</artifactId>
         <version>2.2.9</version>
@@ -106,6 +127,22 @@
                   <version>0.1.0</version>
                   <classifier>features</classifier>
                   <packaging>xml</packaging>
+                  <repositoryId>${project.distributionManagement.repository.id}</repositoryId>
+                  <url>${project.distributionManagement.repository.url}</url>
+                </configuration>
+              </execution>
+              <execution>
+                <id>deploy-AA_WorkDay_Bus_Owne_JMS</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>deploy-file</goal>
+                </goals>
+                <configuration>
+                  <file>../../../process/B_Demo_AVV/M_Owne_Flow/owne_jms_0.1/target/owne_jms_0_1.jar</file>
+                  <groupId>org.example.tic_keyrus.job</groupId>
+                  <artifactId>AA_WorkDay_Bus_Owne_JMS</artifactId>
+                  <version>0.1.0</version>
+                  <packaging>jar</packaging>
                   <repositoryId>${project.distributionManagement.repository.id}</repositoryId>
                   <url>${project.distributionManagement.repository.url}</url>
                 </configuration>
