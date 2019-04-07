@@ -115,7 +115,10 @@
     <module>jobs/process/C_Azure/a_fichier_blob_0.1</module>
     <module>jobs/process/C_Azure/b_blob_local_adls_0.1</module>
     <module>jobs/process/Tdsc/a_sfdc_comptes_0.1</module>
+    <module>jobs/process/Tdsc/b_recuperation_tdsc_0.1</module>
     <module>jobs/process/Tdsc/c_survivor_0.1</module>
+    <module>jobs/process/Tdsc/e_tdsc_consolidation_0.1</module>
+    <module>jobs/process/D_DQ_RTDMS/ab_vat_rtdms_ws_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/b_rest_find_customer_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/scratch_0.1</module>
     <module>jobs/process/B_Demo_AVV/C_ESB/c_rest_customer_0.1</module>
@@ -126,20 +129,14 @@
     <module>jobs/process/Sfdc/e_sfdc_dq_phone_0.1</module>
     <module>jobs/process/Sfdc/e_sfdc_dq_phone_1.0</module>
     <module>jobs/process/Sfdc/d_sfdc_dq_adresse_1.1</module>
-    <module>jobs/process/A_Socle/check_siret_0.1</module>
-    <module>jobs/process/Tdsc/d_arbitrage_0.1</module>
-    <module>jobs/process/Tdsc/b_sfdc_comptes_recuperation_tdsc_0.1</module>
-    <module>jobs/process/Tdsc/e_arbitrage_recuperation_0.1</module>
-    <module>jobs/process/A_Socle/copy_of_check_siret_0.1</module>
-    <module>jobs/routes/test_jms_1.0</module>
-    <module>jobs/process/Sfdc/f_lanceur_0.1</module>
+    <module>jobs/routes/Workday/aa_workday_bus_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
