@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.tic_keyrus.job</groupId>
-  <artifactId>AB_VAT_RTDMS_WS</artifactId>
+  <artifactId>B_Sfdc_Comptes_Recuperation_TDSC</artifactId>
   <version>0.1.0</version>
-  <name>TIC_KEYRUS AB_VAT_RTDMS_WS-0.1.0 (0.1,Job Designs)</name>
+  <name>TIC_KEYRUS B_Sfdc_Comptes_Recuperation_TDSC-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,12 +19,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>tic_keyrus</talend.project.name.lowercase>
-    <talend.job.path>tic_keyrus/ab_vat_rtdms_ws_0_1</talend.job.path>
+    <talend.job.path>tic_keyrus/b_sfdc_comptes_recuperation_tdsc_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
-    <talend.job.finalName>ab_vat_rtdms_ws_0_1</talend.job.finalName>
+    <talend.job.finalName>b_sfdc_comptes_recuperation_tdsc_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,44 +33,24 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>AB_VAT_RTDMS_WS</talend.job.name>
-    <talend.job.id>_AFGpAPCiEeijKfnBu9ZrBQ</talend.job.id>
+    <talend.job.name>B_Sfdc_Comptes_Recuperation_TDSC</talend.job.name>
+    <talend.job.id>_bp8Q4NYxEeihApn6s4_wGw</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
-    <talend.job.folder>d_dq_rtdms/</talend.job.folder>
+    <talend.job.folder>tdsc/</talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>org.antlr</groupId>
-      <artifactId>ST4</artifactId>
-      <version>4.0.7</version>
-    </dependency>
     <dependency>
       <groupId>biz.aQute.bnd</groupId>
       <artifactId>annotation</artifactId>
       <version>2.4.0</version>
     </dependency>
     <dependency>
-      <groupId>antlr</groupId>
-      <artifactId>antlr</artifactId>
-      <version>2.7.7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.antlr</groupId>
-      <artifactId>antlr-runtime</artifactId>
-      <version>3.5</version>
-    </dependency>
-    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>antlr-runtime-3.5.2</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.antlr</groupId>
-      <artifactId>antlr4-runtime</artifactId>
-      <version>4.6</version>
     </dependency>
     <dependency>
       <groupId>com.google.auto</groupId>
@@ -88,34 +68,9 @@
       <version>1.8.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>bcprov_1.51.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>com.google.guava_15.0.0.v201403281430</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.8.3</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.11</version>
-    </dependency>
-    <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.10</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.2.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -123,9 +78,9 @@
       <version>1.8.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-jxpath-1.3</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.6</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -149,93 +104,8 @@
     </dependency>
     <dependency>
       <groupId>org.talend.components</groupId>
-      <artifactId>components-common-oauth</artifactId>
+      <artifactId>components-datastewardship</artifactId>
       <version>0.25.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components</groupId>
-      <artifactId>components-salesforce-definition</artifactId>
-      <version>0.25.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components</groupId>
-      <artifactId>components-salesforce-runtime</artifactId>
-      <version>0.25.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>correlationid-policy-7.1.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>cryptacular-1.1.1</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-core</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-bindings-soap</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-bindings-xml</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-databinding-jaxb</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-frontend-jaxws</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-frontend-simple</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-security</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-security-saml</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-transports-http</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-ws-addr</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-ws-policy</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-ws-security</artifactId>
-      <version>3.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.cxf</groupId>
-      <artifactId>cxf-rt-wsdl</artifactId>
-      <version>3.2.6</version>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
@@ -243,24 +113,19 @@
       <version>0.27.0</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.components</groupId>
+      <artifactId>datastewardship-client</artifactId>
+      <version>0.25.3</version>
+    </dependency>
+    <dependency>
       <groupId>dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>1.6.1</version>
     </dependency>
     <dependency>
-      <groupId>net.sf.ehcache</groupId>
-      <artifactId>ehcache</artifactId>
-      <version>2.10.5</version>
-    </dependency>
-    <dependency>
-      <groupId>com.force.api</groupId>
-      <artifactId>force-partner-api</artifactId>
-      <version>44.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.force.api</groupId>
-      <artifactId>force-wsc</artifactId>
-      <version>44.0.0</version>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>fluent-hc</artifactId>
+      <version>4.5.5</version>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -303,11 +168,6 @@
       <version>1.9.14-TALEND</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jasypt-1.9.2</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>net.sourceforge.javacsv</groupId>
       <artifactId>javacsv</artifactId>
       <version>2.0</version>
@@ -323,16 +183,6 @@
       <version>3.1.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>javax.wsdl_1.6.2.v201012040545</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jaxen-1.1.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
       <version>1.7.25</version>
@@ -343,16 +193,6 @@
       <version>2.8.2</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>joda-time-2.9</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20140107</version>
-    </dependency>
-    <dependency>
       <groupId>com.cedarsoftware</groupId>
       <artifactId>json-io</artifactId>
       <version>4.9.9-TALEND</version>
@@ -361,101 +201,6 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>mysql-connector-java-5.1.30-bin</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.neethi</groupId>
-      <artifactId>neethi</artifactId>
-      <version>3.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-core-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-profile-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-saml-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-saml-impl-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-security-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-security-impl-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-soap-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xacml-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xacml-impl-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xacml-saml-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xacml-saml-impl-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xmlsec-api-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>opensaml-xmlsec-impl-3.3.0</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>org.apache.log4j_1.2.15.v201012070815</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.oltu.oauth2</groupId>
-      <artifactId>org.apache.oltu.oauth2.client</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.oltu.oauth2</groupId>
-      <artifactId>org.apache.oltu.oauth2.common</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>org.apache.xml.resolver_1.2.0.v201005080400</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -479,33 +224,13 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-api-1.7.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>slf4j-log4j12-1.7.2</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-log4j12-1.7.5</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.xerial.snappy</groupId>
       <artifactId>snappy-java</artifactId>
       <version>1.1.1.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>stax2-api-3.1.4</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.antlr</groupId>
-      <artifactId>stringtemplate</artifactId>
-      <version>3.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -516,51 +241,6 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>woodstox-core-asl-4.4.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-bindings</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-policy</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-ws-security-common</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-ws-security-dom</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-ws-security-policy-stax</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.wss4j</groupId>
-      <artifactId>wss4j-ws-security-stax</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.ws.xmlschema</groupId>
-      <artifactId>xmlschema-core</artifactId>
-      <version>2.2.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.santuario</groupId>
-      <artifactId>xmlsec</artifactId>
-      <version>2.1.2</version>
     </dependency>
     <dependency>
       <groupId>org.tukaani</groupId>
