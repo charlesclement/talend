@@ -128,15 +128,14 @@
     <module>jobs/process/A_Socle/A_Dynamic_Job/SUPPLYCHAIN/SUP9500_SnOP/ODS/main_sup9500_snop_azap_to_ods_0.1</module>
     <module>jobs/process/Phone_Crazy_Matching/Phone_Crazy_MatchingPortType/Phone_Crazy_MatchingOperation/phone_fuzzy_match_0.1</module>
     <module>jobs/process/Phone_Crazy_Matching/Phone_Crazy_MatchingPortType/Phone_Crazy_MatchingOperation/phone_crazy_matchingporttype_phone_crazy_matchingoperation_0.1</module>
-    <module>jobs/services/phone_0.1</module>
-    <module>jobs/process/Phone/PhonePortType/PhoneOperation/phoneporttype_phoneoperation_0.1</module>
+    <module>jobs/services/pays_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
