@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_6wEDcFpLEemvWIbfjt7f6w" name="Match Analysis" creationDate="2019-04-08T22:16:12.311+0000">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_6wEDcFpLEemvWIbfjt7f6w" name="Match Analysis" creationDate="2019-04-08T22:16:12.311+0000" defaultContext="Default">
+  <clientDependency href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_ajwEwForEeWe9fHqZgwIFQ"/>
   <taggedValue xmi:id="_6wEDcVpLEemvWIbfjt7f6w" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_6wEDclpLEemvWIbfjt7f6w" tag="Status" value="development"/>
   <taggedValue xmi:id="_6wEDc1pLEemvWIbfjt7f6w" tag="Author" value="master@nfr.keyrus.com"/>
-  <taggedValue xmi:id="_6wEDdFpLEemvWIbfjt7f6w" tag="Purpose"/>
-  <taggedValue xmi:id="_6wEDdVpLEemvWIbfjt7f6w" tag="Description"/>
+  <taggedValue xmi:id="_6wEDdFpLEemvWIbfjt7f6w" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_6wEDdVpLEemvWIbfjt7f6w" tag="Description" value=""/>
   <taggedValue xmi:id="_6wEDdlpLEemvWIbfjt7f6w" tag="Version" value="0.1"/>
-  <context xmi:id="_6wEDd1pLEemvWIbfjt7f6w"/>
+  <taggedValue xmi:id="_7Ev6AFpLEemvWIbfjt7f6w" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_7Ev6AVpLEemvWIbfjt7f6w" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_7Ev6AlpLEemvWIbfjt7f6w" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_7HsgUVpLEemvWIbfjt7f6w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_6wEDd1pLEemvWIbfjt7f6w">
+    <connection href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_sB_xMFoTEeWAPM7TeQxAow"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rYlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2relpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rglpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rhlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rilpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rjlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rklpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rllpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rmlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rnlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rolpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rslpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rtlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rulpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rvlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rwlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
+    <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
+  </context>
   <results xmi:id="_6wEDeFpLEemvWIbfjt7f6w">
     <resultMetadata xmi:id="_6wEDeVpLEemvWIbfjt7f6w"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_6wEDelpLEemvWIbfjt7f6w"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_6wEDe1pLEemvWIbfjt7f6w">
-      <builtInMatchRuleDefinition xmi:id="_6wEDfFpLEemvWIbfjt7f6w"/>
+      <builtInMatchRuleDefinition xmi:id="_6wEDfFpLEemvWIbfjt7f6w">
+        <matchRules xmi:id="_7Br-8FpLEemvWIbfjt7f6w" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_6wEDfVpLEemvWIbfjt7f6w" analysisType="Match Analysis"/>
+  <contextType xmi:id="_7HsgUFpLEemvWIbfjt7f6w" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
