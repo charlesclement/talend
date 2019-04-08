@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_zXYGAFpIEemvWIbfjt7f6w" name="Basic Column Analysis" creationDate="2019-04-08T21:53:54.245+0000">
-  <taggedValue xmi:id="_zXYGAVpIEemvWIbfjt7f6w" tag="Status" value="development"/>
-  <taggedValue xmi:id="_zXYGAlpIEemvWIbfjt7f6w" tag="Author" value="master@nfr.keyrus.com"/>
-  <taggedValue xmi:id="_zXYGA1pIEemvWIbfjt7f6w" tag="Purpose"/>
-  <taggedValue xmi:id="_zXYGBFpIEemvWIbfjt7f6w" tag="Description"/>
-  <taggedValue xmi:id="_zXYGBVpIEemvWIbfjt7f6w" tag="Version" value="0.1"/>
-  <context xmi:id="_zXYGBlpIEemvWIbfjt7f6w"/>
-  <results xmi:id="_zXYGB1pIEemvWIbfjt7f6w">
-    <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w"/>
-  </results>
-  <parameters xmi:id="_zXYGCVpIEemvWIbfjt7f6w" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_zXYGAFpIEemvWIbfjt7f6w" name="Basic Column Analysis" creationDate="2019-04-08T21:53:54.245+0000" defaultContext="Default">
+    <taggedValue xmi:id="_zXYGAVpIEemvWIbfjt7f6w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_zXYGAlpIEemvWIbfjt7f6w" tag="Author" value="master@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_zXYGA1pIEemvWIbfjt7f6w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_zXYGBFpIEemvWIbfjt7f6w" tag="Description" value=""/>
+    <taggedValue xmi:id="_zXYGBVpIEemvWIbfjt7f6w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ITRRIFpJEemvWIbfjt7f6w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_ITRRIVpJEemvWIbfjt7f6w" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_ITR4MFpJEemvWIbfjt7f6w" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_ITXXwFpJEemvWIbfjt7f6w" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_zXYGBlpIEemvWIbfjt7f6w"/>
+    <results xmi:id="_zXYGB1pIEemvWIbfjt7f6w">
+      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w"/>
+    </results>
+    <parameters xmi:id="_zXYGCVpIEemvWIbfjt7f6w" dataFilter="_ITZ0AFpJEemvWIbfjt7f6w" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_ITQqEFpJEemvWIbfjt7f6w" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_ITZ0AFpJEemvWIbfjt7f6w" name="Basic Column Analysis">
+    <ranges xmi:id="_ITZ0AVpJEemvWIbfjt7f6w">
+      <expressions xmi:id="_ITabEFpJEemvWIbfjt7f6w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_ITabEVpJEemvWIbfjt7f6w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
