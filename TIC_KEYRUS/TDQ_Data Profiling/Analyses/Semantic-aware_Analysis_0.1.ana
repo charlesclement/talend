@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_jDWOkVnfEem3pfKYIuYl8g" name="Semantic-aware Analysis" creationDate="2019-04-08T09:20:27.532+0000">
-  <taggedValue xmi:id="_jDWOklnfEem3pfKYIuYl8g" tag="Status" value="Draft"/>
-  <taggedValue xmi:id="_jDWOk1nfEem3pfKYIuYl8g" tag="Author" value="master@nfr.keyrus.com"/>
-  <taggedValue xmi:id="_jDWOlFnfEem3pfKYIuYl8g" tag="Purpose" value=""/>
-  <taggedValue xmi:id="_jDWOlVnfEem3pfKYIuYl8g" tag="Description" value=""/>
-  <taggedValue xmi:id="_jDWOllnfEem3pfKYIuYl8g" tag="Version" value="0.1"/>
-  <context xmi:id="_jDWOl1nfEem3pfKYIuYl8g">
-    <connection href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_sB_xMFoTEeWAPM7TeQxAow"/>
-  </context>
-  <results xmi:id="_jDWOmFnfEem3pfKYIuYl8g">
-    <resultMetadata xmi:id="_jDWOmVnfEem3pfKYIuYl8g"/>
-  </results>
-  <parameters xmi:id="_jDWO61nfEem3pfKYIuYl8g" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_jDWOkVnfEem3pfKYIuYl8g" name="Semantic-aware Analysis" creationDate="2019-04-08T09:20:27.532+0000" defaultContext="Default">
+    <taggedValue xmi:id="_jDWOklnfEem3pfKYIuYl8g" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_jDWOk1nfEem3pfKYIuYl8g" tag="Author" value="master@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_jDWOlFnfEem3pfKYIuYl8g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_jDWOlVnfEem3pfKYIuYl8g" tag="Description" value=""/>
+    <taggedValue xmi:id="_jDWOllnfEem3pfKYIuYl8g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_p8O54VpLEemvWIbfjt7f6w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_p8Pg8FpLEemvWIbfjt7f6w" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_p8Pg8VpLEemvWIbfjt7f6w" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_p8QvEFpLEemvWIbfjt7f6w" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_jDWOl1nfEem3pfKYIuYl8g"/>
+    <results xmi:id="_jDWOmFnfEem3pfKYIuYl8g">
+      <resultMetadata xmi:id="_jDWOmVnfEem3pfKYIuYl8g"/>
+    </results>
+    <parameters xmi:id="_jDWO61nfEem3pfKYIuYl8g" dataFilter="_p8QvEVpLEemvWIbfjt7f6w" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_p8O54FpLEemvWIbfjt7f6w" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_p8QvEVpLEemvWIbfjt7f6w" name="Semantic-aware Analysis">
+    <ranges xmi:id="_p8QvElpLEemvWIbfjt7f6w">
+      <expressions xmi:id="_p8QvE1pLEemvWIbfjt7f6w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_p8QvFFpLEemvWIbfjt7f6w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
