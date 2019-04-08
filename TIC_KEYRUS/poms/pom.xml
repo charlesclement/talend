@@ -23,13 +23,10 @@
     <module>jobs/routes/deplacement_fichier_0.1</module>
     <module>jobs/services/produit_0.5</module>
     <module>jobs/routes/writelogs_1.0</module>
-    <module>jobs/services/phone_crazy_matching_1.3</module>
     <module>jobs/routes/exception_0.1</module>
     <module>jobs/routes/Producer_Consumer/Producer/j_multipleheaders_failover_0.1</module>
     <module>jobs/joblets/stats_log_0.1</module>
-    <module>jobs/services/phone_crazy_matching_1.1</module>
     <module>jobs/services/produit_0.2</module>
-    <module>jobs/services/phone_crazy_matching_0.1</module>
     <module>jobs/routes/Producer_Consumer/Consumer/i_msg_from_jms_q_to_processor_0.1</module>
     <module>jobs/routes/Producer_Consumer/Producer/j_multipleheaders_0.1</module>
     <module>jobs/routes/SFDC/cc_bus_salesforce_compte_0.1</module>
@@ -38,10 +35,8 @@
     <module>jobs/services/produit_0.4</module>
     <module>jobs/routes/LoadBalancing/Starter/starter4_0.1</module>
     <module>jobs/routes/LoadBalancing/Starter/starter2_0.1</module>
-    <module>jobs/services/phone_crazy_matching_1.2</module>
     <module>jobs/routes/notification_route_0.1</module>
     <module>jobs/routes/writelogs_0.1</module>
-    <module>jobs/services/phone_crazy_matching_1.4</module>
     <module>code/beans</module>
     <module>jobs/process/A_Socle/check_adresse_0.1</module>
     <module>jobs/process/A_Socle/check_vat_vies_0.1</module>
@@ -53,10 +48,8 @@
     <module>jobs/process/B_Demo_AVV/A_DataIntegration/c_fichier_bdd_look_up_stat_0.1</module>
     <module>jobs/process/B_Demo_AVV/A_DataIntegration/c_fichier_bdd_look_up_stat_0.2</module>
     <module>jobs/process/B_Demo_AVV/A_DataIntegration/d_csv_en_xml_0.1</module>
-    <module>jobs/process/B_Demo_AVV/A_DataIntegration/e_conso_ws_0.1</module>
     <module>jobs/process/B_Demo_AVV/A_DataIntegration/f_fichier_siren_0.1</module>
     <module>jobs/process/B_Demo_AVV/A_DataIntegration/g_lanceur_0.1</module>
-    <module>jobs/process/B_Demo_AVV/A_DataIntegration/h_sqoop_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/a_demo_dq_debut_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/b_demo_dq_fin_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/c_data_masking_0.1</module>
@@ -127,15 +120,13 @@
     <module>jobs/process/A_Socle/A_Dynamic_Job/SUPPLYCHAIN/SUP9500_SnOP/ODS/job_sup9500_snop_loading_differential_0.1</module>
     <module>jobs/process/A_Socle/A_Dynamic_Job/SUPPLYCHAIN/SUP9500_SnOP/ODS/main_sup9500_snop_azap_to_ods_0.1</module>
     <module>jobs/process/Phone_Crazy_Matching/Phone_Crazy_MatchingPortType/Phone_Crazy_MatchingOperation/phone_fuzzy_match_0.1</module>
-    <module>jobs/process/Phone_Crazy_Matching/Phone_Crazy_MatchingPortType/Phone_Crazy_MatchingOperation/phone_crazy_matchingporttype_phone_crazy_matchingoperation_0.1</module>
-    <module>jobs/services/pays_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
