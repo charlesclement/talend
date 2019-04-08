@@ -406,7 +406,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Name " name="Name" type="id_String"/>
@@ -1015,6 +1015,12 @@
       <column comment="text" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="BillingPostalCode"/>
       </column>
+      <column comment="text" key="false" length="-1" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingCountry"/>
+      </column>
+      <column comment="text" key="false" length="-1" name="Type_compte" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Type_compte"/>
+      </column>
       <column comment="text" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="phone"/>
       </column>
@@ -1044,6 +1050,8 @@
         <mapperTableEntries expression="row4.Name" name="Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.BillingCountry " name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Type " name="Type_compte" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.Phone " name="phone" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.GID " name="TDS_GID" type="id_String"/>
         <mapperTableEntries expression="row4.MASTER " name="TDS_MASTER" type="id_Boolean"/>
@@ -1347,6 +1355,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type_compte"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TDS_GID"/>
@@ -1374,6 +1386,12 @@
       </column>
       <column comment="text" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="BillingPostalCode"/>
+      </column>
+      <column comment="text" key="false" length="-1" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingCountry"/>
+      </column>
+      <column comment="text" key="false" length="-1" name="Type_compte" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Type_compte"/>
       </column>
       <column comment="text" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="phone"/>
@@ -1478,6 +1496,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="phone"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Type_compte"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="sortie"/>
@@ -1496,13 +1520,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e864cf07-3e92-440a-84f6-52e8285a9be8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eQkStiEqZ5xv9Jul9q3tvIbdYtAipWdQpMATo+f1+77KqUh/fihF3LWrMaOzo1cqbSaSAb4gIPWP
-qkuGibG6sA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ee437edb-d065-4a46-866a-228dcdc0a081"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ezqm4fTgdcIQLRjQwQ/qlfVbhxn/4frRrxNbaFLYhspSLnlHAmmNEutsd2eUCFSn7cLv/jqDbHyT
-JiipvOKBNQ==</DigestValue></Reference></SignedInfo><SignatureValue>y6NRVmYYJNKNdexpLDbfsNaXx7oP3pmUzJKaQddUVc6fT3j3OC1Pw9wmTDUJl5F/sPJznBM7TFIT
-CLH2u2jzGrVpsGEIFBeqXDwcV5fjmMyawVbEJbU0UOuD8Nwj9PU2OYr4BD2JgSQ4Yz/YZ6mJw8N/
-udNesDrjmviMz5180AN85J/SLmct0obrubYRMdcxpUGXOlqgfkiuwj/albC1REqFdQetunaDON4w
-aIo+xruaH6f2ITCj7xBcF9vyLqNBZ+zCgTfgsye6vPN6x85FTxZ3Zyil9KEDPeU3QsLxtR96FyYa
-BMZCmD0eiYmA3GGbi+UBTbWE93fwHvKI0OVwqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3e9a0cc-12f6-431a-a9d5-b35f3feac508"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R+S5idsu/K/flcySQf9BUmsmxoGbRAs9K8w2G+Cf/5B7IGEWqqkRYPfjwlwO+cDnF7JKZ0x59cgn
+M2mXadQtTQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b55227bf-c763-44f6-af04-f9c880d639c7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b+bvjaJ03mf4suW/r2F8y91IIHUSWAeu2VQP3HrFyQqMk+OxDc1yCbNU/IyCl6MMu54SmipC907w
+PndpJErOQg==</DigestValue></Reference></SignedInfo><SignatureValue>sQVTqdty/+FBxqBjKD14l5MUxhPZVX9cMWfOHqqOcdkIwA8sRsr9qIkWA5l7ffEOgyO+qZm+3q98
+irbRs+iK/pnKsPBW46fQAMlQDw6AtKJBuYuFAmzYysVeksR4mfa6jUVFVZ08YpKMLe+y7O1noyTp
+DvkQlsiJnjIgBsI1W8Fe6cXfqT54FZHGGoYeVtCjzlF7Kou5QY0Yj21wEj+aen6Upq+5QHc4myLe
+y2xI9MKBpJRhIKOPKTbCUEDSGFa2AvGj8dw15KWm4/2BXSnPhWZD01q4doXqco0UL8TGPOg1/GnF
+7n2+49xphCZ6rsNvvgZdiQdRg2vFuB/qdpxqOQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1526,4 +1550,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ee437edb-d065-4a46-866a-228dcdc0a081" Target="#_e864cf07-3e92-440a-84f6-52e8285a9be8"><Timestamp>2019-04-08 12:44:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b55227bf-c763-44f6-af04-f9c880d639c7" Target="#_e3e9a0cc-12f6-431a-a9d5-b35f3feac508"><Timestamp>2019-04-08 12:48:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
