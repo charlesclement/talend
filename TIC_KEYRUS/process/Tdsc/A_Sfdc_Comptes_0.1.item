@@ -404,6 +404,9 @@
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
       </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -426,6 +429,7 @@
         <mapperTableEntries expression="row1.Fax " name="Fax" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.AccountNumber " name="AccountNumber" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Website " name="Website" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Code_ISO__c " name="Code_ISO__c" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Id" type="id_String"/>
@@ -582,6 +586,9 @@
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
       </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -640,6 +647,9 @@
       </column>
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
+      </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
       </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -700,6 +710,9 @@
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
       </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -759,6 +772,9 @@
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
       </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -817,6 +833,9 @@
       </column>
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
+      </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
       </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -1078,6 +1097,7 @@
         <mapperTableEntries name="Fax" nullable="true" type="id_String"/>
         <mapperTableEntries name="AccountNumber" nullable="true" type="id_String"/>
         <mapperTableEntries name="Website" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Code_ISO__c" nullable="true" type="id_String"/>
         <mapperTableEntries name="GID" nullable="true" type="id_String"/>
         <mapperTableEntries name="GRP_SIZE" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="MASTER" nullable="true" type="id_Boolean"/>
@@ -1134,6 +1154,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_ISO__c"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GID"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -1203,6 +1225,9 @@
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
       </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
@@ -1258,6 +1283,8 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_ISO__c"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GID"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -1326,6 +1353,9 @@
       </column>
       <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
+      </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
       </column>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -1484,6 +1514,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMatchGroup_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Code_ISO__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
@@ -1539,13 +1574,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_275fd5bd-4d55-48a2-8d2a-4eaeec3329b3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5nR8d6353Xd4kcCjuR5yLEN74hLhRM+I2X6ffd26HgNs0R4fm7rohVHneaSxZq8MXTQeJE+w/0AO
-44cp/i/qjw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2d7a72e3-62b7-426f-b129-c6425031a89f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5XFBaGA9vVGpzgktl0AiSTynSg78WeARFE5XgRIWm9eozPyEwrbyv/C+oQDUx6c3nmx1ZQ3Nc0NY
-I7GdoEEGcA==</DigestValue></Reference></SignedInfo><SignatureValue>f3G7I7j0GehUuhIZYmc37vWtz/HtnWuUFk6Jd7rQZq+hiM2IrbXXBh0tr+z3NrNE1KSPjbRzY1QJ
-LPMnTwZ6eZTCZK5tZE3BFJ+pGUYVw5XFqUrwHOb8RS337bAuOiEcIS9DDfsCTpd7PeonELOKxxGD
-ZcYGZpXn+ihOFYy1+I05ZBtzIzb38TB5z0ufCEiNhUhi4iirXsybmxLOFpD2eeheclQvhQZ+WNyp
-r5vcXZC2atdKWB0VUdmwZLoIgjlUsuWtD0ByUduZpfm2Dfu4OwBpW1rkLn4HcbgXNlql14lvDWUn
-GDCaaXy8aGDAKScF6Ye2B7ioNDHZV4ISRC/MLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_30ee3519-23f0-47a9-8c88-9f8d8838f802"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>28AnioRJdtVnEQFH2nhS0QBAXul1e2qa48/ZwkV/Bp9sbhc8vMFalh+vRkvh4XnSrusBRFVvK99Q
+a+2sKlTYFg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_482c480d-3490-42a3-880d-09013e210fbb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gdqi88x//fPUCmkDOpedo1lJ5f2ZE0iEY6t/OlFshibrbgDXBhOaX+S9IdLBM3x4X14791dYN21W
+y+PyTMd/xQ==</DigestValue></Reference></SignedInfo><SignatureValue>C40cnFZkE39wVOcEtHryt0j8tCUpdBvtyPVdrEeEtPC0IwP8d+BgCzAkoK+NYbQ1UFX9MeBOnGLR
+adv1hL1JGMRiekZavhVN5bgJ6SJSbZIdccblfSK2oVV61QDFqaESLSdYD+UuO+HngsovDC+eI8Mv
+24Z1mTYWWux4dWgOZnScmFdXANum+V4c06CoosDXPB+TDHBCLZ0chQMW1AJYf6dZzYQ8yu9HR2WR
++BJaQhX+9lcQy6uLtyJL/8ATkY1x1erjLCtnPl2vWwqVjs/M3SS8nOsoYJII//iPqv+GpSddyEH5
+zXcSoSvbeQvOt4ZpDyQjwzlOwKbEdDAytKuc/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1569,4 +1604,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2d7a72e3-62b7-426f-b129-c6425031a89f" Target="#_275fd5bd-4d55-48a2-8d2a-4eaeec3329b3"><Timestamp>2019-04-08 12:51:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_482c480d-3490-42a3-880d-09013e210fbb" Target="#_30ee3519-23f0-47a9-8c88-9f8d8838f802"><Timestamp>2019-04-08 12:55:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
