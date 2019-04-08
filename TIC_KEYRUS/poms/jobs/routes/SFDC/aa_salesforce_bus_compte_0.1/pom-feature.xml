@@ -31,7 +31,7 @@
     <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.context>Default</talend.job.context>
+    <talend.job.context>Remote</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
@@ -60,7 +60,7 @@
               <artifactId>AA_Salesforce_Bus_Compte_A_Salesforce_Bus_Compte</artifactId>
               <version>0.1.0</version>
               <packaging>jar</packaging>
-              <file>../../../process/A_Demo_AVV/J_SalesForce_RealTime/a_salesforce_bus_compte_0.1/target/a_salesforce_bus_compte_0_1.jar</file>
+              <file>../../../process/B_Demo_AVV/J_SalesForce_RealTime/a_salesforce_bus_compte_0.1/target/a_salesforce_bus_compte_0_1.jar</file>
               <generatePom>true</generatePom>
             </configuration>
           </execution>
@@ -138,7 +138,7 @@
                   <goal>deploy-file</goal>
                 </goals>
                 <configuration>
-                  <file>../../../process/A_Demo_AVV/J_SalesForce_RealTime/a_salesforce_bus_compte_0.1/target/a_salesforce_bus_compte_0_1.jar</file>
+                  <file>../../../process/B_Demo_AVV/J_SalesForce_RealTime/a_salesforce_bus_compte_0.1/target/a_salesforce_bus_compte_0_1.jar</file>
                   <groupId>org.example.tic_keyrus.job</groupId>
                   <artifactId>AA_Salesforce_Bus_Compte_A_Salesforce_Bus_Compte</artifactId>
                   <version>0.1.0</version>

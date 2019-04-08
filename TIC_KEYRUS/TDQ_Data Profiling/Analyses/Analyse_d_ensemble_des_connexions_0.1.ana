@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_KH7aoDmlEemIQ8NBGZEDjw" name="Analyse d'ensemble des connexions" creationDate="2019-02-26T10:01:51.978+0100" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_tA1SkNm4EeWVoc2o62vdAA"/>
+    <taggedValue xmi:id="_KH7aoTmlEemIQ8NBGZEDjw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_KH7aojmlEemIQ8NBGZEDjw" tag="Author" value="charlesclement@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_KH7aozmlEemIQ8NBGZEDjw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_KH7apDmlEemIQ8NBGZEDjw" tag="Description" value=""/>
+    <taggedValue xmi:id="_KH7apTmlEemIQ8NBGZEDjw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_a1_6cTmlEemIQ8NBGZEDjw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_a2BIkDmlEemIQ8NBGZEDjw" tag="Reload Databases" value="true"/>
+    <taggedValue xmi:id="_a2KSgDmlEemIQ8NBGZEDjw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_KH7apjmlEemIQ8NBGZEDjw">
+      <connection href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
+    </context>
+    <results xmi:id="_KH7apzmlEemIQ8NBGZEDjw">
+      <resultMetadata xmi:id="_KH7aqDmlEemIQ8NBGZEDjw" executionDate="2019-02-26T10:02:04.068+0100" executionDuration="576" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators.schema:ConnectionIndicator" xmi:id="_KH7aqTmlEemIQ8NBGZEDjw" computed="true" tableCount="14" keyCount="1" indexCount="1" tableRowCount="795724" catalogCount="1">
+        <analyzedElement xsi:type="TalendMetadata:DatabaseConnection" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Connection_Overview_0.1.definition#_nZEo8MYSEd27NP4lvE0A4w"/>
+        <catalogIndicators xmi:id="_L9RysDmlEemIQ8NBGZEDjw" tableCount="14" keyCount="1" indexCount="1" tableRowCount="795724">
+          <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_9dUyIB8wEeaZwq16WZZz4g"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+          <tableIndicators xmi:id="_L9RysTmlEemIQ8NBGZEDjw" rowCount="175770" tableName="generate_commande">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RysjmlEemIQ8NBGZEDjw" rowCount="303998" tableName="generate_ligne_commande">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyszmlEemIQ8NBGZEDjw" tableName="log_ws">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RytDmlEemIQ8NBGZEDjw" rowCount="7" tableName="ods_annee">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RytTmlEemIQ8NBGZEDjw" rowCount="2502" tableName="ods_calendrier">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RytjmlEemIQ8NBGZEDjw" rowCount="9039" tableName="ods_client">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RytzmlEemIQ8NBGZEDjw" rowCount="31" tableName="ods_employe">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyuDmlEemIQ8NBGZEDjw" rowCount="303998" tableName="ods_fait_vente">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyuTmlEemIQ8NBGZEDjw" rowCount="8" tableName="ods_ligne_produit">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyujmlEemIQ8NBGZEDjw" rowCount="11" tableName="ods_magasin">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyuzmlEemIQ8NBGZEDjw" rowCount="12" tableName="ods_mois">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyvDmlEemIQ8NBGZEDjw" rowCount="248" tableName="ods_pays" keyCount="1" indexCount="1">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyvTmlEemIQ8NBGZEDjw" rowCount="72" tableName="ods_produit">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+          <tableIndicators xmi:id="_L9RyvjmlEemIQ8NBGZEDjw" rowCount="28" tableName="ods_region">
+            <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+          </tableIndicators>
+        </catalogIndicators>
+      </indicators>
+    </results>
+    <parameters xmi:id="_KH7aqzmlEemIQ8NBGZEDjw" dataFilter="_a2NV0DmlEemIQ8NBGZEDjw" analysisType="Connection Analysis"/>
+    <contextType xmi:id="_a1_6cDmlEemIQ8NBGZEDjw" confirmationNeeded="false" name="Studio"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_a2NV0DmlEemIQ8NBGZEDjw" name="Analysis Data Filter" patterns="_a2N84DmlEemIQ8NBGZEDjw _a2N84zmlEemIQ8NBGZEDjw">
+    <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_a2N84DmlEemIQ8NBGZEDjw" name="Table Pattern">
+      <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_a2N84TmlEemIQ8NBGZEDjw">
+        <expression xmi:id="_a2N84jmlEemIQ8NBGZEDjw" body=""/>
+      </components>
+    </ownedElement>
+    <ownedElement xsi:type="dataquality.domain.pattern:Pattern" xmi:id="_a2N84zmlEemIQ8NBGZEDjw" name="View Pattern">
+      <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_a2N85DmlEemIQ8NBGZEDjw">
+        <expression xmi:id="_a2N85TmlEemIQ8NBGZEDjw" body=""/>
+      </components>
+    </ownedElement>
+  </dataquality.domain:Domain>
+</xmi:XMI>
