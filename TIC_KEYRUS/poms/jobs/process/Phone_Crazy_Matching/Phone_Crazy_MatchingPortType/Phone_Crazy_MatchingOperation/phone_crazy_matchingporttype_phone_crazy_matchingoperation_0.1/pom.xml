@@ -9,37 +9,47 @@
     <relativePath>../../../../../../</relativePath>
   </parent>
   <groupId>org.example.tic_keyrus.job</groupId>
-  <artifactId>Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation</artifactId>
+  <artifactId>Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation-bundle</artifactId>
   <version>0.1.0</version>
-  <name>TIC_KEYRUS Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation-0.1.0 (0.1,Job Designs)</name>
+  <name>TIC_KEYRUS Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation-0.1.0 (0.1,Job Designs) Bundle</name>
   <properties>
-    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
-    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
+    <item.name>@ItemName@</item.name>
+    <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
+    <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
+    <talend.job.name>Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation</talend.job.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.version>0.1</talend.job.version>
-    <talend.project.name.lowercase>tic_keyrus</talend.project.name.lowercase>
-    <talend.job.path>tic_keyrus/phone_crazy_matchingporttype_phone_crazy_matchingoperation_0_1</talend.job.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
-    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
+    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
+    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
+    <bundle.config.export.package>@BundleConfigExportPackage@</bundle.config.export.package>
+    <talend.project.id>0</talend.project.id>
+    <provided.lib.path>${current.bundle.resources.dir}/provided-lib</provided.lib.path>
+    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
+    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
-    <talend.job.finalName>phone_crazy_matchingporttype_phone_crazy_matchingoperation_0_1</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
+    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
+    <talend.job.folder>phone_crazy_matching/phone_crazy_matchingporttype/phone_crazy_matchingoperation/</talend.job.folder>
+    <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
+    <talend.job.id>_aabt0FooEemvWIbfjt7f6w</talend.job.id>
+    <talend.project.name.lowercase>tic_keyrus</talend.project.name.lowercase>
+    <talend.job.finalName>${talend.job.name}-bundle-${project.version}</talend.job.finalName>
+    <lib.path>${resources.path}/lib</lib.path>
+    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.job.version>0.1</talend.job.version>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.job.path>tic_keyrus/phone_crazy_matchingporttype_phone_crazy_matchingoperation_0_1</talend.job.path>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Phone_Crazy_MatchingPortType_Phone_Crazy_MatchingOperation</talend.job.name>
-    <talend.job.id>_aabt0FooEemvWIbfjt7f6w</talend.job.id>
-    <talend.project.id>0</talend.project.id>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
     <talend.job.framework></talend.job.framework>
-    <talend.job.folder>phone_crazy_matching/phone_crazy_matchingporttype/phone_crazy_matchingoperation/</talend.job.folder>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.type>Standard</talend.job.type>
+    <resources.path>${basedir}/src/main/resources</resources.path>
+    <item.project.name>@ItemProjectName@</item.project.name>
+    <cloud.publisher.skip>true</cloud.publisher.skip>
   </properties>
   <dependencies>
     <dependency>
@@ -169,7 +179,30 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>${talend.job.finalName}</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
+              </descriptors>
+              <tarLongFileMode>gnu</tarLongFileMode>
+              <appendAssemblyId>false</appendAssemblyId>
+              <finalName>${talend.job.name}-bundle-${project.version}</finalName>
+              <archive>
+                <manifestFile>${current.bundle.resources.dir}/META-INF/MANIFEST.MF</manifestFile>
+              </archive>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
   <profiles>
     <profile>
@@ -193,32 +226,11 @@
                   </descriptors>
                   <tarLongFileMode>gnu</tarLongFileMode>
                   <appendAssemblyId>false</appendAssemblyId>
-                  <finalName>${talend.job.finalName}</finalName>
+                  <finalName>${talend.job.name}-bundle-${project.version}</finalName>
+                  <archive>
+                    <manifestFile>${current.bundle.resources.dir}/META-INF/MANIFEST.MF</manifestFile>
+                  </archive>
                 </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>signature</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.talend.ci</groupId>
-            <artifactId>signer-maven-plugin</artifactId>
-            <version>${talend.version}</version>
-            <executions>
-              <execution>
-                <id>sign</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
               </execution>
             </executions>
           </plugin>
@@ -251,15 +263,9 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
-        <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
-        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
-        <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
         <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
-        <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
-        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
         <poms.dir>${basedir}</poms.dir>
+        <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
       </properties>
     </profile>
     <profile>
@@ -371,7 +377,7 @@
     <profile>
       <id>include-microservice-running-configs</id>
       <properties>
-        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
+        <microservice.running.configs.dir>${current.resources.dir}/</microservice.running.configs.dir>
       </properties>
     </profile>
   </profiles>
