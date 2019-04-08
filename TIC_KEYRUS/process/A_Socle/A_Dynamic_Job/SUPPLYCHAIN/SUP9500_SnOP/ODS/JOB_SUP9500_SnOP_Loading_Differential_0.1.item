@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="varDateTecLoading" prompt="varDateTecLoading?" promptNeeded="false" type="id_Date" value=""/>
     <contextParameter comment="" name="archiveFolder" prompt="archiveFolder?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\DEV\DATA\SUPPLYCHAIN\Archives\SUP9500\"/>
     <contextParameter comment="" name="bddLogDirLogFromCtxtFile" prompt="bddLogDirLogFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\DEV\DATA\SUPPLYCHAIN\Log\"/>
     <contextParameter comment="" name="bddLogHostFromCtxtFile" prompt="bddLogHostFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="localhost"/>
@@ -51,19 +52,9 @@
     <contextParameter comment="" name="ods_Port" prompt="ods_Port?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="1433"/>
     <contextParameter comment="" name="ods_Schema" prompt="ods_Schema?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value=""/>
     <contextParameter comment="" name="ods_Server" prompt="ods_Server?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="frddy-dwh-dev"/>
-    <contextParameter comment="" name="dbAddParams" prompt="dbAddParams?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="DWH_GROUP"/>
-    <contextParameter comment="" name="dbLogin" prompt="dbLogin?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="dti"/>
-    <contextParameter comment="" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_Password" value="7BoDoyAgAaReF2Wb9CGa0w=="/>
-    <contextParameter comment="" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="1433"/>
-    <contextParameter comment="" name="dbSchema" prompt="dbSchema?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbServer" prompt="dbServer?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="FRDDY-DWH-DEV"/>
-    <contextParameter comment="" name="verFileNameContext" prompt="verFileNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verInputFolder" prompt="verInputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verOutputFolder" prompt="verOutputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verPathNameContext" prompt="verPathNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="INT">
+    <contextParameter comment="" name="varDateTecLoading" prompt="varDateTecLoading?" promptNeeded="false" type="id_Date" value=""/>
     <contextParameter comment="" name="archiveFolder" prompt="archiveFolder?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\INT\DATA\SUPPLYCHAIN\Archives\SUP9500\"/>
     <contextParameter comment="" name="bddLogDirLogFromCtxtFile" prompt="bddLogDirLogFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\INT\DATA\SUPPLYCHAIN\Log\"/>
     <contextParameter comment="" name="bddLogHostFromCtxtFile" prompt="bddLogHostFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="localhost"/>
@@ -115,19 +106,9 @@
     <contextParameter comment="" name="ods_Port" prompt="ods_Port?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="57932"/>
     <contextParameter comment="" name="ods_Schema" prompt="ods_Schema?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value=""/>
     <contextParameter comment="" name="ods_Server" prompt="ods_Server?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="frddy-dwh-dev"/>
-    <contextParameter comment="" name="dbAddParams" prompt="dbAddParams?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="DWH_GROUP"/>
-    <contextParameter comment="" name="dbLogin" prompt="dbLogin?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="dti"/>
-    <contextParameter comment="" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_Password" value="7BoDoyAgAaReF2Wb9CGa0w=="/>
-    <contextParameter comment="" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="57932"/>
-    <contextParameter comment="" name="dbSchema" prompt="dbSchema?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbServer" prompt="dbServer?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="FRDDY-DWH-DEV"/>
-    <contextParameter comment="" name="verFileNameContext" prompt="verFileNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verInputFolder" prompt="verInputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verOutputFolder" prompt="verOutputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verPathNameContext" prompt="verPathNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" name="varDateTecLoading" prompt="varDateTecLoading?" promptNeeded="false" type="id_Date" value=""/>
     <contextParameter comment="" name="archiveFolder" prompt="archiveFolder?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\DATA\SUPPLYCHAIN\Archives\SUP9500\"/>
     <contextParameter comment="" name="bddLogDirLogFromCtxtFile" prompt="bddLogDirLogFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="D:\DATA\SUPPLYCHAIN\Log\"/>
     <contextParameter comment="" name="bddLogHostFromCtxtFile" prompt="bddLogHostFromCtxtFile?" promptNeeded="false" repositoryContextId="_jBfmsAiXEeeGrsJNbqubfQ" type="id_String" value="localhost"/>
@@ -179,19 +160,10 @@
     <contextParameter comment="" name="ods_Port" prompt="ods_Port?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="49247"/>
     <contextParameter comment="" name="ods_Schema" prompt="ods_Schema?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value=""/>
     <contextParameter comment="" name="ods_Server" prompt="ods_Server?" promptNeeded="false" repositoryContextId="_BqZMIHPJEeSmL7YSUa-KIg" type="id_String" value="frlimo-dwh"/>
-    <contextParameter comment="" name="dbAddParams" prompt="dbAddParams?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="DWH_GROUP"/>
-    <contextParameter comment="" name="dbLogin" prompt="dbLogin?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="dti"/>
-    <contextParameter comment="" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_Password" value="7BoDoyAgAaReF2Wb9CGa0w=="/>
-    <contextParameter comment="" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="49247"/>
-    <contextParameter comment="" name="dbSchema" prompt="dbSchema?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="dbServer" prompt="dbServer?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value="FRLIMO-DWH"/>
-    <contextParameter comment="" name="verFileNameContext" prompt="verFileNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verInputFolder" prompt="verInputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verOutputFolder" prompt="verOutputFolder?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
-    <contextParameter comment="" name="verPathNameContext" prompt="verPathNameContext?" promptNeeded="false" repositoryContextId="_ZjDu0OFZEeWB_JFgDrsRTw" type="id_String" value=""/>
   </context>
   <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms512M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -319,7 +291,31 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
-  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_eNg2sBw8Eea6bvxKREHhug"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Azap_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Azap_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Azap_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Azap_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Azap_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuee37V053VXD0EF1CEdQQt0"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Azap_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Azap"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="HOST" value="context.bddLogHost"/>
@@ -340,7 +336,56 @@
     <elementParameter field="TEXT" name="LABEL" value="DbLogConnection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJobInstanceStart" componentVersion="4.5" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJobInstanceEnd" componentVersion="3.3" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJobInstanceEnd_1"/>
+    <elementParameter field="CHECK" name="USE_SEPARATE_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="JOB_START_COMP" value="tJobInstanceStart_1"/>
+    <elementParameter field="TEXT" name="JOB_RESULT" value=""/>
+    <elementParameter field="TEXT" name="TIME_RANGE_START" value=""/>
+    <elementParameter field="TEXT" name="TIME_RANGE_END" value=""/>
+    <elementParameter field="TEXT" name="VALUE_RANGE_START" value=""/>
+    <elementParameter field="TEXT" name="VALUE_RANGE_END" value=""/>
+    <elementParameter field="CHECK" name="SAVE_NAMED_COUNTERS" value="true"/>
+    <elementParameter field="CHECK" name="SAVE_CONTEXT_AT_END" value="true"/>
+    <elementParameter field="CHECK" name="DO_NOT_SAVE_PASSWORDS" value="false"/>
+    <elementParameter field="CHECK" name="CLEANUP_BY_WORKITEM" value="false"/>
+    <elementParameter field="CHECK" name="CLOSE_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_ALL_COMPONENTS_FINISHED" value="true"/>
+    <elementParameter field="TABLE" name="INPUTS">
+      <elementValue elementRef="INPUT_COUNTER" value="((Integer)globalMap.get(&quot;tFileInputDelimited_1_NB_LINE&quot;))"/>
+      <elementValue elementRef="ADD" value="true"/>
+      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Reades Lines&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OUTPUTS">
+      <elementValue elementRef="OUTPUT_COUNTER" value="((Integer)globalMap.get(&quot;tMysqlOutput_1_NB_LINE_INSERTED&quot;))"/>
+      <elementValue elementRef="ADD" value="true"/>
+      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Lines inserted in DB&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="UPDATES"/>
+    <elementParameter field="TABLE" name="REJECTS">
+      <elementValue elementRef="REJECT_COUNTER" value="((Integer)globalMap.get(&quot;tMysqlOutput_1_NB_LINE_REJECTED&quot;))"/>
+      <elementValue elementRef="ADD" value="true"/>
+      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Lines rejected from db&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="DELETES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJobInstanceStart" componentVersion="4.5" offsetLabelX="0" offsetLabelY="0" posX="768" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJobInstanceStart_1"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE_CONNECTION" value="false"/>
@@ -402,226 +447,461 @@
     <elementParameter field="CHECK" name="REDUCE_RESUME_LOGS" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tJobInstanceEnd" componentVersion="3.3" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJobInstanceEnd_1"/>
-    <elementParameter field="CHECK" name="USE_SEPARATE_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="COMPONENT_LIST" name="JOB_START_COMP" value="tJobInstanceStart_1"/>
-    <elementParameter field="TEXT" name="JOB_RESULT" value=""/>
-    <elementParameter field="TEXT" name="TIME_RANGE_START" value=""/>
-    <elementParameter field="TEXT" name="TIME_RANGE_END" value=""/>
-    <elementParameter field="TEXT" name="VALUE_RANGE_START" value=""/>
-    <elementParameter field="TEXT" name="VALUE_RANGE_END" value=""/>
-    <elementParameter field="CHECK" name="SAVE_NAMED_COUNTERS" value="true"/>
-    <elementParameter field="CHECK" name="SAVE_CONTEXT_AT_END" value="true"/>
-    <elementParameter field="CHECK" name="DO_NOT_SAVE_PASSWORDS" value="false"/>
-    <elementParameter field="CHECK" name="CLEANUP_BY_WORKITEM" value="false"/>
-    <elementParameter field="CHECK" name="CLOSE_CONNECTION" value="true"/>
-    <elementParameter field="CHECK" name="CHECK_ALL_COMPONENTS_FINISHED" value="true"/>
-    <elementParameter field="TABLE" name="INPUTS">
-      <elementValue elementRef="INPUT_COUNTER" value="((Integer)globalMap.get(&quot;tFileInputDelimited_1_NB_LINE&quot;))"/>
-      <elementValue elementRef="ADD" value="true"/>
-      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Reades Lines&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="OUTPUTS">
-      <elementValue elementRef="OUTPUT_COUNTER" value="((Integer)globalMap.get(&quot;tMysqlOutput_1_NB_LINE_INSERTED&quot;))"/>
-      <elementValue elementRef="ADD" value="true"/>
-      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Lines inserted in DB&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="UPDATES"/>
-    <elementParameter field="TABLE" name="REJECTS">
-      <elementValue elementRef="REJECT_COUNTER" value="((Integer)globalMap.get(&quot;tMysqlOutput_1_NB_LINE_REJECTED&quot;))"/>
-      <elementValue elementRef="ADD" value="true"/>
-      <elementValue elementRef="COUNTER_NAME" value="&quot;Nb Lines rejected from db&quot;"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="DELETES"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_eNg2sBw8Eea6bvxKREHhug"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Azap_Server"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Azap_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Azap_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Azap_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.Azap_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuee37V053VXD0EF1CEdQQt0"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.Azap_AdditionalParams"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Azap"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_1"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_2"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_3"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_SVVBEBgDEeSx7ogwDsZ_Nw"/>
-    <elementParameter field="TEXT" name="HOST" value="context.dwh_group_Server"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.dwh_group_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.dwh_group_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.dwh_group_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.dwh_group_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kuezBR6nIVN1N8ar7o77gFu4jS3yJMsTQv0="/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.dwh_group_AdditionalParams"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="dwh_group"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_3"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
-    <elementParameter field="TEXT" name="HOST" value="context.ods_Server"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.ods_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.ods_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.ods_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.ods_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.ods_AdditionalParams"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="ods"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String msg = &quot;Source table : &quot;+context.tableSource+&quot; / Target table : &quot;+context.tableCible+ &quot; / rootpid : &quot;+rootPid + &quot; / job name : &quot;+this.jobName;&#10;System.out.println(msg);&#10;&#10;if(!&quot;&quot;.equals(context.flag) &amp;&amp; &quot;0&quot;.equals(context.flag)) {&#10;&#9;System.out.println(&quot;Loading table with TRUNCATE/INSERT&quot;);&#10;&#9;}&#10;&#10;if(!&quot;&quot;.equals(context.flag) &amp;&amp; &quot;1&quot;.equals(context.flag)) {&#10;&#9;System.out.println(&quot;Loading table with DIFFERENTIAL&quot;);&#10;&#9;}"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String msg = &quot;Source table : &quot;+context.tableSource+&quot; / Target table : &quot;+context.tableCible+ &quot; / rootpid : &quot;+rootPid + &quot; / job name : &quot;+this.jobName;&#10;System.out.println(msg);&#10;&#10;context.tableSourceFiltre = &quot; &quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="Initialisation"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_SVVBEBgDEeSx7ogwDsZ_Nw"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="context.dwh_group_Server"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="context.dwh_group_Port"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.dwh_group_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.dwh_group_Database"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="context.dwh_group_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kuezBR6nIVN1N8ar7o77gFu4jS3yJMsTQv0="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;TEC_LOADING_VERSION&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTEVENTVERSION&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_SVVBEBgDEeSx7ogwDsZ_Nw - TEC_LOADING_VERSION_MaxStartDate"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(TEC_LOADING_VERSION.StartDate) as StartDate&#13;&#10;from TEC_LOADING_VERSION&#13;&#10;where TEC_LOADING_VERSION.LoadingDomain = '&quot;+context.LoadingDomain+&quot;' and &#13;&#10;&#9;&#9;TEC_LOADING_VERSION.LoadingGroup = '&quot;+context.LoadingGroup+&quot;'  and &#13;&#10;&#9;&#9;TEC_LOADING_VERSION.LoadingSource = '&quot;+context.LoadingSource+&quot;' and &#13;&#10;&#9;&#9;TEC_LOADING_VERSION.LoadingStatus = 'In Progress'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(GEN_IDRPTTYPOPROMO) as GEN_IDRPTTYPOPROMO&#13;&#10;from AZAP_FRA_REPORTEVENTVERSION&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.dwh_group_AdditionalParams"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="StartDate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEN_IDRPTTYPOPROMO"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="TEC_LOADING_VERSION" name="tMSSqlInput_1">
-      <column comment="" key="true" length="23" name="StartDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
+    <metadata connector="FLOW" name="tMSSqlInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ZOuB4AiTEeeGrsJNbqubfQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="NextTable1" name="NextTable1">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="NextTable1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Relational.ISNULL(MAXID_1.GEN_IDRPTTYPOPROMO)?-1:MAXID_1.GEN_IDRPTTYPOPROMO " name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries expression="Relational.ISNULL(MAXID_2.GEN_IDRPTPLANVTE)?-1:MAXID_2.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="MAXID_1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTTYPOPROMO" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="MAXID_2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTPLANVENTEVALEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(GEN_IDRPTPLANVTE) as GEN_IDRPTPLANVTE&#13;&#10;from AZAP_FRA_REPORTPLANVENTEVALEUR&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEN_IDRPTPLANVTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_2">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="NextTable2" name="NextTable2">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="NextTable2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="NextTable1.GEN_IDRPTTYPOPROMO " name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable1.GEN_IDRPTPLANVTEVALEUR" name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries expression="Relational.ISNULL(MAXID_3.GEN_IDRPTPLANVTE)?-1:MAXID_3.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="NextTable1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="MAXID_3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTPLANEVENT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(GEN_IDRPTPLANVTE) as GEN_IDRPTPLANVTE&#13;&#10;from AZAP_FRA_REPORTPLANEVENT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEN_IDRPTPLANVTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_3">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="NextTable3" name="NextTable3">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEEVENT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="NextTable3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="NextTable2.GEN_IDRPTTYPOPROMO " name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable2.GEN_IDRPTPLANVTEVALEUR " name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable2.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+        <mapperTableEntries expression="Relational.ISNULL(MAXID_4.GEN_IDRPTPLANVTE)?-1:MAXID_4.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTEEVENT" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="NextTable2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="MAXID_4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTPLANEVENTVALEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(GEN_IDRPTPLANVTE) as GEN_IDRPTPLANVTE&#13;&#10;from AZAP_FRA_REPORTPLANEVENTVALEUR&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEN_IDRPTPLANVTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_4">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="setGlobalVar" name="NextTable4">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEEVENT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANPOP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="NextTable4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="NextTable3.GEN_IDRPTTYPOPROMO " name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable3.GEN_IDRPTPLANVTEVALEUR " name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable3.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable3.GEN_IDRPTPLANVTEEVENT " name="GEN_IDRPTPLANVTEEVENT" type="id_Integer"/>
+        <mapperTableEntries expression="Relational.ISNULL(MAXID_5.GEN_IDRPTPLANPOP)?-1:MAXID_5.GEN_IDRPTPLANPOP " name="GEN_IDRPTPLANPOP" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="NextTable3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEEVENT" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="MAXID_5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTPLANPOP" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTPLANPOPVALEUR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(GEN_IDRPTPLANPOP) as GEN_IDRPTPLANPOP&#13;&#10;from AZAP_FRA_REPORTPLANPOPVALEUR&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEN_IDRPTPLANPOP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_5">
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANPOP" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_5-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="setGlobalVar" name="setGlobalVar">
-      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEEVENT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANPOP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="PERIODE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="setGlobalVar" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="TEC_LOADING_VERSION.StartDate " name="StartDate" type="id_Date"/>
+        <mapperTableEntries expression="NextTable4.GEN_IDRPTTYPOPROMO " name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable4.GEN_IDRPTPLANVTEVALEUR " name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable4.GEN_IDRPTPLANVTE " name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable4.GEN_IDRPTPLANVTEEVENT " name="GEN_IDRPTPLANVTEEVENT" type="id_Integer"/>
+        <mapperTableEntries expression="NextTable4.GEN_IDRPTPLANPOP " name="GEN_IDRPTPLANPOP" type="id_Integer"/>
+        <mapperTableEntries expression="Relational.ISNULL(MAXPERIODE_1.PERIODE)?&quot;1970-01-01 00:00:00&quot;:TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, MAXPERIODE_1.PERIODE) " name="PERIODE" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="TEC_LOADING_VERSION" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="StartDate" type="id_Date"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="NextTable4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="GEN_IDRPTTYPOPROMO" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEVALEUR" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTE" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANVTEEVENT" type="id_Integer"/>
+        <mapperTableEntries name="GEN_IDRPTPLANPOP" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="MAXPERIODE_1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="PERIODE" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_7"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AZAP_FRA_REPORTVENTE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select MAX(PERIODE) as PERIODE&#13;&#10;from AZAP_FRA_REPORTVENTE&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ods_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_7">
+      <column comment="" key="false" length="23" name="PERIODE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
     <elementParameter field="TABLE" name="VARIABLES">
-      <elementValue elementRef="KEY" value="&quot;varDateTecLoading&quot;"/>
-      <elementValue elementRef="VALUE" value="setGlobalVar.StartDate"/>
+      <elementValue elementRef="KEY" value="&quot;varIDPOPROMO&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.GEN_IDRPTTYPOPROMO"/>
+      <elementValue elementRef="KEY" value="&quot;varIDPLANVTEVALEUR&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.GEN_IDRPTPLANVTEVALEUR"/>
+      <elementValue elementRef="KEY" value="&quot;varIDPLANVTE&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.GEN_IDRPTPLANVTE"/>
+      <elementValue elementRef="KEY" value="&quot;varIDPLANVTEEVENT&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.GEN_IDRPTPLANVTEEVENT"/>
+      <elementValue elementRef="KEY" value="&quot;varIDPLANPOP&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.GEN_IDRPTPLANPOP"/>
+      <elementValue elementRef="KEY" value="&quot;varPERIODEVENTE&quot;"/>
+      <elementValue elementRef="VALUE" value="setGlobalVar.PERIODE"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="setGlobalVar" name="tSetGlobalVar_1">
-      <column comment="" key="false" length="23" name="StartDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTTYPOPROMO" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEVALEUR" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTE" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANVTEEVENT" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GEN_IDRPTPLANPOP" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="PERIODE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;ERROR : when get MAX(ID) for ODS table&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot; Affichage de la date de chargement : &quot; +(String)globalMap.get(&quot;varPERIODEVENTE&quot;));&#10;&#10;if(context.tableSource.equals(&quot;REPORTVENTE&quot;)) {&#10;&#9;context.tableSourceFiltre = &quot;DATEDIFF(day, &quot;+context.tableSource+&quot;.PERIODE,'&quot;+((String)globalMap.get(&quot;varPERIODEVENTE&quot;))+&quot;')&lt;0&quot;;&#10;&#9;}&#10;else if(context.tableSource.equals(&quot;REPORTEVENTVERSION&quot;)) {&#10;&#9;context.tableSourceFiltre = context.tableSource+&quot;.GEN_IDRPTTYPOPROMO&gt;&quot;+((int)globalMap.get(&quot;varIDPOPROMO&quot;));&#10;&#9;}&#10;else if(context.tableSource.equals(&quot;REPORTPLANVENTEVALEUR&quot;)) {&#10;&#9;context.tableSourceFiltre = context.tableSource+&quot;.GEN_IDRPTPLANVTE&gt;&quot;+((int)globalMap.get(&quot;varIDPLANVTEVALEUR&quot;));&#10;&#9;}&#10;else if(context.tableSource.equals(&quot;REPORTPLANEVENT&quot;)) {&#10;&#9;context.tableSourceFiltre = context.tableSource+&quot;.GEN_IDRPTPLANVTE&gt;&quot;+((int)globalMap.get(&quot;varIDPLANVTE&quot;));&#10;&#9;}&#10;else if(context.tableSource.equals(&quot;REPORTPLANEVENTVALEUR&quot;)) {&#10;&#9;context.tableSourceFiltre = context.tableSource+&quot;.GEN_IDRPTPLANVTE&gt;&quot;+((int)globalMap.get(&quot;varIDPLANVTEEVENT&quot;));&#10;&#9;}&#10;else if(context.tableSource.equals(&quot;REPORTPLANPOPVALEUR&quot;)) {&#10;&#9;context.tableSourceFiltre = context.tableSource+&quot;.GEN_IDRPTPLANPOP&gt;&quot;+((int)globalMap.get(&quot;varIDPLANPOP&quot;));&#10;&#9;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="Transition"/>
+    <elementParameter field="TEXT" name="LABEL" value="CreateTableFiltre"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_2"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_6"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
@@ -638,7 +918,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &quot; + context.tableSource +&quot;.*  from &quot; + context.tableSource"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &quot; + context.tableSource +&quot;.*  from &quot; + context.tableSource + &#13;&#10;&quot; where &quot; + context.tableSourceFiltre"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -653,43 +933,43 @@
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Table_Source"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlInput_2">
+    <metadata connector="FLOW" name="tMSSqlInput_6">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_6"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_ZOuB4AiTEeeGrsJNbqubfQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_D5iLMAjOEeedBq212xbEBw-tMap_6-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Load_Cible" name="outputCible">
+    <metadata connector="FLOW" label="outputCible" name="outputCible">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="ODS_CREATION_DATE" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ODS_CREATION_DATE" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="outputCible" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="inputSource.newColumn " name="newColumn" nullable="true" type="id_Dynamic"/>
-        <mapperTableEntries expression="((Date)globalMap.get(&quot;varDateTecLoading&quot;)) " name="ODS_CREATION_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="inputSource.newColumn" name="newColumn" nullable="true" type="id_Dynamic"/>
+        <mapperTableEntries expression="context.varDateTecLoading" name="ODS_CREATION_DATE" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="inputSource" sizeState="INTERMEDIATE">
         <mapperTableEntries name="newColumn" nullable="true" type="id_Dynamic"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="448">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="context.ods_Server"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="context.ods_Port"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.ods_Schema"/>
@@ -698,7 +978,7 @@
     <elementParameter field="TEXT" name="USER" show="false" value="context.ods_Login"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.tableCible"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
@@ -733,65 +1013,59 @@
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="500"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="LABEL" value="Table_Cible"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Load_Cible" name="tMSSqlOutput_1">
+    <metadata connector="FLOW" label="outputCible" name="tMSSqlOutput_1">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="ODS_CREATION_DATE" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="Load_Cible" name="REJECT">
+    <metadata connector="REJECT" label="outputCible" name="REJECT">
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="ODS_CREATION_DATE" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="512">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;ERROR : no value found for the flag in file &quot; + context.fileNameAZAPTable"/>
-    <elementParameter field="TEXT" name="CODE" value="1"/>
-    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
-    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlCommit_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDie_1"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
   </node>
-  <node componentName="tMSSqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="576">
+  <node componentName="tMSSqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlRollback_1"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
     <elementParameter field="CHECK" name="CLOSE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMSSqlRollback_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="672">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_SUP9500_SnOP_Loading_Differential"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_D5iLMAjOEeedBq212xbEBw"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="varDateTecLoading"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((Date)globalMap.get(&quot;varDateTecLoading&quot;)) "/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_LPd_gHDVEeSGpeylymATyw"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ods_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ods_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.ods_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ods_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.ods_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufmlH1YjLP2TInt7spBIlPy"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.ods_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ods"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_1"/>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlCommit_1"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tWarn_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -800,80 +1074,103 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tMSSqlConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tMSSqlConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlConnection_1" target="tJobInstanceStart_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
     <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tJobInstanceEnd_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
     <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJobInstanceEnd_1" offsetLabelX="0" offsetLabelY="0" source="tJobInstanceEnd_1" target="tMSSqlClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tMSSqlConnection_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
-  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlClose_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlClose_1" target="tMSSqlClose_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlClose_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlClose_2" target="tMSSqlClose_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk9"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_2" target="tMSSqlConnection_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_3" target="tMysqlConnection_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMSSqlInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk10"/>
   </connection>
-  <connection connectorName="FLOW" label="TEC_LOADING_VERSION" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
+  <connection connectorName="FLOW" label="MAXID_1" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TEC_LOADING_VERSION"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXID_1"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
-  <connection connectorName="FLOW" label="setGlobalVar" lineStyle="0" metaname="setGlobalVar" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSetGlobalVar_1">
+  <connection connectorName="FLOW" label="NextTable1" lineStyle="0" metaname="NextTable1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="setGlobalVar"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NextTable1"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_2" target="tMSSqlInput_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!&quot;&quot;.equals(context.flag) &amp;&amp; &quot;0&quot;.equals(context.flag)"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If1"/>
+  <connection connectorName="FLOW" label="MAXID_2" lineStyle="8" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXID_2"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_2" target="tRunJob_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!&quot;&quot;.equals(context.flag) &amp;&amp; &quot;1&quot;.equals(context.flag)"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If2"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tJava_2" target="tDie_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="Relational.ISNULL(context.flag) || &quot;&quot;.equals(context.flag)"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="If3"/>
-  </connection>
-  <connection connectorName="FLOW" label="inputSource" lineStyle="0" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMap_2">
+  <connection connectorName="FLOW" label="NextTable2" lineStyle="0" metaname="NextTable2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN" value="GEN_IDRPTPLANVTEVALEUR"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NextTable2"/>
+  </connection>
+  <connection connectorName="FLOW" label="MAXID_3" lineStyle="8" metaname="tMSSqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXID_3"/>
+  </connection>
+  <connection connectorName="FLOW" label="NextTable3" lineStyle="0" metaname="NextTable3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NextTable3"/>
+  </connection>
+  <connection connectorName="FLOW" label="MAXID_4" lineStyle="8" metaname="tMSSqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_4" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXID_4"/>
+  </connection>
+  <connection connectorName="FLOW" label="NextTable4" lineStyle="0" metaname="NextTable4" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NextTable4"/>
+  </connection>
+  <connection connectorName="FLOW" label="MAXID_5" lineStyle="8" metaname="tMSSqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_5" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXID_5"/>
+  </connection>
+  <connection connectorName="FLOW" label="setGlobalVar" lineStyle="0" metaname="setGlobalVar" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="setGlobalVar"/>
+  </connection>
+  <connection connectorName="FLOW" label="MAXPERIODE_1" lineStyle="8" metaname="tMSSqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_7" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MAXPERIODE_1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tMSSqlInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk11"/>
+  </connection>
+  <connection connectorName="FLOW" label="inputSource" lineStyle="0" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="inputSource"/>
   </connection>
-  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlRollback_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_2" target="tMSSqlCommit_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMSSqlCommit_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
-  <connection connectorName="FLOW" label="outputCible" lineStyle="0" metaname="outputCible" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMSSqlOutput_1">
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tMSSqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_6" target="tMSSqlRollback_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError2"/>
+  </connection>
+  <connection connectorName="FLOW" label="outputCible" lineStyle="0" metaname="outputCible" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tMSSqlOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="outputCible"/>
   </connection>
-  <note opaque="true" posX="832" posY="288" sizeHeight="97" sizeWidth="257" text="Etape N°1 : On récupère la date de &#13;&#10;création de la ligne en base &#13;&#10;dans une variable."/>
-  <note opaque="true" posX="928" posY="416" sizeHeight="97" sizeWidth="257" text="Etape N°2 : On charge la table AZAP &#13;&#10;vers l'ODS sur le mode &#13;&#10;TRUNCATE/INSERT."/>
-  <note opaque="true" posX="384" posY="640" sizeHeight="97" sizeWidth="257" text="Etape N°3 : On charge la table AZAP &#13;&#10;vers l'ODS sur le mode &#13;&#10;DIFFERENTIAL."/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_2" target="tMysqlConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -888,12 +1185,12 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConnection_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJobInstanceStart_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConnection_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -909,11 +1206,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -924,17 +1216,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlClose_3"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_3"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJobInstanceStart_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -946,19 +1228,7 @@
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Get MAX date TEC_LOADING_VERSION"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_2"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load table with Truncate/Insert mode"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Récupération du MAX(ID) pour les tables ODS avant leur alimentation"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
@@ -970,13 +1240,15 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlRollback_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlInput_6"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Load table with Differential mode"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
@@ -984,13 +1256,23 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_09ba68d2-586d-48cf-9cf4-ab98097604fb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cnA5Vgw1+jx6SmEV/uLrzMHuV31aZVy+19EVMbdpJLzbmk97ISal+zFT2jhj+o2EtA5+KUyUUGkm
-jVpgjG3Aug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fe039f57-28e4-4097-8dc5-78eb636ffedb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xcGw0RjwsEhvQ4RLUvHfZVryIHDgJejKZevutRHklB4NYrbDjLLDm8/K/SNM1YF+zOFFjNhiRFyf
-4Ny4JEItzA==</DigestValue></Reference></SignedInfo><SignatureValue>JzQ/9HrxD99dRDuOK1mQ0a2rnNn8rbzlnwedMyn9dZ0nW04aCW66KKvp8IAuSEm5ddE+lRtuw8Pu
-ENY2f7q9SiDlWdYKI9mnwPzLGTp77LuVv9QY0BQzaE9hOqUgCPB9P+nA7+0ZERrJoqGqCsGzNgZS
-eBXqivrFmEZRKrkozaWThMzI598uGLYynhsy/WkmCbF1n7psU1tHo+yGOfyO+KHE1Dps8Vux4G2l
-Z4moK5Ok+Zx4ja4D8XVDGILEvLFbeMpOP4UHde+EjHGJ4+7Khyt7sx+55YVOJJYppINtw0G2CjzJ
-6Y0RW94JS8KdRiObbEwB9HPs9JUqKG5nY2Mq4A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlRollback_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlConnection_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6ed9c8c5-c980-4874-8123-40e90323d31b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H5GEFpaX2j5I8HZZi1THgZamj3zojsL87R+JNcaNMlZWGYZRzgVPjE6BR9LAPdP40yo6YPJIlU6A
+ZCHyjeE/ew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1bb1659f-6edf-4d25-8593-95590448b6c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y0YsTnEr8Mh+gbl2YVmsP7lSQYqjOPMGWNIcrx//pT6P7C/vKhN5t2ynkLwxwBhn41QjAaiPUHf9
+O+3cnlsYVQ==</DigestValue></Reference></SignedInfo><SignatureValue>gvdnfeCGHV3hyqLK/ws1Dv3SckUaeFdxHu5Dm3tMeYIZGmBXFbTxN2j2NAlBZ7MOvF2gOE40h2bQ
+DGJYsaVcih64kSgZj0YeD9Jh71yGzv2zKlo5l1KqZkwEr7f+WVAbkSulqhoRCyqWuxMYBYLV/vKR
+0zTTywSqkYNabO6KQv5OkKwTa8Lc/Uuxx/mFbFrHucEe6r5MfSUxbhWmgdSBezB35LxLlv3SKTxV
+LitQ8ybXAhQMMZAkzYFRxF+txzS5yQQgiflKiEfl7jasqkkw7ulAdNkRNApBJAp+ZRaNc0tYg0mu
+tTfzGhQtjjDZnIoYmQ/aidSXpSdW70ZOYrSmzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1014,4 +1296,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fe039f57-28e4-4097-8dc5-78eb636ffedb" Target="#_09ba68d2-586d-48cf-9cf4-ab98097604fb"><Timestamp>2019-04-08 17:52:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1bb1659f-6edf-4d25-8593-95590448b6c0" Target="#_6ed9c8c5-c980-4874-8123-40e90323d31b"><Timestamp>2019-04-08 17:52:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
