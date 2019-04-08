@@ -361,31 +361,6 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tStandardizePhoneNumber" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStandardizePhoneNumber_1"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="PHONE_NUMBER" value="Phone"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="COUNTRY_CODE" value="ISO2"/>
-    <elementParameter field="CHECK" name="COUNTRY_CUSTOME" value="false"/>
-    <elementParameter field="TEXT" name="COUNTRY_CODE_CUSTOME" show="false" value="&quot;US&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="PHONE_NUMBER_FORMAT" value="INTERNATIONAL"/>
-    <elementParameter field="CHECK" name="AVOID_COMPARISON" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tStandardizePhoneNumber_1">
-      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Phone" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ISO2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column key="false" length="255" name="MATCHING" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column key="false" length="255" name="VALUE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Nom_francais" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pays" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="StandardizedPhoneNumber" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="IsValidPhoneNumber" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="IsPossiblePhoneNumber" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="IsAlreadyStandard" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="PhoneNumberType" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="ErrorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -396,35 +371,26 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row5">
-        <nodes name="Id" outgoingConnections="//@node.7/@nodeData/@connections.1" type="id_String" xpath="row5/Id"/>
-        <nodes name="Phone" type="id_String" xpath="row5/Phone"/>
-        <nodes name="ISO2" type="id_String" xpath="row5/ISO2"/>
-        <nodes name="MATCHING" type="id_String" xpath="row5/MATCHING"/>
-        <nodes name="VALUE" type="id_String" xpath="row5/VALUE"/>
-        <nodes name="Nom_francais" type="id_String" xpath="row5/Nom_francais"/>
-        <nodes name="Pays" outgoingConnections="//@node.7/@nodeData/@connections.0" type="id_String" xpath="row5/Pays"/>
-        <nodes name="StandardizedPhoneNumber" outgoingConnections="//@node.7/@nodeData/@connections.2" type="id_String" xpath="row5/StandardizedPhoneNumber"/>
-        <nodes name="IsValidPhoneNumber" type="id_Boolean" xpath="row5/IsValidPhoneNumber"/>
-        <nodes name="IsPossiblePhoneNumber" type="id_Boolean" xpath="row5/IsPossiblePhoneNumber"/>
-        <nodes name="IsAlreadyStandard" type="id_Boolean" xpath="row5/IsAlreadyStandard"/>
-        <nodes name="PhoneNumberType" type="id_String" xpath="row5/PhoneNumberType"/>
-        <nodes name="ErrorMessage" type="id_String" xpath="row5/ErrorMessage"/>
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="out3">
+        <nodes name="Id" type="id_String" xpath="out3/Id"/>
+        <nodes name="Phone" type="id_String" xpath="out3/Phone"/>
+        <nodes name="ISO2" type="id_String" xpath="out3/ISO2"/>
+        <nodes name="MATCHING" type="id_String" xpath="out3/MATCHING"/>
+        <nodes name="VALUE" type="id_String" xpath="out3/VALUE"/>
+        <nodes name="Nom_francais" type="id_String" xpath="out3/Nom_francais"/>
+        <nodes name="Pays" type="id_String" xpath="out3/Pays"/>
       </inputTrees>
       <outputTrees expressionFilter="" name="out2">
         <nodes expression="" name="payload" type="id_Document" xpath="out2/payload">
           <children name="tns:Phone_Crazy_MatchingOperationResponse" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse" xsi:type="TalendXMLMap:OutputTreeNode">
             <children defaultValue="http://www.talend.org/service/" name="tns" nodeType="NAME_SPACE" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/xmlns:tns" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression=" row5.Id" incomingConnections="//@node.7/@nodeData/@connections.1" loop="true" name="id" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression=" row5.StandardizedPhoneNumber" incomingConnections="//@node.7/@nodeData/@connections.2" name="tel_out" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/tel_out" xsi:type="TalendXMLMap:OutputTreeNode"/>
-            <children expression="row5.Pays" incomingConnections="//@node.7/@nodeData/@connections.0" name="Pays" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/Pays" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" loop="true" name="id" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/id" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="tel_out" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/tel_out" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="" name="Pays" type="id_String" xpath="out2.payload:/tns:Phone_Crazy_MatchingOperationResponse/Pays" xsi:type="TalendXMLMap:OutputTreeNode"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.6" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.7" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
@@ -479,13 +445,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
-  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tStandardizePhoneNumber_1">
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tXMLMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
-  </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tStandardizePhoneNumber_1" offsetLabelX="0" offsetLabelY="0" source="tStandardizePhoneNumber_1" target="tXMLMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -500,13 +462,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_749f36c8-43eb-49a4-a877-62002340f2d5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>joZIcl73qXQhK+3vA9UQj1JkxmxnPsgaKMbn1CnpZeAARtAGZhKKH6PcVBZ01LgvXBwfAF4udwxK
-PxjVriRSbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e6e12c4b-aa31-4198-85ac-81212824e33c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>arC1O+nSh/jSVLAIeVDM81ybfdEArYdRHgkxmEIINZfqzkmrVtM/hHTJZ+PN4UZ0+vt+t5/BbxS1
-fYg+MobYpQ==</DigestValue></Reference></SignedInfo><SignatureValue>ur4ZIgnXuNZ7BwFS5pza1jzFjBGbCCHZv6JUQTjcGK0nP05aLqWvZnyYRvZeiyOeEWnsMRJhzBPd
-fvx9mVWpmAxpOcTptgJFt0M5OnCQwLNF18gxbhBdSQ8EwkYSFLWnfOC72CEgrD5uDW4psLr4sg+v
-/sZijmzGgmkz83ypjKkAnHUyq2OrWh7XLF6jsEJB7L50bOVJJPlIDPu8ZbXJIOE+wVBfI/nFWNV9
-H0Ty4bDtm7apdjQKKRTax2JiE1Oi8T+GRQDUgOHdezHWUODWHtgJDkmJT3K8zl3sM514cfn9ZHhm
-kD0O/Fuim9bK2v6HJ+KSrrpB2jrTBhh+UKMmqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6c149977-7eca-4238-bb18-b10d8e502e7b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fXwFi+R7KRdWROPbtsvt8HjGOduVX3zd2Y80EVgz3in4Ym9oDvBkWY2fpCn8pDkvFHORGuId9BHs
+E2PLs4GYgA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_33eed684-839f-403d-b60c-eb746f32fa73"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QWsnri95bDR07tlAFXcdtxiE4mdS1fzoBQtRMc5tN3F5xVfQeRkskWE7fRY5NwWo8OMAUb0m/hf5
+YMw+dmF9Pg==</DigestValue></Reference></SignedInfo><SignatureValue>OEx/ZOyfGR84sxD6gNvm1jBtF8KwWwrMuczF7W301ME5R2r/R8ZxiBkXiZ+BFbRl87WmUnTDdX9H
+SWG3OIRkRbczg+AMGsgZzh132dlVSYf4sZC1pwakIXjV4qU0e2Ep4ItOhvmYm7QpRZcv25JlYvSR
+DqM7NAedwpB158ltzk/Mlj1C0EtyJYHgfqDXBQzw3RaZCmWkeL75HoJpGPaRR1C//UNixrayqU8g
+sof6eE/9mIcdmSWD/9aBQy6A55Yfi4fW4x8scaQ6o5p1lpphN6BIg3YpYjPz0/znd6jXxUMOE2Rp
+em7Mq1NsO8+qU248TUSPC0OXtE8rTcMwQVtG/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -530,4 +492,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e6e12c4b-aa31-4198-85ac-81212824e33c" Target="#_749f36c8-43eb-49a4-a877-62002340f2d5"><Timestamp>2019-04-08 21:07:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_33eed684-839f-403d-b60c-eb746f32fa73" Target="#_6c149977-7eca-4238-bb18-b10d8e502e7b"><Timestamp>2019-04-08 21:08:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
