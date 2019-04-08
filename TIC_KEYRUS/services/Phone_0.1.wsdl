@@ -12,14 +12,25 @@
 			<xsd:element name="PhoneOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="id"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Pays"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Phone" type="xsd:string"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="PhoneOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="tel_out" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Pays"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
