@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_eGCeAFsGEemsSrE9JUoeYQ" name="03_Basic_Column_Analysis_After" creationDate="2019-04-08T21:53:54.245+0000" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_eGCeAFsGEemsSrE9JUoeYQ" name="03_Basic_Column_Analysis_After" supplierDependency="_vu1EMFsHEemsSrE9JUoeYQ" creationDate="2019-04-08T21:53:54.245+0000" defaultContext="Default">
     <clientDependency href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_ajwEwForEeWe9fHqZgwIFQ"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_CMvs4FpLEemvWIbfjt7f6w"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/phone/Phone_Number_0.1.pattern#_CNZ0MFpLEemvWIbfjt7f6w"/>
@@ -460,4 +460,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_vu1EMFsHEemsSrE9JUoeYQ" kind="Usage" supplier="_eGCeAFsGEemsSrE9JUoeYQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/01_Report_0.1.rep#_Y-A-0FsHEemsSrE9JUoeYQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
