@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
   <dataquality.domain.pattern:Pattern xmi:id="_NwUnsD4LEd20H7qFpzB9dg" name="BE Code postal" supplierDependency="_CNHgUFpLEemvWIbfjt7f6w">
     <taggedValue xmi:id="__qeGEEElEd2095gIBp6gJQ" tag="Purpose" value="Check the validity of Belgian postal codes."/>
     <taggedValue xmi:id="__qeGEUElEd2095gIBp6gJQ" tag="Description" value="Matches standard Belgian postal codes."/>
@@ -10,5 +10,7 @@
       <expression xmi:id="_NwUnsj4LEd20H7qFpzB9dg" body="'^(F-[0-9]{4,5}|B-[0-9]{4})$'" language="SQL"/>
     </components>
   </dataquality.domain.pattern:Pattern>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_CNHgUFpLEemvWIbfjt7f6w" kind="Usage" supplier="_NwUnsD4LEd20H7qFpzB9dg"/>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_CNHgUFpLEemvWIbfjt7f6w" kind="Usage" supplier="_NwUnsD4LEd20H7qFpzB9dg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/03_Basic_Column_Analysis_After_0.1.ana#_eGCeAFsGEemsSrE9JUoeYQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
