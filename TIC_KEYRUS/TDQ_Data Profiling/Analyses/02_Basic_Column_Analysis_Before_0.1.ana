@@ -31,7 +31,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_A1fK5lsFEemsSrE9JUoeYQ"/>
     </context>
     <results xmi:id="_zXYGB1pIEemvWIbfjt7f6w">
-      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w" executionDate="2019-04-09T20:37:54.399+0000" executionDuration="186" message="" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w" executionDate="2019-04-09T20:41:26.171+0000" executionDuration="404" message="" executionNumber="6" lastRunOk="true" lastExecutionNumberOk="5"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_M_41YFsGEemsSrE9JUoeYQ" count="15" computed="true">
         <parameters xmi:id="_M_41YVsGEemsSrE9JUoeYQ"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_A1fKhlsFEemsSrE9JUoeYQ"/>
@@ -465,6 +465,9 @@
     <parameters xmi:id="_zXYGCVpIEemvWIbfjt7f6w" dataFilter="_ITZ0AFpJEemvWIbfjt7f6w" analysisType="Multiple Column Analysis"/>
     <contextType xmi:id="_ITQqEFpJEemvWIbfjt7f6w" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_vushUFsHEemsSrE9JUoeYQ" kind="Usage" supplier="_zXYGAFpIEemvWIbfjt7f6w">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/01_Report_0.1.rep#_Y-A-0FsHEemsSrE9JUoeYQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
   <dataquality.domain:Domain xmi:id="_ITZ0AFpJEemvWIbfjt7f6w" name="02_Basic_Column_Analysis_Before">
     <ranges xmi:id="_ITZ0AVpJEemvWIbfjt7f6w">
       <expressions xmi:id="_ITabEFpJEemvWIbfjt7f6w">
@@ -472,7 +475,4 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_vushUFsHEemsSrE9JUoeYQ" kind="Usage" supplier="_zXYGAFpIEemvWIbfjt7f6w">
-    <client xsi:type="dataquality.reports:TdReport" href="../Reports/01_Report_0.1.rep#_Y-A-0FsHEemsSrE9JUoeYQ"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
