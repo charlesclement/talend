@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -107,13 +109,51 @@
     <routinesParameter id="_4fb7sAIGEemhqaUwHHKNOA" name="TalendStringUtil"/>
     <routinesParameter id="_4fXqQAIGEemhqaUwHHKNOA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_174fbcfa-dc73-4cc4-96e1-10bd1a1104e9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gNG01I1JFDhnqJQLN89LL3G50o0TMRpvG3YciGvsxrQugBHfY0VVQHYvu/AIuH9FPfbnRDO9lKhS
-Z7S4MZ5hrQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ee7c0050-e993-469d-9f2d-a43f0799f818"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dyGCPMayY/Qvmq0REpSgzKO89b/zPDblzpSFg3U6wS3obLtUg4mwJDNTIFJC9+R9CzODLKbNKOIb
-S3bdrIGgXw==</DigestValue></Reference></SignedInfo><SignatureValue>QB68B3BF5d1vJaA5biM6v7Xyiwt05hkeZvgij7pCoJoaLeTDz0dh2N7lJ7HeSuzVJT0+9ekfwvlL
-nr49yaOLCkZLLtqh2uU8Q9BkL9SgazLW1pIIt1dTEiN7zthPd7mD9vVf59DqbFfo0+nxtOvBABeZ
-+yX6Iv/2pqeKk33ZIRT6VZpV2UlwR4iE2efySqAC7kxGjvgy/ANLHjyq/COj8xJvdJxMbT0AnHk6
-FlCxw4ffeoD70Rg1PsomV8yiPOwoRBujkCulsRRXXmdS94+XDq0lB0UHNorqxC/DcPZ9hq+XWFr8
-UWl+fiiTcjxjElt4gVg/+orD3ZikyMtBoOXrvw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <node componentName="tVerifyEmail" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tVerifyEmail_1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="EMAIL_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="USE_REGULAR_EXPRESSION" value="false"/>
+    <elementParameter field="TEXT" name="COMPLETE_REGEX" show="false" value="&quot;^(([^\\s\\p{Cntrl}\\(\\)&lt;&gt;@,;:'\\\\\\\&quot;\\.\\[\\]]|')+|(\\\&quot;[^\\\&quot;]*\\\&quot;))(\\.(([^\\s\\p{Cntrl}\\(\\)&lt;&gt;@,;:'\\\\\\\&quot;\\.\\[\\]]|')+|(\\\&quot;[^\\\&quot;]*\\\&quot;)))*@([\\p{L}\\p{M}0-9]([\\p{L}\\p{M}0-9\\-]{0,61}[\\p{L}\\p{M}0-9])?\\.)+[\\p{L}\\p{M}]{2,6}$&quot;"/>
+    <elementParameter field="RADIO" name="USE_REGEX" value="true"/>
+    <elementParameter field="RADIO" name="USE_SHORT" value="false"/>
+    <elementParameter field="RADIO" name="USE_COLUMN" value="false"/>
+    <elementParameter field="CHECK" name="CASE_SENSITIVE" value="false"/>
+    <elementParameter field="TEXT" name="LOCAL_REGEX_PART" value="&quot;^\\s*(([^\\s\\p{Cntrl}\\(\\)&lt;&gt;@,;:'\\\\\\\&quot;\\.\\[\\]]|')+|(\&quot;[^\&quot;]*\&quot;))(\\.(([^\\s\\p{Cntrl}\\(\\)&lt;&gt;@,;:'\\\\\\\&quot;\\.\\[\\]]|')+|(\&quot;[^\&quot;]*\&quot;)))*$&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SHORT_PART" show="false" value="&quot;w[-_.]w&quot;"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="COLUMN_FIRSTNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="COLUMN_NFIRSTCHAR_FIRSTNAME" show="false" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="COLUMN_NLASTCHAR_FIRSTNAME" show="false" value="&quot;20&quot;"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="COLUMN_LASTNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="COLUMN_NFIRSTCHAR_LASTNAME" show="false" value="&quot;1&quot;"/>
+    <elementParameter field="TEXT" name="COLUMN_NLASTCHAR_LASTNAME" show="false" value="&quot;20&quot;"/>
+    <elementParameter field="TEXT" name="COLUMN_SEPARATOR" show="false" value="&quot;-&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_CASE_TYPE" show="false" value="L"/>
+    <elementParameter field="CHECK" name="SHOW_HELP" show="false" value="false"/>
+    <elementParameter field="LABEL" name="HELP_CONTENT" show="false" value=" &#10;    Syntax              Equivalent Regex                Description   &#10;    9                        [0-9]                                     adigit       &#10;    a                        [a-z]                                     a lowercased ascii letter    &#10;    A                       [A-Z]                                    an uppercased ascii letter   &#10;    w                       [a-z]+                                  one or more lowercased ascii letters &#10;    W                      [A-Z]+                                  one or more uppercased ascii letters&#10;    ?                        .                                            any character which valid in the email address&#10;    *                        .*                                          any string which valid in the email address&#10;    .                        \.                                           the period symbol &#10;    [-_+]                 [-_+]                                    any of the symbols listed between brackets   &#10;    &lt;pattern&gt;        pattern                                any standard regex can be placed inside angle brackets&#10;    "/>
+    <elementParameter field="CHECK" name="CHECK_TLDS" value="true"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_TLDS"/>
+    <elementParameter field="RADIO" name="CHECK_BLACK_DOMAINS" value="true"/>
+    <elementParameter field="RADIO" name="CHECK_WHITE_DOMAINS" value="false"/>
+    <elementParameter field="TABLE" name="DOMAINS_LIST"/>
+    <elementParameter field="CHECK" name="CALL_BACK" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tVerifyEmail_1">
+      <column defaultValue="" key="false" length="31" name="VerificationLevel" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="31" name="SuggestedEmail" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tVerifyEmail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e638f7ee-daa8-4fd7-9ac7-c151ecd21701"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aepVaij4vS588QrFRkNeeO3gKsyYuqIt0cUaqXh3QXonSdKgqOw6SDqgH2Rv7BPscFLcK3IjRPcU
+zVBim2ajlA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_83660e3c-2454-4e87-aac3-3242acffbd5e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7RWVuDb7SBmrTRujhiw9Ff5BxywmGEmCBX8VCVrc1dwpX4JLMLsocJtdh0qvspvAATWLrfXkjgSP
+1uZtrH751A==</DigestValue></Reference></SignedInfo><SignatureValue>hTS/o4fJcHDbQOBJhanBWb3rPTOBZ1xSkuig/cXeC22ikJqSarMqE2IYQE56Byuzl+gzifxpr5Km
+wmFOdc2ZZFLrFTDcZy1F0Dfvx6eyVJFAdCBUvJo8fzjtw+FqPyh/XdTgMsXSOhnch94AYSqPie+p
+AfFoioKufR6n9XKUK4ynNdjW46gRKDe87syFuaQiMqCaCiFvandI/rSJQgI2a0Lz4X38swtJ9giy
+ihGbR91k1xDl/1mRhvYoDUbBuuVQHYmU8Z1gZBHFiXl+e8Uesei/YpZMCWISk/YwdBDJpNJP2zZH
+/RVOQrNYNWm+ke/441RIWn2q/P+PkXoRHutvLQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -137,4 +177,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ee7c0050-e993-469d-9f2d-a43f0799f818" Target="#_174fbcfa-dc73-4cc4-96e1-10bd1a1104e9"><Timestamp>2019-04-10 09:42:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_83660e3c-2454-4e87-aac3-3242acffbd5e" Target="#_e638f7ee-daa8-4fd7-9ac7-c151ecd21701"><Timestamp>2019-04-10 09:42:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
