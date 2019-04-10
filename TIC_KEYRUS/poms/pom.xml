@@ -123,13 +123,14 @@
     <module>jobs/process/B_Demo_AVV/B_DataQuality/h_loading_sfdc_report_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/f_loading_sfdc_before_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/h_verification_email_0.1</module>
+    <module>jobs/process/B_Demo_AVV/G_SalesForce/f_loading_other_data_1_1.2</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
