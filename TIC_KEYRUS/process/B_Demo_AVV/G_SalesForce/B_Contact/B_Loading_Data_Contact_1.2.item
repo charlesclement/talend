@@ -238,7 +238,7 @@
       <column comment="" key="false" length="100" name="MailingStreet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="MailingPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MailingPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingCountry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Phone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -255,7 +255,7 @@
       <column comment="" key="false" length="100" name="MailingStreet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingCity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingState" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="MailingPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MailingPostalCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MailingCountry" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Phone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="MobilePhone" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -356,7 +356,7 @@
         <mapperTableEntries name="MailingStreet" nullable="true" type="id_String"/>
         <mapperTableEntries name="MailingCity" nullable="true" type="id_String"/>
         <mapperTableEntries name="MailingState" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MailingPostalCode" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MailingPostalCode" nullable="true" type="id_String"/>
         <mapperTableEntries name="MailingCountry" nullable="true" type="id_String"/>
         <mapperTableEntries name="Phone" nullable="true" type="id_String"/>
         <mapperTableEntries name="MobilePhone" nullable="true" type="id_String"/>
@@ -548,13 +548,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f50bf241-0d56-433f-a414-1ae14ecbcd71"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UMyeal0hmh+eGyTRXamxa9l8PR/zUEXk781Am0cOgdiTJxwxE/Bkesn6qGJoq5MbOZwtvwLlFI4y
-yps7JIxlkw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_933b0864-c689-4367-b297-0d1d0a2876ec"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XQp61Dey/QAaAuBrrwOnDCzpJQD9/sRYjNQ7Dbo4iaukCSzzg416O6gCJQqZ+MuQ+FOZvVkjVFcn
-0ZUOgXJRzQ==</DigestValue></Reference></SignedInfo><SignatureValue>JFiTsyemRiPmkYEzJGta/t+wlXhL0FVaApdn5b99ZlN6PHQwKTot7u1km7H7DKZgcr85VdwmioKW
-Nvjzc9CjpJKAjp8NjmvNLXJl9tUHZpeqyMOnf/Y7bZ/HlAyGb8G79s0d6kKL7mly4tBdrqnq8M8W
-hiKSagedQJmDDK38BQD162bChbonZGXBN4c7eIsrpjRDNuJzHJVZZ2C1Wc5cMaFo4TfZH5oj/0vP
-ti+WR/L4o67vduLjN/2znFJ0yAlrKRMMHpqR/3B8kLNL1w2PpngtbrNtkJ5huMl4iWyl2aNFWbIE
-5pU3pffp4wI/nLhRq+p91hA1kQxnkeFgHC40jw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a808bb2f-b0e5-4c54-a173-7e2c4e924a19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mE514IKuUPt3PJ8luebt2eE8B90MVZ69dHsvPu4igaf0gkz1riUqykvikkgy+llyjnbYBgPfe+Bl
+VR8z8qv+Rg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ff188d6d-db4a-49a1-a5b9-68e5b47eee4f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lstCkePH/AAKiuDeL0TCAkkIF7NzWgOQrhNsQ/DBOZmbH291ecjYyPhHe9/tQ6PYib1gQJTZ+LJ5
+iU60mRToFQ==</DigestValue></Reference></SignedInfo><SignatureValue>IFRnFSJiREW3a5F7qZUBB1pvqcvuqQ21JjynL7WcY2Xqm2U44XktZheRWWr2V/UmHHdWZmvL6uO7
+k3LW7wtGJG7kwB0+eDaXoGLSZMNz9YpRYmr/tENQ1k8JS0eTRUsdeAWsUx7b5O4fJtOMTevEtKPu
+yFnG93s2nuA+noDW/a07mlhe5fmgWFfK1l9Vl/irvqmZ3fKtUI0yynDldd7ls7lcCmMx/tWFFUds
+HBAiHFhfhUdtLy+7aqOSERbc3/dC0yM8p37T+vo27sohL34WFfMRO6CTzL30oJubxxJz3ARmVfDi
+eRW0mLou/znrJ/JA7NKCPLXkv/yMA1x5wD3d+A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -578,4 +578,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_933b0864-c689-4367-b297-0d1d0a2876ec" Target="#_f50bf241-0d56-433f-a414-1ae14ecbcd71"><Timestamp>2019-04-12 16:51:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ff188d6d-db4a-49a1-a5b9-68e5b47eee4f" Target="#_a808bb2f-b0e5-4c54-a173-7e2c4e924a19"><Timestamp>2019-04-12 16:52:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
