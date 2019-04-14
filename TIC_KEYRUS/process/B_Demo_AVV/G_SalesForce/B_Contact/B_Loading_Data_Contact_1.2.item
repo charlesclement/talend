@@ -314,28 +314,24 @@
       <column comment="" key="false" length="80" name="Department" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Department"/>
       </column>
-      <column key="false" length="31" name="VerificationLevel" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column key="false" length="31" name="SuggestedEmail" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.LastName " name="LastName" type="id_String"/>
-        <mapperTableEntries expression="row2.FirstName " name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Salutation " name="Salutation" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MailingStreet " name="MailingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MailingCity " name="MailingCity" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MailingState " name="MailingState" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MailingPostalCode " name="MailingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MailingCountry " name="MailingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Phone " name="Phone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MobilePhone " name="MobilePhone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.CHANGE(StringHandling.DOWNCASE(TalendString.removeAccents(row2.Email)),&quot; &quot;,&quot;&quot;) " name="Email" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Title " name="Title" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Department " name="Department" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.VerificationLevel " name="VerificationLevel" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.SuggestedEmail " name="SuggestedEmail" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.LastName" name="LastName" type="id_String"/>
+        <mapperTableEntries expression="row1.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Salutation" name="Salutation" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MailingStreet" name="MailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MailingCity" name="MailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MailingState" name="MailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MailingPostalCode" name="MailingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MailingCountry" name="MailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Phone" name="Phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.MobilePhone" name="MobilePhone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="StringHandling.CHANGE(StringHandling.DOWNCASE(TalendString.removeAccents(row1.Email)),&quot; &quot;,&quot;&quot;) " name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Title" name="Title" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Department" name="Department" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Name" type="id_String"/>
@@ -802,13 +798,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cf5bea7f-5169-4d24-a220-e46a79a6ee44"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BZOpPtjq0Vk812PQzxLIkDotHqG8UFoWCEY5PlX3sALZWy4zN3Gspgu2y+V+TQi9UYqNKHhaVEK1
-vHFI3TBLpw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ba64c9b5-363b-4cfe-a5b8-f128e2d8c5c7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vL2NcWxCi91wQ76cvZ8IwVck+wLWBhIDfrLax9WAk3+PPCfj0juG1FJeha721xCj5/Db0vGeAHHF
-T0Q6t0TG3Q==</DigestValue></Reference></SignedInfo><SignatureValue>JbKhi59jZQm6Xc5F7ryv74+cao+XcRYATAzMHrrLZT9RVE58FcFPq24EAVp38kS+DsCJ63mcF+a2
-S3k66i3rFSxvMf3XcA39d3+Xzzu4KYP0qvmUXrpwhbREY3j/+E70gMo0oqjLej10q9MtCu8ynmpT
-sC6AaxTQqqwhw6wnvJPwGUpAbicPOxRpIeZwGQzJxO9KOEDjLXps1HNO5zyadjg5obnGxgI+D+UK
-xeMHcEKrJyPuBq9ujHUz9UcLFW5eIWbns2+ymgI58TBAmZFUy0ZF2yOOWs+n5bqzai/quTt2QtbE
-iUW+AgQPEhB4bRN8+Q9xvBRGvm1Se/CyvYLQCw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_96f370ee-b5df-4fa6-b265-86dcceb1f3c0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>STV3NoS9hhKin2v7W8vDVRUlsgAB5kq6EAalNgA/7da5ZvueDdeAxai820JcqXMC03dZw0/cBTH2
+3aFEW4+MMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_089289ef-d2cd-4e83-8171-6495f8f9a0b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NY6LbuD/Dxy4PNKvjbVLs8BxFVsxpDILj5zCAz45+Ehjo9sBPYf9xtw6tiZnC/gbRbz9jUUXFUzE
+FNTDaXCKcg==</DigestValue></Reference></SignedInfo><SignatureValue>3pTrve9G4iaxCfyQ7wchCGkoylrDfuvDtiwZLX6EP5bJg8+ydSgUy+YkE0ubMgARfnLWoRG18HF3
+PoIvlSlHk1ao2LbLn2kLNilWotp1Nm7YLkKwvev19OIbdmxQ6vkFQa87YZV+W728om7sVVQBJm20
+716pDv5RKT7eCobSFxeVoKNw5VxIsF9romTHin8Ok63JLJD1HwL04juEeOOxeN8FfctR8yERKngN
+8ZvB2hIrfhYfmbOuFs6E7P6Iz4HgMY5VK2nFVq0bAbMwuCVe4PscZUS0OG84QAlkwOhySwpYjmoR
+718JiSRAPNZTqT3IAuSgO4hzO1nWJQAFRUxjQQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -832,4 +828,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ba64c9b5-363b-4cfe-a5b8-f128e2d8c5c7" Target="#_cf5bea7f-5169-4d24-a220-e46a79a6ee44"><Timestamp>2019-04-14 11:46:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_089289ef-d2cd-4e83-8171-6495f8f9a0b3" Target="#_96f370ee-b5df-4fa6-b265-86dcceb1f3c0"><Timestamp>2019-04-14 11:48:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
