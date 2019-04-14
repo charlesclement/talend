@@ -706,8 +706,6 @@
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
-      <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AccountId"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Salutation"/>
@@ -745,7 +743,6 @@
     <elementParameter field="MEMO" name="INLINECONTENT" value="Blablatrotinette;;Lefebvre;Éléna;45 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;04 67 32 32 33;Lefebvre.Éléna@gmail.com;;&#10;Blablatrotinette;;Louis;Thomas;46 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;05 34 54 54 34;Louis.Thomas@hotmail.com;;&#10;Blablatrotinette;;Gaillard;Anaïs;47 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;06 67 43 43 18;Gaillard.Anaïs@yahoo.com;;&#10;Blablatrotinette;;Thomas;Françoise;48 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;07 87 21 21 40;Thomas.Françoise@gmail.com;;&#10;Blablatrotinette;;Dufour;Amandine;49 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;07 78 56 56 52;Dufour.Amandine@hotmail.com;;&#10;Blablatrotinette;;Le roux;Cloé;50 Rue Lachassaigne, 33000 Bordeaux, France;Bordeaux;;;France;;09 12 78 78 85;Le roux.Cloé@yahoo.com;;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="AccountId" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Salutation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -777,12 +774,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="out2">
-      <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Id"/>
-      </column>
-      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="MasterRecordId"/>
-      </column>
+      <column comment="" key="false" length="18" name="AccountId" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Salutation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -802,8 +794,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out2" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row4.Id " name="Id" type="id_String"/>
-        <mapperTableEntries expression="row4.MasterRecordId " name="MasterRecordId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.Id " name="AccountId" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.Name" name="Name" type="id_String"/>
         <mapperTableEntries expression="row2.Salutation" name="Salutation" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
@@ -820,7 +811,6 @@
         <mapperTableEntries expression="row2.Department" name="Department" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Name" type="id_String"/>
         <mapperTableEntries name="AccountId" nullable="true" type="id_String"/>
         <mapperTableEntries name="Salutation" nullable="true" type="id_String"/>
         <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
@@ -941,12 +931,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Contact_SFDC"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
-      <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Id"/>
-      </column>
-      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="MasterRecordId"/>
-      </column>
+      <column comment="" key="false" length="18" name="AccountId" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Name" nullable="false" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Salutation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="LastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1226,6 +1211,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="MasterRecordId"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccountId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
@@ -1257,13 +1245,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c2f6e74c-9515-444d-ad06-f2632513b3ca"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K71SV5EXTyYDrMPytWZ0WPTJeiK1C0bYGyKeBHShXnyDblDzLpFRQKF8gvzVkp/1BDMEiXIgR6Px
-exEIPF82IA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f1a550cc-62bf-4114-b2b0-985f790ee5a3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JlUlE71Ww11uiMNs1Tq0r7P9/WABqYATe+TL8vWIscaz7w7oRlfxafz2Jhr2Tx/V245JzYsfIZQ9
-Let4Xrk1fg==</DigestValue></Reference></SignedInfo><SignatureValue>mTvUIbHxIvCNIBB8OIVhTJdnG9tAXJemDHt+YmNy0Zgy7FqrWDYMyel/R8yl2s2wScMguuG85ezk
-QncvRI0TpH0tbCwXpDWN+3YbFetSyR1yEXW44ZYxOqyjQbiyrGn8zpDQzVULnd4tlpaCUiAuqehY
-KYj0b6hOtEc8JVEqOE9aV2+cWVIjseUZt1hS4T6n3tKOFPVIrYZKjhZsox7so3Ll0UiV9yxNUZwE
-8oAgnIdlIZzQL4gDyYZLroQjEPvgbHXCvGa/1bA6Muu7doODN0F8ZFVQZu2xkfrJCkRe+nK25KRS
-PVyRZWJguwR1kRghOar839km3N79tpi2/IJTtA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f227bf6c-040e-49dd-ad16-1f5a24988a55"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1GqKMPGH2qWBhm8tW9uhrgznCO4OnYCPkc6K+uG2agK1Uogj4mMe0lk/qrMq6s9n89qsHBqnJJct
+wl696YfETQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0eacccfd-fdc6-445d-aee1-66ac307cc925"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iigji1j9QPCbihA8ypMJEX/63UzUjivRN0RbhTdXxBQgeHgmTq6Rtm/8KSvAs0WCL2wN1OaViPqU
+/qFYhRx3nQ==</DigestValue></Reference></SignedInfo><SignatureValue>kLqE40c9Uqy1A1z4XNUAFApx4/Sur2WX8IMvjI4Wqdf73N70W+bWkmLr5awmollocvIy15klePHI
+b8QEdgmPF7fBBHEgNPyb6nHgX2u/OzS8Tqex42gKXVc1j/XOhDfeI+/UhKR2RVcWvEaERvtYG1d+
+AiSAkO+EEpv2subyNxdLpGuAy8TIeLvILvmggB/CBlqaAC0Mq4KomxpRje+HYRl0N4+oqchKahIL
+tcljqCNtSY88xoL5haRBnyVWnXKSuO9fXBaO9MbEfeIStGzVON9T5kaDcbAAPT22el82R48UdjzN
+b1seaL4Q1ns4o3COowFNiyRVz+m4f1jkaU3L5Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1287,4 +1275,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f1a550cc-62bf-4114-b2b0-985f790ee5a3" Target="#_c2f6e74c-9515-444d-ad06-f2632513b3ca"><Timestamp>2019-04-14 14:33:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0eacccfd-fdc6-445d-aee1-66ac307cc925" Target="#_f227bf6c-040e-49dd-ad16-1f5a24988a55"><Timestamp>2019-04-14 14:40:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
