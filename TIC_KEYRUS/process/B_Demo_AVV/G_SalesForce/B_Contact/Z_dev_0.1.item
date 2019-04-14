@@ -267,12 +267,56 @@
     <elementParameter field="TABLE" name="CONDITIONS">
       <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
       <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="&gt;"/>
+      <elementValue elementRef="OPERATOR" value="=="/>
       <elementValue elementRef="RVALUE" value="3"/>
       <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
       <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="&lt;"/>
-      <elementValue elementRef="RVALUE" value="10"/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="4"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="5"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="89"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="1457"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="2346"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="3456"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="4567"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="5678"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="6789"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="7890"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="8900"/>
+      <elementValue elementRef="INPUT_COLUMN" value="ID_CLIENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="9000"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" show="false" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
@@ -959,13 +1003,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_da1ab78d-19c4-4c89-ac59-3876996f70cf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ta5iMvvmL1YfQ1Qg+cJyUpjUUbDpYKnq+8VBedJbgG19KVRnFwIg70ojiMv4QfsMUi0bhDwejV+z
-Ls52kRO7JA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_88d0cb4a-9113-4b13-9525-e0f7661ce236"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gIbIH49I8lxUy/YC4xrZ1/DIfbG94IK7NTQqGLQKQOz9EG1LKt8bwAzVhwiSfUM/gXR7C7ad6YsP
-qhBM9WPAIw==</DigestValue></Reference></SignedInfo><SignatureValue>BJjYNx33MgnyYQ0VN2ja6v0hXDIVI8Us/P6gw5HL7iKKglZx8tqtlgpHhobuKRW6sdjfJuCopyYc
-HM7rE/M5JX8gok9wN43EEVOXBaLxagGR/+yZJ3bNULbitYMPGcIAf9cRUh/o0m5UCYPuI5NS5A27
-lidCyMef5OQW+h7tQjGLS48mURzFItsf/9Pj3TfmNODn/u8VQE8uw9z39DgQmIvnNfMz1muu54Yb
-6Wf5hlQXnAqpJpWJpXC3kLgQ3+8iYV5LXTtxHu/SWj0+j3NbmzE+DdKi5sxl8cgy7PBO7hG1PyYQ
-QLybHwe35DFCBW84/DE/NBLYJIc2EuU2MFB+gw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1dd8d6a8-138d-45d4-8214-006331acf7b2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>49YgkPqdxn7Mz19pKdoaLKqddqDF3ePy6bKuPDs/PT3TRADTrT7lUudeDV0ELlrIZVm697+hkchH
+9Iu1mbroyQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c7f900b8-896f-4274-bd71-faefc1619383"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tUMx1o/A9vZhSDBOkXLnjEHGK2cKkaTQY+e3jl4Zi5hBJV/JhIFM/j7BXcKbhCc8c8AmgONcl8Nm
+V1gTZxK64w==</DigestValue></Reference></SignedInfo><SignatureValue>oIjri1dOvu8kCClgh9YNCyoGZ2s9/prrmZCLzG1bgGyq/1xVPBlrHIDJzxXVb0/KdKpVPBtDhtcX
+aFO7ufOzEpSonDzMY0qjWK6u1yRvvLmlhE7KrsrEEM2zwu2lRNKcQOFL6ATqokWD939IA4vDNJaK
+OscpLiMhnzfCgf1ncSQNwZlYC4KOLIxXCgrPl/FUwZJv9RKDZWAo59qKUtOSd0oxvJSKNZ87C4k6
+vEDqkHHPgeR20u2Uft6rqjcSUCJmYGLLfu40aByr9LgtP+YKoRz5h0+06VKWoLOZxtOpnLicoymk
+EcWM/djvqWhSOlZJ1jF9rdEJITHjRkkPhXMfFQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -989,4 +1033,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_88d0cb4a-9113-4b13-9525-e0f7661ce236" Target="#_da1ab78d-19c4-4c89-ac59-3876996f70cf"><Timestamp>2019-04-14 14:49:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c7f900b8-896f-4274-bd71-faefc1619383" Target="#_1dd8d6a8-138d-45d4-8214-006331acf7b2"><Timestamp>2019-04-14 14:50:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
