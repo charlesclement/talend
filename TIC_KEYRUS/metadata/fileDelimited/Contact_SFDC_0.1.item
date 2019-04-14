@@ -2,40 +2,57 @@
   <TalendMetadata:DelimitedFileConnection Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" FilePath="C:/Local_data/Input/Sfdc_contact.csv" FirstLineCaption="true" Format="WINDOWS" HeaderValue="1" RowSeparatorValue="&quot;\n&quot;" Server="Localhost 127.0.0.1" UseHeader="true" dataPackage="_dZ-40V1BEemeK9O_boioOA" name="Contact_SFDC" xmi:id="_dZ-40F1BEemeK9O_boioOA"/>
   <orgomg.cwm.resource.record:RecordFile dataManager="_dZ-40F1BEemeK9O_boioOA" name="default" xmi:id="_dZ-40V1BEemeK9O_boioOA">
     <ownedElement id="_TvKZUF1BEemeK9O_boioOA" label="metadata" xmi:id="_dZ-40l1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataTable">
-      <feature label="Id" length="18" name="Id" nullable="false" precision="-1" talendType="id_String" xmi:id="_095agF6_Eemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
-        <initialValue xmi:id="_095agV6_Eemk4cLj580Zww"/>
+      <feature label="AccountId" length="18" name="AccountId" precision="-1" talendType="id_String" xmi:id="_ZnXKYF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKYV7DEemk4cLj580Zww"/>
       </feature>
-      <feature label="MasterRecordId" length="18" name="MasterRecordId" precision="-1" talendType="id_String" xmi:id="_095agl6_Eemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
-        <initialValue xmi:id="_095ag16_Eemk4cLj580Zww"/>
+      <feature label="Salutation" length="100" name="Salutation" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKYl7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKY17DEemk4cLj580Zww"/>
       </feature>
-      <feature label="AccountId" length="18" name="AccountId" precision="-1" talendType="id_String" xmi:id="_HoGk8F7CEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
-        <initialValue xmi:id="_HoGk8V7CEemk4cLj580Zww"/>
+      <feature label="LastName" length="100" name="LastName" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKZF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKZV7DEemk4cLj580Zww"/>
       </feature>
-      <feature label="Name" length="255" name="Name" nullable="false" precision="-1" talendType="id_String" xmi:id="_KW-2wF6mEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
-        <initialValue xmi:id="_KW-2wV6mEemk4cLj580Zww"/>
+      <feature label="FirstName" length="100" name="FirstName" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKZl7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKZ17DEemk4cLj580Zww"/>
       </feature>
-      <feature label="Salutation" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-41F1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="LastName" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-41V1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="FirstName" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-41l1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MailingStreet" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-42F1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MailingCity" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-42V1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MailingState" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-42l1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MailingPostalCode" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-4211BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MailingCountry" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-43F1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Phone" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-43V1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="MobilePhone" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-43l1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Email" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-4311BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Title" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-44F1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Department" length="100" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_dZ-44V1BEemeK9O_boioOA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="MailingStreet" length="100" name="MailingStreet" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKaF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKaV7DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="MailingCity" length="100" name="MailingCity" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKal7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKa17DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="MailingState" length="100" name="MailingState" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKbF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKbV7DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="MailingPostalCode" length="100" name="MailingPostalCode" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKbl7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKb17DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="MailingCountry" length="100" name="MailingCountry" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKcF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKcV7DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="Phone" length="100" name="Phone" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKcl7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKc17DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="MobilePhone" length="100" name="MobilePhone" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKdF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKdV7DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="Email" length="100" name="Email" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKdl7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKd17DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="Title" length="100" name="Title" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKeF7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKeV7DEemk4cLj580Zww"/>
+      </feature>
+      <feature label="Department" length="100" name="Department" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_ZnXKel7DEemk4cLj580Zww" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_ZnXKe17DEemk4cLj580Zww"/>
+      </feature>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_abfa183a-1189-4777-b3ac-ab5fcf1bd6ba"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+XMzo29RqHwO09Ewt4Bq6yUnI5hP4CeGsR8aJ8oE8TZT096tcdHTu1KMf8QAklhk0ALPqxMXwXlO
-c2cZETVGzA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bb8a12c9-3592-4b54-9abc-7e4447315af0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3Ber5b+UvV3D9YaRAqwBfF7TkeI7qG81/GBTR6sfGeEsEXVWjoiDOtUzgcB+cChQ6QPVaupHpI84
-+LpivUd8wg==</DigestValue></Reference></SignedInfo><SignatureValue>Wwz083VpWylrLrZU/app0cFyFCmze7oaWaQf9bHuZHzfVLb6TbAAYk/eSf7W25zqrYLnISfztAXM
-eXDEp/6BUuf63tiGP6IkKPog+UUxHk92DmaUctC7fC6EW70JcT3QpZ8EsRrwEM59F/R6e+DevPAm
-yKG93JBAVB/LFXMzNKvtyngEn9HExl8hE84BFfOn5idqY9hStclh/pJr6S/LaUZvgeTctXGaqRA3
-QbTedlZh7X0be1jwtLLqoIHDV8rdgiKe+BI+bHEK9eIykQHByyh2hAkmoIDYMfKVvuLO7Mmp3bI0
-Py/GF04bExLpGcjqq1yAZVb9BDkD8cYNWiukJA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_73d1ef1a-0dc0-4ac3-afe5-f5afe8a8ed7e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dTy6F8wu0PzIDTbqDeWivU0FuaVQ9Xw8NubcGAV0nGsKYcFKwRYF70jk6DCwZ3Dd6LBEauMZTKEF
+d/T+mTMZmA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d45b409c-dbcb-4ce6-aaaf-09aa09372ce1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FmaPz0AH1RpcnwHOSZGH+q5L4ujixTxWg3xYgb+3leDy/LVA/3tYr7EII8WorjjWFNn47GQiLbPx
+veAVC/Sh4w==</DigestValue></Reference></SignedInfo><SignatureValue>Tg+2krC7G96eBEoIIhiXjzoTO2cj4cXbBktAWmuHlDFGmB7YLVnzGNDqEqpX99yJ8hPWsFmelCOX
+0MprMBhMFLi6XkI7gPb88cwehbnb47ZVa0vcIAog+nZoWnPh0AVf8tSRTX3HYbbFwMzSvNFR9kjT
+3R2V4r079tbD+ms3F/j4Q31Pn+Y166ApNVfWZ+jNF2B7U6361sF/K12HLvCVhz2Z+wQ2V2bWfBtK
+c7Q+74hPouXiGPe8ok6lfATIL+nS/x8cJYp25k122kLAx+lY6I+tOj/RAEdscpkXSc3dAk1QrKR3
+D01HJ5SZj+A6FrLNBvIA7og8b6gwJmtubQYpuQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -59,4 +76,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bb8a12c9-3592-4b54-9abc-7e4447315af0" Target="#_abfa183a-1189-4777-b3ac-ab5fcf1bd6ba"><Timestamp>2019-04-14 14:32:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d45b409c-dbcb-4ce6-aaaf-09aa09372ce1" Target="#_73d1ef1a-0dc0-4ac3-afe5-f5afe8a8ed7e"><Timestamp>2019-04-14 14:41:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
