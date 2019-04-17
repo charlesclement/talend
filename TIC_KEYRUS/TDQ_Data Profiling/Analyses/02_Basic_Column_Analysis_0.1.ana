@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_zXYGAFpIEemvWIbfjt7f6w" name="02_Basic_Column_Analysis" supplierDependency="_vushUFsHEemsSrE9JUoeYQ" creationDate="2019-04-08T21:53:54.245+0000" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_ajwEwForEeWe9fHqZgwIFQ"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_CMvs4FpLEemvWIbfjt7f6w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/phone/Phone_Number_0.1.pattern#_CNZ0MFpLEemvWIbfjt7f6w"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/internet/Website_URL_0.1.pattern#_NA13oFsGEemsSrE9JUoeYQ"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_CNHgUFpLEemvWIbfjt7f6w"/>
+    <taggedValue xmi:id="_zXYGAVpIEemvWIbfjt7f6w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_zXYGAlpIEemvWIbfjt7f6w" tag="Author" value="master@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_zXYGA1pIEemvWIbfjt7f6w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_zXYGBFpIEemvWIbfjt7f6w" tag="Description" value=""/>
+    <taggedValue xmi:id="_zXYGBVpIEemvWIbfjt7f6w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ITRRIFpJEemvWIbfjt7f6w" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_ITRRIVpJEemvWIbfjt7f6w" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_ITR4MFpJEemvWIbfjt7f6w" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_ITXXwFpJEemvWIbfjt7f6w" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_zXYGBlpIEemvWIbfjt7f6w">
+      <connection href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_sB_xMFoTEeWAPM7TeQxAow"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2relpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rjlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rmlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
+    </context>
+    <results xmi:id="_zXYGB1pIEemvWIbfjt7f6w">
+      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w" executionDate="2019-04-10T09:16:09.187+0000" executionDuration="640" message="" executionNumber="8" lastRunOk="true" lastExecutionNumberOk="7"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BIFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BIVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v-FtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqKwkFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RqKwkVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RqKwkltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RqKwk1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BIltxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BI1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XAFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `Name` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqZaEFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RqZaEVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RqZaEltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RqZaE1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BJFtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="15">
+        <parameters xmi:id="_Qv0BJVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XAVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `Name` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqfgsFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RqfgsVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RqfgsltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_Rqfgs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BJ1txEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BKFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v8VtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqkZMFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RqkZMVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RqkZMltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RqkZM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BKVtxEemb2MVqZ7si7g" count="15" nullCount="5" computed="true">
+        <parameters xmi:id="_Qv0BKltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XAltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `Type` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqpRsFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RqpRsVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RqpRsltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RqpRs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BK1txEemb2MVqZ7si7g" count="15" nullCount="5" computed="true" distinctValueCount="3">
+        <parameters xmi:id="_Qv0BLFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XA1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `Type` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RqtjIFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RqtjIVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RqtjIltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RqtjI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BLltxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BL1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v91txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rqx0kFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_Rqx0kVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_Rqx0kltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_Rqx0k1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BMFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BMVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XBFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `BillingStreet` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rq3UIFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_Rq3UIVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_Rq3UIltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_Rq3UI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BMltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="14">
+        <parameters xmi:id="_Qv0BM1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XBVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `BillingStreet` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RrAeEFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RrAeEVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RrAeEltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RrAeE1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BNVtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BNltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v9VtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RrIZ4FtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RrIZ4VtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RrIZ4ltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RrIZ41txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BN1txEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BOFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XBltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `BillingCity` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RrNSYFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RrNSYVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RrNSYltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RrNSY1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BOVtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="5">
+        <parameters xmi:id="_Qv0BOltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4XB1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `BillingCity` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RrSK4FtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RrSK4VtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RrSK4ltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RrSK41txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BPFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BPVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v8ltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RraGsFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RraGsVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RraGsltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RraGs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BPltxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BP1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4-EFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `BillingState` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rrg0YFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RrhbcFtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RrhbcVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RrhbcltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BQFtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="3">
+        <parameters xmi:id="_Qv0BQVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4-EVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `BillingState` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rrm7AFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_Rrm7AVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_Rrm7AltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_Rrm7A1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_Qv0BQ1txEemb2MVqZ7si7g" name="FR Code postal" count="15" computed="true" matchingValueCount="14" notMatchingValueCount="1">
+        <parameters xmi:id="_Qv0BRFtxEemb2MVqZ7si7g">
+          <dataValidDomain xmi:id="_Qv0BRVtxEemb2MVqZ7si7g">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/address/FR_Code_postal_0.1.pattern#_EJ_moD4LEd20H7qFpzB9dg"/>
+            <builtInPatterns xmi:id="_RsYXEFtxEemb2MVqZ7si7g" name="FR Code postal">
+              <taggedValue xmi:id="_RsYXEVtxEemb2MVqZ7si7g" tag="Purpose" value="Check the validity of French postal codes."/>
+              <taggedValue xmi:id="_RsYXEltxEemb2MVqZ7si7g" tag="Description" value="Matches the French postal codes"/>
+              <taggedValue xmi:id="_RsYXE1txEemb2MVqZ7si7g" tag="Author" value=""/>
+              <taggedValue xmi:id="_RsYXFFtxEemb2MVqZ7si7g" tag="Status" value="Draft"/>
+              <taggedValue xmi:id="_RsYXFVtxEemb2MVqZ7si7g" tag="Validation_Status" value="true"/>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_RsYXFltxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_RsYXF1txEemb2MVqZ7si7g" body="'^(0[1-9]|[1-9][0-9])[0-9]{3}$'" language="SQL"/>
+              </components>
+            </builtInPatterns>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2relpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4-EltxEemb2MVqZ7si7g" body="SELECT COUNT(CASE WHEN `BillingPostalCode` REGEXP BINARY '^(0[1-9]|[1-9][0-9])[0-9]{3}$' THEN 1 END), COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_Qv0BRltxEemb2MVqZ7si7g" name="BE Code postal" count="15" computed="true" notMatchingValueCount="15">
+        <parameters xmi:id="_Qv0BR1txEemb2MVqZ7si7g">
+          <dataValidDomain xmi:id="_Qv0BSFtxEemb2MVqZ7si7g">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/address/BE_Code_postal_0.1.pattern#_NwUnsD4LEd20H7qFpzB9dg"/>
+            <builtInPatterns xmi:id="_RtFhsFtxEemb2MVqZ7si7g" name="BE Code postal">
+              <taggedValue xmi:id="_RtFhsVtxEemb2MVqZ7si7g" tag="Purpose" value="Check the validity of Belgian postal codes."/>
+              <taggedValue xmi:id="_RtFhsltxEemb2MVqZ7si7g" tag="Description" value="Matches standard Belgian postal codes."/>
+              <taggedValue xmi:id="_RtFhs1txEemb2MVqZ7si7g" tag="Author" value=""/>
+              <taggedValue xmi:id="_RtFhtFtxEemb2MVqZ7si7g" tag="Status" value="Draft"/>
+              <taggedValue xmi:id="_RtFhtVtxEemb2MVqZ7si7g" tag="Validation_Status" value="true"/>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_RtFhtltxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_RtFht1txEemb2MVqZ7si7g" body="'^(F-[0-9]{4,5}|B-[0-9]{4})$'" language="SQL"/>
+              </components>
+            </builtInPatterns>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2relpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv4-E1txEemb2MVqZ7si7g" body="SELECT COUNT(CASE WHEN `BillingPostalCode` REGEXP BINARY '^(F-[0-9]{4,5}|B-[0-9]{4})$' THEN 1 END), COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BSltxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BS1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v8FtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RtKaMFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RtKaMVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RtKaMltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RtKaM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BTFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0BTVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lIFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `BillingCountry` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RtPSsFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RtPSsVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RtPSsltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RtPSs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BTltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="2">
+        <parameters xmi:id="_Qv0BT1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lIVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `BillingCountry` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RtULMFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RtULMVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RtULMltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RtULM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_Qv0oMVtxEemb2MVqZ7si7g" name="Phone Number" count="15" computed="true" matchingValueCount="12" notMatchingValueCount="3">
+        <parameters xmi:id="_Qv0oMltxEemb2MVqZ7si7g">
+          <dataValidDomain xmi:id="_Qv0oM1txEemb2MVqZ7si7g">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/phone/Phone_Number_0.1.pattern#_S7m6oIyhEd6Dle_8xC0lwg"/>
+            <builtInPatterns xmi:id="_Rt5aAFtxEemb2MVqZ7si7g" name="Phone Number">
+              <taggedValue xmi:id="_Rt5aAVtxEemb2MVqZ7si7g" tag="Author" value="Tim N Tousley"/>
+              <taggedValue xmi:id="_Rt5aAltxEemb2MVqZ7si7g" tag="Description" value="Very flexible phone number entry. -- There are many valid ways to enter a phone number, and often there is other data that a restrictive Regex pattern will not abide. -- This pattern accepts any number of letters, commas, pound signs, slashes, spaces, periods, parenthesis, hyphens, plus signs, and asterisks... but amongst it scans for a minimum of 7 digits (modify {7} to adjust the minimum number of required digits (i.e. 10 for area code + phone number, 18 for long international numbers). -- This pattern does not attempt to restrict the entered phone number format in any way, but instead just verfies that enough digits for one was entered. -- Data in excess of the 7 required digits is allowed. -- I've posted another submission that forces compliance for US phone numbers."/>
+              <taggedValue xmi:id="_Rt5aA1txEemb2MVqZ7si7g" tag="Purpose" value="1234567 ||| 12345678 ||| (555) 987-6543 ext 210 ||| 999-666-7777-x1967123456 ||| 555-123"/>
+              <taggedValue xmi:id="_Rt5aBFtxEemb2MVqZ7si7g" tag="Status" value="Draft"/>
+              <taggedValue xmi:id="_Rt5aBVtxEemb2MVqZ7si7g" tag="Validation_Status" value="true"/>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_Rt5aBltxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_Rt5aB1txEemb2MVqZ7si7g" body="'^([a-zA-Z,#/ \.\(\)\-\+\*]*[0-9]){7}[0-9a-zA-Z,#/ \.\(\)\-\+\*]*$'" language="SQL"/>
+              </components>
+            </builtInPatterns>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rjlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lIltxEemb2MVqZ7si7g" body="SELECT COUNT(CASE WHEN `Phone` REGEXP BINARY '^([a-zA-Z,#/ \.\(\)\-\+\*]*[0-9]){7}[0-9a-zA-Z,#/ \.\(\)\-\+\*]*$' THEN 1 END), COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_Qv0oNVtxEemb2MVqZ7si7g" name="Website URL" count="15" computed="true" notMatchingValueCount="15">
+        <parameters xmi:id="_Qv0oNltxEemb2MVqZ7si7g">
+          <dataValidDomain xmi:id="_Qv0oN1txEemb2MVqZ7si7g">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/internet/Website_URL_0.1.pattern#_yaXdsYZMEd2G3OfabUsfOQ"/>
+            <builtInPatterns xmi:id="_RuaXYFtxEemb2MVqZ7si7g" name="Website URL">
+              <taggedValue xmi:id="_RuaXYVtxEemb2MVqZ7si7g" tag="Author" value="scorreia"/>
+              <taggedValue xmi:id="_RuaXYltxEemb2MVqZ7si7g" tag="Description" value="will match &quot;http://www.google.fr&quot;, &quot;http://talendforge.org/bugs/view.php?id=5096&quot; but will not match &quot;http://10.42.10.53&quot; ..."/>
+              <taggedValue xmi:id="_RuaXY1txEemb2MVqZ7si7g" tag="Purpose" value="identify website URLs"/>
+              <taggedValue xmi:id="_RuaXZFtxEemb2MVqZ7si7g" tag="Status" value="Draft"/>
+              <taggedValue xmi:id="_RuaXZVtxEemb2MVqZ7si7g" tag="Validation_Status" value="true"/>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_RuaXZltxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_RuaXZ1txEemb2MVqZ7si7g" body="'^https?://[[:alnum:]_-][\.[[:alnum:]_-]*]*\.(com|edu|org|net|int|info|eu|biz|mil|gov|aero|travel|pro|name|museum|coop|asia|[a-z][a-z])+(:[[:digit:]]+)?[/[[:alnum:]\._#-\?]*]*/?$'" language="Oracle"/>
+              </components>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_RuaXaFtxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_RuaXaVtxEemb2MVqZ7si7g" body="'^https?://[[:alnum:]_-][\\.[[:alnum:]_-]*]*\\.(com|edu|org|net|int|info|eu|biz|mil|gov|aero|travel|pro|name|museum|coop|asia|[a-z][a-z])+(:[[:digit:]]+)?[/[[:alnum:]\\._#-\\?]*]*/?$'" language="Mysql"/>
+              </components>
+              <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_RuaXaltxEemb2MVqZ7si7g" expressionType="REGEXP">
+                <expression xmi:id="_RuaXa1txEemb2MVqZ7si7g" body="'^https?://[[:alnum:]_-][\\.[[:alnum:]_-]*]*\\.(com|edu|org|net|int|info|eu|biz|mil|gov|aero|travel|pro|name|museum|coop|asia|[a-z][a-z])+(:[[:digit:]]+)?[/[[:alnum:]\\._#-\\?]*]*/?$'" language="PostgreSQL"/>
+              </components>
+            </builtInPatterns>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rmlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lI1txEemb2MVqZ7si7g" body="SELECT COUNT(CASE WHEN `Website` REGEXP BINARY '^https?://[[:alnum:]_-][\\.[[:alnum:]_-]*]*\\.(com|edu|org|net|int|info|eu|biz|mil|gov|aero|travel|pro|name|museum|coop|asia|[a-z][a-z])+(:[[:digit:]]+)?[/[[:alnum:]\\._#-\\?]*]*/?$' THEN 1 END), COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0oOVtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oOltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v81txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RuhFEFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RuhFEVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RuhFEltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RuhFE1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oO1txEemb2MVqZ7si7g" count="15" nullCount="5" computed="true">
+        <parameters xmi:id="_Qv0oPFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lJFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `Industry` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rul9kFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_Rul9kVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_Rul9kltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_Rul9k1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oPVtxEemb2MVqZ7si7g" count="15" nullCount="5" computed="true" distinctValueCount="7">
+        <parameters xmi:id="_Qv0oPltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lJVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `Industry` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RurdIFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RurdIVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RurdIltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RurdI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0oQFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oQVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v-VtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RuwVoFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RuwVoVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RuwVoltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RuwVo1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oQltxEemb2MVqZ7si7g" count="15" nullCount="7" computed="true">
+        <parameters xmi:id="_Qv0oQ1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lJltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `AnnualRevenue` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Ru1OIFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_Ru1OIVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_Ru1OIltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_Ru1OI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oRFtxEemb2MVqZ7si7g" count="15" nullCount="7" computed="true" distinctValueCount="6">
+        <parameters xmi:id="_Qv0oRVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv5lJ1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `AnnualRevenue` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Ru6tsFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_Ru6tsVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_Ru6tsltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_Ru6ts1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0oR1txEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oSFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v9ltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Ru_mMFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_Ru_mMVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_Ru_mMltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_Ru_mM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oSVtxEemb2MVqZ7si7g" count="15" nullCount="8" computed="true">
+        <parameters xmi:id="_Qv0oSltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6MMFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `NumberOfEmployees` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvD3oFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RvD3oVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RvD3oltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RvD3o1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oS1txEemb2MVqZ7si7g" count="15" nullCount="8" computed="true" distinctValueCount="5">
+        <parameters xmi:id="_Qv0oTFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6MMVtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `NumberOfEmployees` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvIwIFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RvIwIVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RvIwIltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RvIwI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0oTltxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oT1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v-ltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvOPsFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RvOPsVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RvOPsltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RvOPs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oUFtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oUVtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6MMltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `Code_ISO__c` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvYAsFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RvYAsVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RvYAsltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RvYAs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oUltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="2">
+        <parameters xmi:id="_Qv0oU1txEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6MM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `Code_ISO__c` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_Rvc5MFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_Rvc5MVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_Rvc5MltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_Rvc5M1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0oVVtxEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oVltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv3v9FtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvhKoFtxEemb2MVqZ7si7g" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_RvhKoVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_RvhKoltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_RvhKo1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oV1txEemb2MVqZ7si7g" count="15" computed="true">
+        <parameters xmi:id="_Qv0oWFtxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6MNFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM `demo`.`client_sfdc` WHERE `Adresse_maps__c` IS NULL " language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvmDIFtxEemb2MVqZ7si7g" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_RvmDIVtxEemb2MVqZ7si7g" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_RvmDIltxEemb2MVqZ7si7g" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_RvmDI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oWVtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="1">
+        <parameters xmi:id="_Qv0oWltxEemb2MVqZ7si7g"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Rv6zQFtxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT `Adresse_maps__c` FROM `demo`.`client_sfdc` ) A" language="MySQL"/>
+        <builtInIndicatorDefinition xmi:id="_RvsJwFtxEemb2MVqZ7si7g" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_RvsJwVtxEemb2MVqZ7si7g" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_RvsJwltxEemb2MVqZ7si7g" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_RvsJw1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+    </results>
+    <parameters xmi:id="_zXYGCVpIEemvWIbfjt7f6w" dataFilter="_ITZ0AFpJEemvWIbfjt7f6w" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_ITQqEFpJEemvWIbfjt7f6w" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_vushUFsHEemsSrE9JUoeYQ" kind="Usage" supplier="_zXYGAFpIEemvWIbfjt7f6w">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/01_Report_Evolution_0.1.rep#_Y-A-0FsHEemsSrE9JUoeYQ"/>
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/02_Report_Report_Flash_0.1.rep#_G2b48FsIEemsSrE9JUoeYQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <dataquality.domain:Domain xmi:id="_ITZ0AFpJEemvWIbfjt7f6w" name="02_Basic_Column_Analysis">
+    <ranges xmi:id="_ITZ0AVpJEemvWIbfjt7f6w">
+      <expressions xmi:id="_ITabEFpJEemvWIbfjt7f6w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_ITabEVpJEemvWIbfjt7f6w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
