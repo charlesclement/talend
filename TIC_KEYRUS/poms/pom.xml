@@ -126,13 +126,14 @@
     <module>jobs/process/B_Demo_AVV/G_SalesForce/B_Contact/b_loading_data_contact_1.2</module>
     <module>jobs/process/B_Demo_AVV/G_SalesForce/B_Contact/z_dev_0.1</module>
     <module>jobs/process/B_Demo_AVV/G_SalesForce/lanceur_complet_0.1</module>
+    <module>jobs/process/B_Demo_AVV/M_Owne_Flow/restart_initial_salesforce_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
