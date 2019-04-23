@@ -210,9 +210,9 @@
     <elementParameter field="TEXT" name="LIMIT" value="1"/>
     <elementParameter field="TABLE" name="SEARCH_INDEXS">
       <elementValue elementRef="PRE_COLUMN" value="Standard_Jobs"/>
-      <elementValue elementRef="COLUMN" value="GID"/>
+      <elementValue elementRef="COLUMN" value="Standard_Jobs"/>
       <elementValue elementRef="INDEX_PATH" value="&quot;C:/Local_data/Index&quot;"/>
-      <elementValue elementRef="SEARCH_MODE" value="MATCH_ANY"/>
+      <elementValue elementRef="SEARCH_MODE" value="MATCH_EXACT"/>
       <elementValue elementRef="SCORE_THRESHOLD" value="0.0"/>
       <elementValue elementRef="MAX_EDITS_FOR_FUZZY_MATCH" value="1"/>
       <elementValue elementRef="SLOP_FOR_PARTIAL_MATCH" value="1"/>
@@ -228,6 +228,7 @@
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSynonymSearch_1">
+      <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -235,6 +236,12 @@
       <column defaultValue="" key="false" length="0" name="NB_MATCHED_FIELDS" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="SCORES" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="NB_MATCHED_FIELDS" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="error_message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -252,6 +259,8 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Standard_Jobs"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GID"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_SIZE"/>
@@ -267,6 +276,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="SCORE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Float" usefulColumn="true"/>
@@ -303,13 +313,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6f98266-de96-4dd2-9916-2e27e5b8afa1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2VyNJzSvleBWfNYfdGSaYam1M++2qShfYUk24fOxKPqctOQn6ykiG2WMhK0JEOo1PqkiW715GQ01
-OQtnOgW8yQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b9e8d1d2-b5f0-4217-9c0b-bb122dcbd8ad"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iET6otttDuZjtfYND2Jq/RpBPM8GFCzOfpnUjmDEnlrObPErrneFq1v2c/THGDM4bVl3Ce61+PWk
-b8QuXul+FQ==</DigestValue></Reference></SignedInfo><SignatureValue>sOTlLfT8qtt1i3dAAe1gXXevJ1pq97SwiOH46ToDW8mZpJ44tRa3lRHdWEcvHkyzpWm6x8IjQXIQ
-XAy8IjR+dkf2iGkx8rvFV9skRcTpIkTuSnGHGtF8mH7LnSFyAyfkmYDwd7rS20Bmz9F8FBsJ3DBC
-d5nFykHkFHo0oeInI35aO2L66RuHkL0XjyQkPsaPGT9r73OA4SUhtXu0PmQ2HxXp+P2haHUAMr/2
-Xwdmrs0h1IufO7h8Y3OQFxrYvpBMnz5L938mCaNR09GKP6ZnMpwbxsber2UJovHXUFAKxWOAwlhB
-8Ht466AnYTXEBAqA1IfoiFPfkrlIum4wDb8pPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9b06785b-9def-4e97-9ffe-199f3b9e95c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AsvpyIp8iPMdcBgZBe3Zf+LZcVDWHV3CBbznNJ64Mz2xN2xPJpUUR9id9bTg/6h1bX6TC8rgRDdJ
+dXM4Pz0PFQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e7500da-55f1-4727-b186-223ba7b4da81"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D79Slv05xD4q+IcM/+hto9w54voBzn/qaeaUbtoqNkfrIJdrMjBFoRUJEROZbMzgYnX20lQ9DiR4
+GtmtinEfHg==</DigestValue></Reference></SignedInfo><SignatureValue>eR6qXxZCHdequX9RYVEiKasnocDnN0v+tA1x4SrFIHKluSAy0X/0gfvSXUjZgaoho1ao89bVFLyp
+AvlfteuVd24wV1D8cJcK+/86HyQnKHwgpblXfJnKhfPYOJ1MIvXJzI/OGdxr5xT4q1aMhkg857DO
+u9dnjdhCOPWJlKGqIvVImRUny4CIqoxDiFCrPFNcD5ejqjO6GHL13gZaJGgQpK/iNm+f9L8hHWls
+li98i3nZSgJd4OHhWXCJ13oWmb7WNMh+lmNDtwKroNPyDvja6r5zBmqGfPqxovV0uRibhwuCdwa2
+2sUlAMlIjFZtyfJh+N+Vm6JhS7w9hZ44lseTIg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -333,4 +343,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b9e8d1d2-b5f0-4217-9c0b-bb122dcbd8ad" Target="#_e6f98266-de96-4dd2-9916-2e27e5b8afa1"><Timestamp>2019-04-23 13:14:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e7500da-55f1-4727-b186-223ba7b4da81" Target="#_9b06785b-9def-4e97-9ffe-199f3b9e95c7"><Timestamp>2019-04-23 13:17:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
