@@ -210,7 +210,7 @@
     <elementParameter field="TEXT" name="LIMIT" value="1"/>
     <elementParameter field="TABLE" name="SEARCH_INDEXS">
       <elementValue elementRef="PRE_COLUMN" value="Standard_Jobs"/>
-      <elementValue elementRef="COLUMN" value="matched_fname"/>
+      <elementValue elementRef="COLUMN" value="matched_fjobs"/>
       <elementValue elementRef="INDEX_PATH" value="&quot;C:/Local_data/Index&quot;"/>
       <elementValue elementRef="SEARCH_MODE" value="MATCH_EXACT"/>
       <elementValue elementRef="SCORE_THRESHOLD" value="0.0"/>
@@ -228,7 +228,7 @@
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSynonymSearch_1">
-      <column comment="" key="false" length="-1" name="matched_fname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="matched_fjobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -237,7 +237,7 @@
       <column defaultValue="" key="false" length="0" name="NB_MATCHED_FIELDS" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="matched_fname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="matched_fjobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -261,7 +261,7 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="matched_fname"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="matched_fjobs"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Standard_Jobs"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -280,7 +280,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="matched_fname" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="matched_fjobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Standard_Jobs" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GID" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
@@ -306,7 +306,7 @@
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSynonymSearch_1" offsetLabelX="0" offsetLabelY="0" source="tSynonymSearch_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="matched_fname"/>
+      <elementValue elementRef="TRACE_COLUMN" value="matched_fjobs"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -323,13 +323,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2235592c-d0ae-4942-b5cc-7ade43bfb3ef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mHsbZlcchn7wGfPhjQAUIaqLiNEhYrq2gHc/8QbuLAn5hwZ7eWqQjCOoPModWthRJUP0s23lzXek
-t2SHHRzEXw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5bd3a96c-4639-43d1-9968-23bb9c75d353"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Dx1J+in+ejJWN6fG1fbu4sCGZ4gotfdwplBqGri3dGdNG7WcDlbWpSEqb7VJCH9tL8RgJ6hD6gwy
-jwoLj3MU4A==</DigestValue></Reference></SignedInfo><SignatureValue>nq0ad+YdzooHVMmEl0iDcy3KMRSvwRprl1xPooWfb3fhKIGrlt7OicZuI4EpWccmHIMn8KX3E7Tp
-7b3wbTqV0ZyWditLqRmfe4gz4B3kq5yLbL7DIjOnerFCdM5FzLHFnyLW0D2HpsqoZKXXzcEcrW4T
-/pEHiyCt8CLi9IWspvl6OB2X72lz2Cggu3gGQWdyTsnvvwNRaR41A7ZOAFniU3de0xk2EZDGmR9f
-mh97GBe5FN2WwORwLDG1TbQJ6mvEMJ7c503zuc/XqcLBTMVqSQ/6HyuazhRZqYBQ0cq4t6MNEhJ5
-8rg1djZ7Wtp/3Q43U5XbOef74NOpYx42zg+MdQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_84b7d89c-a90b-4857-81d3-e1df8f9ddc63"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NterNz35zB28pF/ivmqoSMO0nh1vbKWtQmu0pSSJhfTmfBsSAnpTsW/wrKafp6J4NQuH/3Qe63lt
+Qosto1RGTg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05763b1b-b6c7-43c0-9f89-ce257f795720"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QFW5hsNY072UyRBgROQQiwYT9MsXYdFIiRx6usrJLBBT2a9ZC9KVe+6SQD6VgGtyHh331myQPVOT
+ydFQTz1sJA==</DigestValue></Reference></SignedInfo><SignatureValue>i4ygCQ6VY+R/TlelrEnUqa/+gj5/LxHk+nrLZd1YihSyeLWWtl80WTrIXc8FrfT10yEFumqZz4w7
+V0L2ntTcRqcWGK2gWrDu6fAvF8YqsCBFf/T8Ec331fnHlZpx8+7aZpEVNaxZV8hfYt7K4X2Q1LAQ
+RX+VWXEl/UeD8AKWqd+VeEBDOqvFqbpOnfyWdMFInK220cVEpJcy9LTbEU4WBabQDsRLhpxNQFim
+nhY9LGbV4t6QF4HNIknZ1ELZAYuSgpozbvudlyJEBB+XU7F/ljrj7Mtxs7/mltxG7KBoDYVlBNCD
+Y7LLTZrpVjxE/OMUZ7f4rH6yWNLEYokTOGs1cA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -353,4 +353,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5bd3a96c-4639-43d1-9968-23bb9c75d353" Target="#_2235592c-d0ae-4942-b5cc-7ade43bfb3ef"><Timestamp>2019-04-23 13:21:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05763b1b-b6c7-43c0-9f89-ce257f795720" Target="#_84b7d89c-a90b-4857-81d3-e1df8f9ddc63"><Timestamp>2019-04-23 13:21:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
