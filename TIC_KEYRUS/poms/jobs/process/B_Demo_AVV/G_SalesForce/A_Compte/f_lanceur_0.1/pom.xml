@@ -11,7 +11,7 @@
   <groupId>org.example.tic_keyrus.job</groupId>
   <artifactId>F_Lanceur</artifactId>
   <version>0.1.0</version>
-  <name>TIC_KEYRUS F_Lanceur-0.1.0 (0.1,Job Designs)</name>
+  <name>TIC_KEYRUS F_Lanceur-0.1.0 (0.1,Jobs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -28,7 +28,7 @@
     <talend.pigudf.groupid>org.example.tic_keyrus.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.tic_keyrus.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -38,7 +38,7 @@
     <talend.project.id>0</talend.project.id>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
-    <talend.job.folder>sfdc/</talend.job.folder>
+    <talend.job.folder>b_demo_avv/g_salesforce/a_compte/</talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
@@ -79,7 +79,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.tic_keyrus.job</groupId>
-      <artifactId>D_Sfdc_DQ_Adresse_Google</artifactId>
+      <artifactId>D_Sfdc_DQ_Adresse_OpenStreetMap</artifactId>
       <version>1.1.0</version>
     </dependency>
     <dependency>
