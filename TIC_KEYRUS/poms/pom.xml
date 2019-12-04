@@ -131,13 +131,14 @@
     <module>jobs/process/B_Demo_AVV/B_DataQuality/k_to_be_0.1</module>
     <module>jobs/process/B_Demo_AVV/B_DataQuality/j_synonyme_0.1</module>
     <module>jobs/process/A_Socle/check_siret_0.1</module>
+    <module>jobs/process/B_Demo_AVV/F_Talend_Data_Preparation/c_indus_rules_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TIC_KEYRUS</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
