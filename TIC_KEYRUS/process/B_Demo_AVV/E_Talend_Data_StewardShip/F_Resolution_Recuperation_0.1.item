@@ -197,10 +197,10 @@
       <column comment="text" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="BillingPostalCode"/>
       </column>
-      <column comment="text" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+      <column comment="text" key="false" length="-1" name="Phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="phone"/>
       </column>
-      <column comment="text" key="false" length="-1" name="Type_compte" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+      <column comment="text" key="false" length="-1" name="Type" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Type_compte"/>
       </column>
     </metadata>
@@ -212,8 +212,8 @@
         <mapperTableEntries expression="row1.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.phone" name="phone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Type_compte" name="Type_compte" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.phone" name="Phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Type_compte " name="Type" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Name" nullable="true" type="id_String"/>
@@ -257,9 +257,9 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Type_compte"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -278,10 +278,10 @@
       <column comment="text" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="BillingPostalCode"/>
       </column>
-      <column comment="text" key="false" length="-1" name="phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+      <column comment="text" key="false" length="-1" name="Phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="phone"/>
       </column>
-      <column comment="text" key="false" length="-1" name="Type_compte" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+      <column comment="text" key="false" length="-1" name="Type" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Type_compte"/>
       </column>
     </metadata>
@@ -546,6 +546,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="toLog" lineStyle="0" metaname="toLog" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="toLog"/>
   </connection>
@@ -572,13 +580,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c2fb706f-4593-4290-8aca-b4f27336101a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8eOaS+z+aidB/q8X5J3Lx+xd4Zpsc3wMf26Da7q68Gl/YBZhLpQTYTHXryvgD5n8MxYr903TyVds
-/NVP1DEr6A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9dc5f911-5914-40ca-83b1-e33f1564394b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ylQntN4e50vu4f3NUN6nHLqpMM1qOUvsUYxLiCmKav+pWGnfoy1mAvUMyKgiBS0suX1ssbKpRqmc
-z6cIJfXXVQ==</DigestValue></Reference></SignedInfo><SignatureValue>TObWahPek2RPaY4/k2Jb79zswmm6o2UjYkYJNrM7ZGumlCdNYNJO+tsiRGVoUCXSaDWBwSGv7XcK
-aAUu3fE+v5ix+aLdtfuuxoMvraYnrVm6sa0g9s0CbVXYAktcWv+LyLj4+naGrUfIrPyNpKhjsFe+
-IqXezCvecw+AcRaOrb7dRe1swU/imbIzgUWIk2bsxEaulBggNpCQ80WCBO0jRbaUzHrMBhGC5ZvU
-Yn8GAenkFx7F+WkGqbIyPNfgnhcr7vdjycPY3/Nu5LXYR9RU5COC6PMwuAwVtHQIhACRILZFC8em
-dkOhxqA6z9sXPLKwDSn9AgbwtuJL6874s+0V4Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f216deb2-2c48-49fe-8f53-e571ef747455"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qfyNs3njQzKRHHQr/t6BcoKO9g8N90cf32tdPRfXfKQl9nSYvqRwZOklU/VNh6w0FAe0nqUWd0oG
+xvbyHoXo3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1119910-5201-4c49-92d8-f6d66fdbfef1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NDo6cQXUmh62JMkx2YOsgQhiddBkttlOKN3BxgHakcAUuzSCtLwE3MLWAiodBIpG4+ZVQoMFgyhm
+u6bJGsVQjw==</DigestValue></Reference></SignedInfo><SignatureValue>3l4ufJTrAdYzIXkmtvm2agp9p1zXTJvgI4CzHPSPef8BQBOz7ekiiFTpJkxzfxiO1GgMxfxm8vbv
+5sBb85ETVHqvauDJPei/H/SiKiK/jSJ214Cw072VzBdfW71COwVYqwS9S4yAnovsqczdNpQWmMtR
++lzcLw0lbPasOjQZUNb76xjzP4YcnEYQDG1QD55ltPZOTNfuvvVZ7zSCI1LQ8uKfxdnejvrwRfIC
+vPPXmqBX+qyGS3GzSneneOWn3ISz6kVcEgf3eT1IgvgHFVg35ItZRcpLKPig4nDPEKOHubUng3ga
+mt+T1dPDWTopvvF/z0XjqI42QRuZTSbxrB5AcQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -602,4 +610,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9dc5f911-5914-40ca-83b1-e33f1564394b" Target="#_c2fb706f-4593-4290-8aca-b4f27336101a"><Timestamp>2019-12-04 14:47:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1119910-5201-4c49-92d8-f6d66fdbfef1" Target="#_f216deb2-2c48-49fe-8f53-e571ef747455"><Timestamp>2019-12-04 14:48:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
