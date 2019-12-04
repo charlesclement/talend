@@ -350,7 +350,380 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsDeleted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MasterRecordId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingLatitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingLongitude"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingGeocodeAccuracy"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingAddress"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fax"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PhotoUrl"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sic"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Industry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AnnualRevenue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumberOfEmployees"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ownership"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TickerSymbol"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rating"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OwnerId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastActivityDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastViewedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastReferencedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Jigsaw"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JigsawCompanyId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CleanStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountSource"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DunsNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tradestyle"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NaicsCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NaicsDesc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YearStarted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SicDesc"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DandbCompanyId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerPriority__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SLA__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Active__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumberofLocations__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpsellOpportunity__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SLASerialNumber__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SLAExpirationDate__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Enterprise_MDM_ID__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duplicate_status__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_ISO__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse_maps__c"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Account" name="tLogRow_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Id"/>
+      </column>
+      <column comment="" key="false" length="-1" name="IsDeleted" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_Boolean" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="IsDeleted"/>
+      </column>
+      <column comment="" key="false" length="18" name="MasterRecordId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="MasterRecordId"/>
+      </column>
+      <column comment="" key="false" length="255" name="Name" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Name"/>
+      </column>
+      <column comment="" key="false" length="40" name="Type" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Type"/>
+      </column>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ParentId"/>
+      </column>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingStreet"/>
+      </column>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingCity"/>
+      </column>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingState"/>
+      </column>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingPostalCode"/>
+      </column>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingCountry"/>
+      </column>
+      <column comment="" key="false" length="18" name="BillingLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingLatitude"/>
+      </column>
+      <column comment="" key="false" length="18" name="BillingLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingLongitude"/>
+      </column>
+      <column comment="" key="false" length="40" name="BillingGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingGeocodeAccuracy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="BillingAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="BillingAddress"/>
+      </column>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingStreet"/>
+      </column>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingCity"/>
+      </column>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingState"/>
+      </column>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingPostalCode"/>
+      </column>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingCountry"/>
+      </column>
+      <column comment="" key="false" length="18" name="ShippingLatitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingLatitude"/>
+      </column>
+      <column comment="" key="false" length="18" name="ShippingLongitude" nullable="true" originalLength="-1" pattern="" precision="15" type="id_Double" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingLongitude"/>
+      </column>
+      <column comment="" key="false" length="40" name="ShippingGeocodeAccuracy" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingGeocodeAccuracy"/>
+      </column>
+      <column comment="" key="false" length="-1" name="ShippingAddress" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="ShippingAddress"/>
+      </column>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Phone"/>
+      </column>
+      <column comment="" key="false" length="40" name="Fax" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Fax"/>
+      </column>
+      <column comment="" key="false" length="40" name="AccountNumber" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="AccountNumber"/>
+      </column>
+      <column comment="" key="false" length="255" name="Website" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Website"/>
+      </column>
+      <column comment="" key="false" length="255" name="PhotoUrl" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="PhotoUrl"/>
+      </column>
+      <column comment="" key="false" length="20" name="Sic" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Sic"/>
+      </column>
+      <column comment="" key="false" length="40" name="Industry" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Industry"/>
+      </column>
+      <column comment="" key="false" length="18" name="AnnualRevenue" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="AnnualRevenue"/>
+      </column>
+      <column comment="" key="false" length="-1" name="NumberOfEmployees" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Integer" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="NumberOfEmployees"/>
+      </column>
+      <column comment="" key="false" length="40" name="Ownership" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Ownership"/>
+      </column>
+      <column comment="" key="false" length="20" name="TickerSymbol" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="TickerSymbol"/>
+      </column>
+      <column comment="" key="false" length="32000" name="Description" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Description"/>
+      </column>
+      <column comment="" key="false" length="40" name="Rating" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Rating"/>
+      </column>
+      <column comment="" key="false" length="80" name="Site" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Site"/>
+      </column>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="OwnerId"/>
+      </column>
+      <column comment="" key="false" length="-1" name="CreatedDate" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="CreatedDate"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="CreatedById"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastModifiedDate" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="LastModifiedDate"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="LastModifiedById"/>
+      </column>
+      <column comment="" key="false" length="-1" name="SystemModstamp" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="SystemModstamp"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastActivityDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="LastActivityDate"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastViewedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="LastViewedDate"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LastReferencedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="LastReferencedDate"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="20" name="Jigsaw" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Jigsaw"/>
+      </column>
+      <column comment="" key="false" length="20" name="JigsawCompanyId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="JigsawCompanyId"/>
+      </column>
+      <column comment="" key="false" length="40" name="CleanStatus" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="CleanStatus"/>
+      </column>
+      <column comment="" key="false" length="40" name="AccountSource" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="AccountSource"/>
+      </column>
+      <column comment="" key="false" length="9" name="DunsNumber" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="DunsNumber"/>
+      </column>
+      <column comment="" key="false" length="255" name="Tradestyle" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Tradestyle"/>
+      </column>
+      <column comment="" key="false" length="8" name="NaicsCode" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="NaicsCode"/>
+      </column>
+      <column comment="" key="false" length="120" name="NaicsDesc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="NaicsDesc"/>
+      </column>
+      <column comment="" key="false" length="4" name="YearStarted" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="YearStarted"/>
+      </column>
+      <column comment="" key="false" length="80" name="SicDesc" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="SicDesc"/>
+      </column>
+      <column comment="" key="false" length="18" name="DandbCompanyId" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="DandbCompanyId"/>
+      </column>
+      <column comment="" key="false" length="255" name="CustomerPriority__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="CustomerPriority__c"/>
+      </column>
+      <column comment="" key="false" length="255" name="SLA__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="SLA__c"/>
+      </column>
+      <column comment="" key="false" length="255" name="Active__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Active__c"/>
+      </column>
+      <column comment="" key="false" length="3" name="NumberofLocations__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_Double" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="NumberofLocations__c"/>
+      </column>
+      <column comment="" key="false" length="255" name="UpsellOpportunity__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="UpsellOpportunity__c"/>
+      </column>
+      <column comment="" key="false" length="10" name="SLASerialNumber__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="SLASerialNumber__c"/>
+      </column>
+      <column comment="" key="false" length="-1" name="SLAExpirationDate__c" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" type="id_Date" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="SLAExpirationDate__c"/>
+        <additionalField key="di.date.noLogicalType" value="true"/>
+      </column>
+      <column comment="" key="false" length="20" name="Enterprise_MDM_ID__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Enterprise_MDM_ID__c"/>
+      </column>
+      <column comment="" key="false" length="20" name="duplicate_status__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="duplicate_status__c"/>
+      </column>
+      <column comment="" key="false" length="255" name="Code_ISO__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Code_ISO__c"/>
+      </column>
+      <column comment="" defaultValue="&quot;KO&quot;" key="false" length="255" name="Adresse_maps__c" nullable="true" originalLength="-1" pattern="" precision="-1" type="id_String" usefulColumn="true">
+        <additionalField key="AVRO_TECHNICAL_KEY" value="Adresse_maps__c"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -394,16 +767,16 @@
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" name="out" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.Name" name="Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Phone" name="phone" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Type " name="Type_compte" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Name" name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingStreet" name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingCountry" name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingPostalCode" name="BillingPostalCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Phone" name="phone" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Type " name="Type_compte" nullable="true" type="id_String"/>
         <mapperTableEntries name="TDS_DUE_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="TDS_EXTERNAL_ID" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Id" type="id_String"/>
         <mapperTableEntries name="IsDeleted" type="id_Boolean"/>
         <mapperTableEntries name="MasterRecordId" nullable="true" type="id_String"/>
@@ -476,8 +849,9 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.25.3" offsetLabelX="0" offsetLabelY="0" posX="736" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataStewardshipTaskOutput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_n3ddsMZ6EeiHuceGAcma6A"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
@@ -515,12 +889,17 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceConnection_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceConnection_1" target="tSalesforceInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
-  <connection connectorName="MAIN" label="row1" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_1">
+  <connection connectorName="MAIN" label="row1" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDataStewardshipTaskOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
   </connection>
   <subjob>
@@ -533,13 +912,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a96b5e7d-030f-46fd-acd2-29bcc31b6ff4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t/oCKAiFBn+OkGoCIN+SjYhqGOn2ktyrEjHNPTuxresTpYVCfc/z7PC09PCk3RaNjDzlHVcogsTq
-FXmUHg2Axg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0e5b4b18-2b5d-4e5e-a53d-757a8f9ac0e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1R3oSzRXJPSwUljjYlMxm6F7PfPm+PjaUvrMlizKcqjCALcoNk8Uc2HaawZ2BI5DxA9oyknU3k7T
-CkiULkEh6g==</DigestValue></Reference></SignedInfo><SignatureValue>Xl+h/m4aZf3Jo++hYuJYks3IMvaEFXrtO3Wq7+U2dEMY2wRyIxunWuanxht+1muKbZ3Q3z2U1UsC
-8KxdU0t7upnUpezJKfhYubC3/9BY7uUOOIDWxGzoMTsgYd3LvvnIlecAGdZr0yuJAX3gVjP3kkHk
-U/Mmxs3GtYiBI6yM0sA4fPPN1NrLl//guZycmtC3u8I7pgTFkcd/H1x1ENiuhBzGcK78B5p+48ea
-2nWT6IJHO6F+XfY29j3Dxcpvf54M7Rv5d1MB6+AAbPYEljg2/Kk1PukVlfyIwFjJzA4z/a+1C0Ov
-RLhnOeYzcI1M20xxdb/Fs4lEmBQ377ojAuH5ag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataStewardshipTaskOutput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b524ecb1-9d21-415b-9d11-6080ab62236a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wY5lQcAZxAwLV11zwp0T3qWqX7F197R2l31KIX7qFY1u4COA3ZNkvgwhonAZs8L3HgAngeUM8Hf4
+Rp9HN11fhA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7b6659ca-9302-40e4-bfc2-5d36b1b6bffd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sWteeJK4ukrmb8VyXQ72oKkGrH9eNt1ArdYMz8W62kmnuhjSZd6w7XcCqN1Wq1QBsXtxEIHk0C7t
+WpZ9wLaOBA==</DigestValue></Reference></SignedInfo><SignatureValue>uc4PcuQ0mKabKbMHpV2HIRwJ8U0Ujxbw/5HvuBw7/n4Opz6/fgI+Vu/JFIHfRNhVw6/GXRyD5SAl
+JROyxFt+ArHsRpzjdom+kuCT12xXjaWW7fBcSgIb05dC/G5fGvgaGTCpMHH1FsXTo2SxgKB984VT
+zM8zz7wtxwnTIUg0Qbn+TpRgZL9nUW00BQU8vvSAVKQhP5rHS7KgTZ4QGAUB4m5/kDZEXlbkRQha
+W5o6Bsqn31h7EvgQuvokWixTI7Twe1h2irpoCaf9PXt/OdLmV0Yj2qnlCRHDwvD+BOK/qdZMN76T
+LpqFlh00b7p5j0okDUon25X57vj5NyusOXyVYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -563,4 +947,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0e5b4b18-2b5d-4e5e-a53d-757a8f9ac0e9" Target="#_a96b5e7d-030f-46fd-acd2-29bcc31b6ff4"><Timestamp>2019-12-04 12:33:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7b6659ca-9302-40e4-bfc2-5d36b1b6bffd" Target="#_b524ecb1-9d21-415b-9d11-6080ab62236a"><Timestamp>2019-12-04 12:39:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
