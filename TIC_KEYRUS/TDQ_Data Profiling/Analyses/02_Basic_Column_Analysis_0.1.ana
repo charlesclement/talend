@@ -33,7 +33,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
     </context>
     <results xmi:id="_zXYGB1pIEemvWIbfjt7f6w">
-      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w" executionDate="2019-04-10T09:16:09.187+0000" executionDuration="640" message="" executionNumber="8" lastRunOk="true" lastExecutionNumberOk="7"/>
+      <resultMetadata xmi:id="_zXYGCFpIEemvWIbfjt7f6w" executionDate="2019-12-05T08:27:42.009+0000" executionDuration="638" message="For more information please refer to the Error Log view." executionNumber="9" lastExecutionNumberOk="7"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qv0BIFtxEemb2MVqZ7si7g" count="15" computed="true">
         <parameters xmi:id="_Qv0BIVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
@@ -45,7 +45,7 @@
           <sqlGenericExpression xmi:id="_RqKwk1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BIltxEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BIltxEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0BI1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -56,7 +56,7 @@
           <sqlGenericExpression xmi:id="_RqZaE1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BJFtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="15">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BJFtxEemb2MVqZ7si7g" computed="true" distinctValueCount="15">
         <parameters xmi:id="_Qv0BJVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rZlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -78,7 +78,7 @@
           <sqlGenericExpression xmi:id="_RqkZM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BKVtxEemb2MVqZ7si7g" count="15" nullCount="5" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BKVtxEemb2MVqZ7si7g" nullCount="5" computed="true">
         <parameters xmi:id="_Qv0BKltxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -89,7 +89,7 @@
           <sqlGenericExpression xmi:id="_RqpRs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BK1txEemb2MVqZ7si7g" count="15" nullCount="5" computed="true" distinctValueCount="3">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BK1txEemb2MVqZ7si7g" nullCount="5" computed="true" distinctValueCount="3">
         <parameters xmi:id="_Qv0BLFtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2ralpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -111,7 +111,7 @@
           <sqlGenericExpression xmi:id="_Rqx0k1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BMFtxEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BMFtxEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0BMVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -122,7 +122,7 @@
           <sqlGenericExpression xmi:id="_Rq3UI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BMltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="14">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BMltxEemb2MVqZ7si7g" computed="true" distinctValueCount="14">
         <parameters xmi:id="_Qv0BM1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rblpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -144,7 +144,7 @@
           <sqlGenericExpression xmi:id="_RrIZ41txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BN1txEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BN1txEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0BOFtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -155,7 +155,7 @@
           <sqlGenericExpression xmi:id="_RrNSY1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BOVtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="5">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BOVtxEemb2MVqZ7si7g" computed="true" distinctValueCount="5">
         <parameters xmi:id="_Qv0BOltxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rclpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -177,7 +177,7 @@
           <sqlGenericExpression xmi:id="_RraGs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BPltxEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BPltxEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0BP1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -188,7 +188,7 @@
           <sqlGenericExpression xmi:id="_RrhbcltxEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BQFtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="3">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BQFtxEemb2MVqZ7si7g" computed="true" distinctValueCount="3">
         <parameters xmi:id="_Qv0BQVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rdlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -250,7 +250,7 @@
           <sqlGenericExpression xmi:id="_RtKaM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BTFtxEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0BTFtxEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0BTVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -261,7 +261,7 @@
           <sqlGenericExpression xmi:id="_RtPSs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BTltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="2">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0BTltxEemb2MVqZ7si7g" computed="true" distinctValueCount="2">
         <parameters xmi:id="_Qv0BT1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rflpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -329,7 +329,7 @@
           <sqlGenericExpression xmi:id="_RuhFE1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oO1txEemb2MVqZ7si7g" count="15" nullCount="5" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oO1txEemb2MVqZ7si7g" nullCount="5" computed="true">
         <parameters xmi:id="_Qv0oPFtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -340,7 +340,7 @@
           <sqlGenericExpression xmi:id="_Rul9k1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oPVtxEemb2MVqZ7si7g" count="15" nullCount="5" computed="true" distinctValueCount="7">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oPVtxEemb2MVqZ7si7g" nullCount="5" computed="true" distinctValueCount="7">
         <parameters xmi:id="_Qv0oPltxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rplpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -362,7 +362,7 @@
           <sqlGenericExpression xmi:id="_RuwVo1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oQltxEemb2MVqZ7si7g" count="15" nullCount="7" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oQltxEemb2MVqZ7si7g" nullCount="7" computed="true">
         <parameters xmi:id="_Qv0oQ1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -373,7 +373,7 @@
           <sqlGenericExpression xmi:id="_Ru1OI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oRFtxEemb2MVqZ7si7g" count="15" nullCount="7" computed="true" distinctValueCount="6">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oRFtxEemb2MVqZ7si7g" nullCount="7" computed="true" distinctValueCount="6">
         <parameters xmi:id="_Qv0oRVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rqlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -395,7 +395,7 @@
           <sqlGenericExpression xmi:id="_Ru_mM1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oSVtxEemb2MVqZ7si7g" count="15" nullCount="8" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oSVtxEemb2MVqZ7si7g" nullCount="8" computed="true">
         <parameters xmi:id="_Qv0oSltxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -406,7 +406,7 @@
           <sqlGenericExpression xmi:id="_RvD3o1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oS1txEemb2MVqZ7si7g" count="15" nullCount="8" computed="true" distinctValueCount="5">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oS1txEemb2MVqZ7si7g" nullCount="8" computed="true" distinctValueCount="5">
         <parameters xmi:id="_Qv0oTFtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rrlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -428,7 +428,7 @@
           <sqlGenericExpression xmi:id="_RvOPs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oUFtxEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oUFtxEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0oUVtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -439,7 +439,7 @@
           <sqlGenericExpression xmi:id="_RvYAs1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oUltxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="2">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oUltxEemb2MVqZ7si7g" computed="true" distinctValueCount="2">
         <parameters xmi:id="_Qv0oU1txEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rxlpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
@@ -461,7 +461,7 @@
           <sqlGenericExpression xmi:id="_RvhKo1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oV1txEemb2MVqZ7si7g" count="15" computed="true">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qv0oV1txEemb2MVqZ7si7g" computed="true">
         <parameters xmi:id="_Qv0oWFtxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
@@ -472,7 +472,7 @@
           <sqlGenericExpression xmi:id="_RvmDI1txEemb2MVqZ7si7g" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oWVtxEemb2MVqZ7si7g" count="15" computed="true" distinctValueCount="1">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qv0oWVtxEemb2MVqZ7si7g" computed="true" distinctValueCount="1">
         <parameters xmi:id="_Qv0oWltxEemb2MVqZ7si7g"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/Demo_1.2.item#_RT2rylpKEemvWIbfjt7f6w"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
