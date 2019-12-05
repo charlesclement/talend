@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_fv8DIRdHEeqHds-SZpIk_Q" name="Basic_Analyse" creationDate="2019-12-05T10:10:42.898+0000">
-  <taggedValue xmi:id="_fv8DIhdHEeqHds-SZpIk_Q" tag="Status" value="development"/>
-  <taggedValue xmi:id="_fv8DIxdHEeqHds-SZpIk_Q" tag="Author" value="master@nfr.keyrus.com"/>
-  <taggedValue xmi:id="_fv8DJBdHEeqHds-SZpIk_Q" tag="Purpose"/>
-  <taggedValue xmi:id="_fv8DJRdHEeqHds-SZpIk_Q" tag="Description"/>
-  <taggedValue xmi:id="_fv8DJhdHEeqHds-SZpIk_Q" tag="Version" value="0.1"/>
-  <context xmi:id="_fv8DJxdHEeqHds-SZpIk_Q"/>
-  <results xmi:id="_fv8DKBdHEeqHds-SZpIk_Q">
-    <resultMetadata xmi:id="_fv8DKRdHEeqHds-SZpIk_Q"/>
-  </results>
-  <parameters xmi:id="_fv8DKhdHEeqHds-SZpIk_Q" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_fv8DIRdHEeqHds-SZpIk_Q" name="Basic_Analyse" creationDate="2019-12-05T10:10:42.898+0000" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_tA1SkNm4EeWVoc2o62vdAA"/>
+    <taggedValue xmi:id="_fv8DIhdHEeqHds-SZpIk_Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_fv8DIxdHEeqHds-SZpIk_Q" tag="Author" value="master@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_fv8DJBdHEeqHds-SZpIk_Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_fv8DJRdHEeqHds-SZpIk_Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_fv8DJhdHEeqHds-SZpIk_Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_swcsERdHEeqHds-SZpIk_Q" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_swcsEhdHEeqHds-SZpIk_Q" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_swcsExdHEeqHds-SZpIk_Q" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_swcsHBdHEeqHds-SZpIk_Q" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_fv8DJxdHEeqHds-SZpIk_Q">
+      <connection href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_TjHKAFofEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_c9FohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_c-FohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_c_FohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dAFohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dBFohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dCFohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dDFohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dEFohEeWe9fHqZgwIFQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dFFohEeWe9fHqZgwIFQ"/>
+    </context>
+    <results xmi:id="_fv8DKBdHEeqHds-SZpIk_Q">
+      <resultMetadata xmi:id="_fv8DKRdHEeqHds-SZpIk_Q"/>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_swcsFBdHEeqHds-SZpIk_Q">
+        <parameters xmi:id="_swcsFRdHEeqHds-SZpIk_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dAFohEeWe9fHqZgwIFQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_swcsFhdHEeqHds-SZpIk_Q">
+        <parameters xmi:id="_swcsFxdHEeqHds-SZpIk_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dBFohEeWe9fHqZgwIFQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_swcsGBdHEeqHds-SZpIk_Q">
+        <parameters xmi:id="_swcsGRdHEeqHds-SZpIk_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dCFohEeWe9fHqZgwIFQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_swcsGhdHEeqHds-SZpIk_Q">
+        <parameters xmi:id="_swcsGxdHEeqHds-SZpIk_Q"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/Demo_AVV/BIMAGASIN_ODS_0.1.item#_A-_dCFohEeWe9fHqZgwIFQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_fv8DKhdHEeqHds-SZpIk_Q" dataFilter="_swcsHRdHEeqHds-SZpIk_Q" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_swcsEBdHEeqHds-SZpIk_Q" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_swcsHRdHEeqHds-SZpIk_Q" name="Basic_Analyse">
+    <ranges xmi:id="_swcsHhdHEeqHds-SZpIk_Q">
+      <expressions xmi:id="_swcsHxdHEeqHds-SZpIk_Q">
+        <expression xsi:type="relational:TdExpression" xmi:id="_swcsIBdHEeqHds-SZpIk_Q" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
