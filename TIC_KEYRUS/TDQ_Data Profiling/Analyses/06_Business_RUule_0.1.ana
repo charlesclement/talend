@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_fnwf4Bc5EeqHds-SZpIk_Q" name="06_Business_RUule" creationDate="2019-12-05T08:30:29.055+0000">
-  <taggedValue xmi:id="_fnwf4Rc5EeqHds-SZpIk_Q" tag="Status" value="development"/>
-  <taggedValue xmi:id="_fnwf4hc5EeqHds-SZpIk_Q" tag="Author" value="master@nfr.keyrus.com"/>
-  <taggedValue xmi:id="_fnwf4xc5EeqHds-SZpIk_Q" tag="Purpose"/>
-  <taggedValue xmi:id="_fnwf5Bc5EeqHds-SZpIk_Q" tag="Description"/>
-  <taggedValue xmi:id="_fnwf5Rc5EeqHds-SZpIk_Q" tag="Version" value="0.1"/>
-  <context xmi:id="_fnwf5hc5EeqHds-SZpIk_Q"/>
-  <results xmi:id="_fnwf5xc5EeqHds-SZpIk_Q">
-    <resultMetadata xmi:id="_fnwf6Bc5EeqHds-SZpIk_Q"/>
-  </results>
-  <parameters xmi:id="_fnwf6Rc5EeqHds-SZpIk_Q" analysisType="Table Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_fnwf4Bc5EeqHds-SZpIk_Q" name="06_Business_RUule" creationDate="2019-12-05T08:30:29.055+0000" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/Simon_PrepTR/CRM_Magasin_0.1.item#_tB2hMDNJEeih6pkkvT16rQ"/>
+    <taggedValue xmi:id="_fnwf4Rc5EeqHds-SZpIk_Q" tag="Status" value="development"/>
+    <taggedValue xmi:id="_fnwf4hc5EeqHds-SZpIk_Q" tag="Author" value="master@nfr.keyrus.com"/>
+    <taggedValue xmi:id="_fnwf4xc5EeqHds-SZpIk_Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_fnwf5Bc5EeqHds-SZpIk_Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_fnwf5Rc5EeqHds-SZpIk_Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_3jbO0Rc5EeqHds-SZpIk_Q" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_3jbO0xc5EeqHds-SZpIk_Q" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_fnwf5hc5EeqHds-SZpIk_Q">
+      <connection href="../../metadata/connections/Simon_PrepTR/CRM_Magasin_0.1.item#_jZI6gDNJEeih6pkkvT16rQ"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/Simon_PrepTR/CRM_Magasin_0.1.item#_24BGh0LeEeiAfvPc1CDOBQ"/>
+    </context>
+    <results xmi:id="_fnwf5xc5EeqHds-SZpIk_Q">
+      <resultMetadata xmi:id="_fnwf6Bc5EeqHds-SZpIk_Q"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3jbO0hc5EeqHds-SZpIk_Q">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/Simon_PrepTR/CRM_Magasin_0.1.item#_24BGh0LeEeiAfvPc1CDOBQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_fnwf6Rc5EeqHds-SZpIk_Q" dataFilter="_3jbO1Bc5EeqHds-SZpIk_Q" analysisType="Table Analysis"/>
+    <contextType xmi:id="_3jbO0Bc5EeqHds-SZpIk_Q" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_3jbO1Bc5EeqHds-SZpIk_Q" name="06_Business_RUule">
+    <ranges xmi:id="_3jbO1Rc5EeqHds-SZpIk_Q">
+      <expressions xmi:id="_3jbO1hc5EeqHds-SZpIk_Q">
+        <expression xsi:type="relational:TdExpression" xmi:id="_3jbO1xc5EeqHds-SZpIk_Q" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
